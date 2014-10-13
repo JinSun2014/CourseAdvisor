@@ -1,1 +1,2 @@
-from .local import *
+# from .local import *
+from .heroku import *
