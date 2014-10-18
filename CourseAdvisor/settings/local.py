@@ -4,8 +4,7 @@ from __future__ import absolute_import
 
 from os.path import join, normpath
 
-from .base import *
-
+from CourseAdvisor.settings import *
 
 ########## DEBUG CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#debug
