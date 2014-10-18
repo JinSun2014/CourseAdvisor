@@ -20,3 +20,5 @@ six==1.8.0
 sqlparse==0.1.13
 static3==0.5.1
 wsgiref==0.1.2
+pylibmc==1.2.3
+django-pylibmc-sasl==0.2.4
