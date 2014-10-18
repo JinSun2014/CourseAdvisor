@@ -13,7 +13,7 @@ django-debug-toolbar==1.2.1
 django-model-utils==2.0.3
 django-toolbelt==0.0.1
 docutils==0.12
-gunicorn==19.0.0
+gunicorn==19.1.0
 logutils==0.3.3
 psycopg2==2.5.4
 six==1.8.0
