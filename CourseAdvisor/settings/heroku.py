@@ -45,7 +45,12 @@ def get_cache():
                   }
               }
 
-CACHES = get_cache()
+# CACHES = get_cache()
+CACHES = {
+        'default': {
+            'BACKEND': 'django_pylibmc.memcached.PyLibMCCache'
+            }
+        }
 
 # Static asset configuration
 import os
