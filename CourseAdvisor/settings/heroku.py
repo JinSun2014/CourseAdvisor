@@ -1,11 +1,8 @@
 # Parse database configuration from $DATABASE_URL
+from CourseAdvisor.settings import *
 import dj_database_url
 
-from .base import *
-
 DEBUG = False
-
-LOCAL_APPS += ('debug_toolbar', )
 
 # DATABASES['default'] = dj_database_url.config()
 DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
@@ -45,12 +42,12 @@ def get_cache():
                   }
               }
 
-# CACHES = get_cache()
-CACHES = {
-        'default': {
-            'BACKEND': 'django_pylibmc.memcached.PyLibMCCache'
-            }
-        }
+CACHES = get_cache()
+# CACHES = {
+#         'default': {
+#             'BACKEND': 'django_pylibmc.memcached.PyLibMCCache'
+#             }
+#         }
 
 # Static asset configuration
 import os
