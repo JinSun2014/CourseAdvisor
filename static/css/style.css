@@ -1,0 +1,94 @@
+html, body, div, span, h1, h2, h3, h4,
+h5, h6, p, a, img, i, ol, ul, li, form,
+label, table, caption {
+  margin: 0;
+  padding: 0; }
+
+html {
+  width: 100%;
+  font-family: Arial, Helvetica;
+  background-color: #522F63; }
+  html body {
+    width: 100%; }
+    html body header {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.1); }
+      html body header nav {
+        padding: 10px;
+        width: calc(100% - 20px);
+        overflow: auto; }
+        html body header nav h1 {
+          float: left;
+          font-size: 25px;
+          font-weight: normal;
+          color: #fff; }
+        html body header nav ul {
+          float: right;
+          list-style: none; }
+          html body header nav ul li {
+            display: inline-block;
+            margin-left: 10px;
+            line-height: 25px;
+            color: #eee; }
+    html body main {
+      margin: 0 auto;
+      width: 80%; }
+      html body main hr {
+        margin: 30px 0;
+        border-color: rgba(255, 255, 255, 0.1); }
+      html body main h2.section-header {
+        margin: 10px 0;
+        color: #fff;
+        font-size: 18px;
+        font-weight: normal; }
+      html body main section.query {
+        margin-top: 60px;
+        width: 100%; }
+        html body main section.query form h2 {
+          margin-bottom: 10px;
+          text-align: center;
+          font-size: 30px;
+          color: rgba(255, 255, 255, 0.9);
+          text-shadow: 0 1px #000; }
+        html body main section.query form input {
+          display: block;
+          margin: 0 auto;
+          padding: 0 30px;
+          width: 500px;
+          height: 50px;
+          font-size: 16px;
+          color: #fff;
+          background-color: rgba(255, 255, 255, 0.2);
+          border: none;
+          border-radius: 30px;
+          outline: none;
+          cursor: pointer; }
+        html body main section.query form input:hover {
+          opacity: 0.7; }
+        html body main section.query form input:focus {
+          opacity: 0.9; }
+      html body main section.results {
+        width: 100%; }
+        html body main section.results h2.section-header {
+          display: inline-block; }
+        html body main section.results h2 + span {
+          margin-left: 5px;
+          font-size: 18px;
+          color: #fff; }
+        html body main section.results ul.results-list {
+          list-style: none; }
+          html body main section.results ul.results-list li.result {
+            margin-bottom: 20px;
+            padding: 5px;
+            width: 80%;
+            height: 70px;
+            background-color: rgba(200, 200, 200, 0.3);
+            border-radius: 5px;
+            cursor: pointer; }
+            html body main section.results ul.results-list li.result h3.results-title {
+              color: #ddd;
+              font-size: 15px; }
+          html body main section.results ul.results-list li.result:hover {
+            opacity: 0.8; }
+
+/*# sourceMappingURL=style.css.map */
