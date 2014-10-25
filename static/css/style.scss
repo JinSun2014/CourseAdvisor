@@ -1,0 +1,129 @@
+html, body, div, span, h1, h2, h3, h4,
+h5, h6, p, a, img, i, ol, ul, li, form,
+label, table, caption, {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	width: 100%;
+	font-family: Arial, Helvetica;
+	background-color: #522F63;
+
+	body {
+		width: 100%;
+
+		header {
+			width: 100%;
+			background-color: rgba(256, 256, 256, 0.1);
+
+			nav {
+				padding: 10px;
+				width: calc(100% - 20px);
+				overflow: auto;
+
+				h1 {
+					float: left;
+					font-size: 25px;
+					font-weight: normal;
+					color: #fff;
+				}
+				ul {
+					float: right;
+					list-style: none;
+
+					li {
+						display: inline-block;
+						margin-left: 10px;
+						line-height: 25px;
+						color: #eee;
+					}
+				}
+			}
+		}
+
+		main {
+			margin: 0 auto;
+			width: 80%;
+
+			hr {
+				margin: 30px 0;
+				border-color: rgba(256, 256, 256, 0.1);
+			}
+			h2.section-header {
+				margin: 10px 0;
+				color: #fff;
+				font-size: 18px;
+				font-weight: normal;
+			}
+			section.query {
+				margin-top: 60px;
+				width: 100%;
+
+				form {
+
+					h2 {
+						margin-bottom: 10px;
+						text-align: center;
+						font-size: 30px;
+						color: rgba(256, 256, 256, 0.9);
+						text-shadow: 0 1px #000;
+					}
+					input {
+						display: block;
+						margin: 0 auto;
+						padding: 0 30px;
+						width: 500px;
+						height: 50px;
+						font-size: 16px;
+						color: #fff;
+						background-color: rgba(256, 256, 256, 0.2);
+						border: none;
+						border-radius: 30px;
+						outline: none;
+						cursor: pointer;
+					}
+					input:hover {
+						opacity: 0.7;
+					}
+					input:focus {
+						opacity: 0.9;
+					}
+				}
+			}
+			section.results {
+				width: 100%;
+
+				h2.section-header {
+					display: inline-block;
+				}
+				h2 + span {
+					margin-left: 5px;
+					font-size: 18px;
+					color: #fff;
+				}
+				ul.results-list {
+					list-style: none;
+
+					li.result {
+						margin-bottom: 20px;
+						padding: 5px;
+						width: 80%;
+						height: 70px;
+						background-color: rgba(200, 200, 200, 0.3);
+						border-radius: 5px;
+						cursor: pointer;
+
+						h3.results-title {
+							color: #ddd;
+							font-size: 15px;
+						}
+					}
+					li.result:hover {
+						opacity: 0.8;
+					}
+				}
+			}
+		}
+	}
+}
