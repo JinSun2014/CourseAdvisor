@@ -3,46 +3,87 @@
 
 	<head>
 		<title>Professor Holmes</title>
-		<link rel="stylesheet" href="static/css/style.css">
+		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="./javascripts/script.js"></script>
 	</head>
 
 	<body>
 
-		<header>
+		<div class="drawer">
+			<h1 class="banner"><span>Professor</span> <span>Holmes</span></h1>
 			<nav>
-				<h1 class="nav-header">Professor Holmes</h1>
 				<ul>
-					<li>Jon Rovira</li>
-					<li>Log Out</li>
+					<li><i class="fa fa-user"></i><span>My Profile</span></li>
+					<li><i class="fa fa-calendar"></i><span>My Schedule</span></li>
+					<li><i class="fa fa-sign-out"></i><span>Log Out</span></li>
 				</ul>
 			</nav>
-		</header>
+		</div>
 
 		<main>
-			<section class="query">
-				<form>
-					<h2>How can I help you?</h2>
-					<input placeholder="Type your question here...">
-				</form>
-			</section>
-			<hr>
-			<section class="results">
-				<h2 class="section-header">Results</h2><span>(4)</span>
-				<ul class="results-list">
-					<li class="result">
-						<h3 class="results-title">Machine Learning</h3>
-					</li>
-					<li class="result">
-						<h3 class="results-title">Intro to Artificial Intelligence</h3>
-					</li>
-					<li class="result">
-						<h3 class="results-title">Next Gen AI Applications with IBM Watson</h3>
-					</li>
-					<li class="result">
-						<h3 class="results-title">Artificial Intelligence Programming</h3>
-					</li>
-				</ul>
-			</section>
+			<div class="main-content">
+				<section class="query">
+					<form>
+						<h2>How can I help you?</h2>
+						<input placeholder="Type your question here..." value="Which AI courses will be offered next quarter?">
+					</form>
+				</section>
+				<section class="results">
+					<h2 class="section-header">Results</h2><span>(6)</span>
+					<ul class="results-list">
+						<li class="result">
+							<h3 class="results-title">Machine Learning</h3>
+							<ul class="results-reasons">
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+							</ul>
+						</li>
+						<li class="result">
+							<h3 class="results-title">Intro to Artificial Intelligence</h3>
+							<ul class="results-reasons">
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+							</ul>
+						</li>
+						<li class="result">
+							<h3 class="results-title">Next Gen AI Applications with IBM Watson</h3>
+							<ul class="results-reasons">
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+							</ul>
+						</li>
+						<li class="result">
+							<h3 class="results-title">Artificial Intelligence Programming</h3>
+							<ul class="results-reasons">
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+							</ul>
+						</li>
+						<li class="result">
+							<h3 class="results-title">Cognitive Science</h3>
+							<ul class="results-reasons">
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+							</ul>
+						</li>
+						<li class="result">
+							<h3 class="results-title">Introduction to Neuroscience</h3>
+							<ul class="results-reasons">
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+								<li>Reason 1</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
 		</main>
 
 	</body>

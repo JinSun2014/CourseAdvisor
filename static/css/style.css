@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Big-John;
+  src: url("../fonts/big-john.otf"); }
+@font-face {
+  font-family: Slim-Joe;
+  src: url("../fonts/slim-joe.otf"); }
 html, body, div, span, h1, h2, h3, h4,
 h5, h6, p, a, img, i, ol, ul, li, form,
 label, table, caption {
@@ -6,89 +12,123 @@ label, table, caption {
 
 html {
   width: 100%;
-  font-family: Arial, Helvetica;
-  background-color: #522F63; }
+  font-family: Arial, Helvetica; }
   html body {
     width: 100%; }
-    html body header {
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.1); }
-      html body header nav {
-        padding: 10px;
-        width: calc(100% - 20px);
-        overflow: auto; }
-        html body header nav h1 {
-          float: left;
-          font-size: 25px;
-          font-weight: normal;
-          color: #fff; }
-        html body header nav ul {
-          float: right;
+    html body div.drawer {
+      float: left;
+      width: 250px;
+      background-color: #eee;
+      border-right: 1px solid #aaa; }
+      html body div.drawer h1.banner {
+        padding: 20px 10px 10px 10px;
+        color: #444; }
+        html body div.drawer h1.banner span:first-child {
+          font-family: "slim-joe";
+          font-size: 20px; }
+        html body div.drawer h1.banner span:last-child {
+          font-family: "big-john";
+          font-size: 19px; }
+      html body div.drawer nav {
+        margin-top: 50px; }
+        html body div.drawer nav ul {
           list-style: none; }
-          html body header nav ul li {
-            display: inline-block;
-            margin-left: 10px;
-            line-height: 25px;
-            color: #eee; }
-    html body main {
-      margin: 0 auto;
-      width: 80%; }
-      html body main hr {
-        margin: 30px 0;
-        border-color: rgba(255, 255, 255, 0.1); }
-      html body main h2.section-header {
-        margin: 10px 0;
-        color: #fff;
-        font-size: 18px;
-        font-weight: normal; }
-      html body main section.query {
-        margin-top: 60px;
-        width: 100%; }
-        html body main section.query form h2 {
-          margin-bottom: 10px;
-          text-align: center;
-          font-size: 30px;
-          color: rgba(255, 255, 255, 0.9);
-          text-shadow: 0 1px #000; }
-        html body main section.query form input {
-          display: block;
-          margin: 0 auto;
-          padding: 0 30px;
-          width: 500px;
-          height: 50px;
-          font-size: 16px;
-          color: #fff;
-          background-color: rgba(255, 255, 255, 0.2);
-          border: none;
-          border-radius: 30px;
-          outline: none;
-          cursor: pointer; }
-        html body main section.query form input:hover {
-          opacity: 0.7; }
-        html body main section.query form input:focus {
-          opacity: 0.9; }
-      html body main section.results {
-        width: 100%; }
-        html body main section.results h2.section-header {
-          display: inline-block; }
-        html body main section.results h2 + span {
-          margin-left: 5px;
-          font-size: 18px;
-          color: #fff; }
-        html body main section.results ul.results-list {
-          list-style: none; }
-          html body main section.results ul.results-list li.result {
-            margin-bottom: 20px;
-            padding: 5px;
-            width: 80%;
-            height: 70px;
-            background-color: rgba(200, 200, 200, 0.3);
-            border-radius: 5px;
+          html body div.drawer nav ul li {
+            padding: 10px;
+            width: calc(100% - 20px);
+            font-family: "slim-joe";
+            font-size: 13px;
+            color: #444;
+            border-top: 1px solid #aaa;
             cursor: pointer; }
-            html body main section.results ul.results-list li.result h3.results-title {
-              color: #ddd;
-              font-size: 15px; }
-          html body main section.results ul.results-list li.result:hover {
-            opacity: 0.8; }
+            html body div.drawer nav ul li i {
+              margin-right: 10px; }
+            html body div.drawer nav ul li span {
+              font-weight: bold; }
+          html body div.drawer nav ul li:last-child {
+            border-bottom: 1px solid #aaa; }
+          html body div.drawer nav ul li:hover {
+            background-color: #e3e3e3; }
+    html body main {
+      float: right;
+      width: calc(100% - 250px - 1px);
+      background: -webkit-linear-gradient(#614385, #516395);
+      background: -o-linear-gradient(#614385, #516395);
+      background: -moz-linear-gradient(#614385, #516395);
+      background: linear-gradient(#614385, #516395); }
+      html body main div.main-content {
+        margin: 0 auto;
+        width: 80%; }
+        html body main div.main-content h2.section-header {
+          margin: 10px 0;
+          color: #fff;
+          font-size: 18px;
+          font-weight: normal; }
+        html body main div.main-content section.query {
+          margin-top: 60px;
+          width: 100%; }
+          html body main div.main-content section.query form h2 {
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: "slim-joe";
+            font-size: 30px;
+            color: #fff; }
+          html body main div.main-content section.query form input {
+            display: block;
+            margin: 0 auto;
+            padding: 0 40px;
+            width: 80%;
+            height: 50px;
+            font-size: 16px;
+            color: #444;
+            border: 1px solid #aaa;
+            border-radius: 30px;
+            outline: none;
+            cursor: pointer; }
+          html body main div.main-content section.query form input:hover {
+            opacity: 0.9; }
+          html body main div.main-content section.query form input:focus {
+            opacity: 1.0; }
+        html body main div.main-content section.results {
+          margin-top: 30px;
+          width: 100%; }
+          html body main div.main-content section.results h2.section-header {
+            display: inline-block; }
+          html body main div.main-content section.results h2 + span {
+            margin-left: 5px;
+            font-size: 18px;
+            color: #fff; }
+          html body main div.main-content section.results ul.results-list {
+            list-style: none;
+            overflow-y: scroll; }
+            html body main div.main-content section.results ul.results-list li.result {
+              margin-bottom: 20px;
+              padding: 7px;
+              width: calc(100% - 14px);
+              height: 70px;
+              background-color: rgba(255, 255, 255, 0.7);
+              border-radius: 3px;
+              box-shadow: 0 1px 0 #555;
+              cursor: pointer; }
+              html body main div.main-content section.results ul.results-list li.result h3.results-title {
+                color: #222;
+                font-weight: normal;
+                font-size: 16px; }
+              html body main div.main-content section.results ul.results-list li.result ul.results-reasons {
+                margin-top: 30px;
+                margin-left: -5px;
+                width: 101%;
+                list-style: none;
+                border-top: 1px solid rgba(0, 0, 0, 0.3); }
+                html body main div.main-content section.results ul.results-list li.result ul.results-reasons li {
+                  display: inline-block;
+                  width: calc(100% / 3 - 5px);
+                  height: 28px;
+                  color: #333;
+                  border-right: 1px solid rgba(0, 0, 0, 0.3); }
+                html body main div.main-content section.results ul.results-list li.result ul.results-reasons li:last-child {
+                  border-right: none; }
+            html body main div.main-content section.results ul.results-list li.result:hover {
+              opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
