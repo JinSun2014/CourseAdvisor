@@ -1,10 +1,16 @@
 $(document).ready(function() {
 
 
+	/*
+	 * Functions
+	 */
+
 	var setHeights = function() {
 		wHeight = $(window).height();
-		$('div.drawer').height(wHeight);
-		$('main').height(wHeight);
+		hHeight = $('header').height();
+		vHeight = wHeight - hHeight;
+		$('div.drawer').height(vHeight);
+		$('main').height(vHeight);
 		$('ul.results-list').height($('main').height() - $('section.query').height() - 132);
 	};
 	var postQuery = function() {
@@ -13,13 +19,30 @@ $(document).ready(function() {
 		  	$( "section.query input" ).html( data );
 		});
 	}
+	var query = function() {
+		$('h5.results-summary').fadeTo(500, 1.0);
+		$('ul.results-list').slideDown();
+	};
 
+
+
+	/*
+	 * Run on document ready
+	 */
 
 	setHeights();
+
+
+
+
+	/*
+	 * Events
+	 */
+
 	$('input').on("keypress", function(e) {
 		if (e.keyCode == 13) {
             
-            postQuery();
+            query();
             return false;
         }
 	});
