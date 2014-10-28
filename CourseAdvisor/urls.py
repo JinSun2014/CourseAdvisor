@@ -8,6 +8,7 @@ from App.core import views
 
 urlpatterns = patterns('',
     url(r'^$', views.IndexView.as_view(), name='index'),
+    url(r'^query$', views.QueryView.as_view(), name='query'),
 
     # Examples:
     # url(r'^$', 'CourseAdvisor.views.home', name='home'),

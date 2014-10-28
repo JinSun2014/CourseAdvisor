@@ -22,3 +22,5 @@ static3==0.5.1
 wsgiref==0.1.2
 pylibmc==1.2.3
 django-pylibmc-sasl==0.2.4
+simplejson==3.6.5
+requests==2.4.3
