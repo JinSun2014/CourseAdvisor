@@ -241,3 +241,5 @@ WSGI_APPLICATION = '%s.wsgi.application' % SITE_NAME
 # ######## END WSGI CONFIGURATION
 
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+
+WASTON_URL = 'https://watson-wdc01.ihost.com/instance/504/deepqa/v1/question'
