@@ -1,3 +1,19 @@
+$primary-color: #522F63;
+$drawer-background-color: #eee;
+$main-background-color-1: #614385; 
+$main-background-color-2: #516395;
+
+$drawer-width: 250px;
+
+@font-face {
+	font-family: Big-John;
+	src: url('../fonts/big-john.otf');
+}
+@font-face {
+	font-family: Slim-Joe;
+	src: url('../fonts/slim-joe.otf');
+}
+
 html, body, div, span, h1, h2, h3, h4,
 h5, h6, p, a, img, i, ol, ul, li, form,
 label, table, caption, {
@@ -8,119 +24,196 @@ label, table, caption, {
 html {
 	width: 100%;
 	font-family: Arial, Helvetica;
-	background-color: #522F63;
 
 	body {
 		width: 100%;
 
 		header {
 			width: 100%;
-			background-color: rgba(256, 256, 256, 0.1);
+			height: 50px;
+			background-color: #333;
 
-			nav {
-				padding: 10px;
-				width: calc(100% - 20px);
-				overflow: auto;
+			div.header-inner {
+				margin: 0 auto;
+				padding: 10px 0;
+				width: 95%;
+				height: 30px;
 
-				h1 {
-					float: left;
-					font-size: 25px;
-					font-weight: normal;
-					color: #fff;
-				}
-				ul {
+				div.header-right {
 					float: right;
-					list-style: none;
 
-					li {
-						display: inline-block;
-						margin-left: 10px;
-						line-height: 25px;
-						color: #eee;
+					img.user-image {
+						width: 30px;
+					}
+					span.user-greeting {
+						margin-left: 5px;
+						line-height: 34px;
+						vertical-align: top;
+						font-size: 15px;
+						color: #fff;
+					}
+					img.ph-logo {
+						margin-left: 30px;
+						width: 40px;
 					}
 				}
 			}
 		}
+		div.drawer {
+			float: left;
+			width: $drawer-width;
+			background-color: $drawer-background-color;
+			border-right: 1px solid #aaa;
 
-		main {
-			margin: 0 auto;
-			width: 80%;
+			h1.banner {
+				padding: 20px 10px 10px 10px;
+				color: #444;
 
-			hr {
-				margin: 30px 0;
-				border-color: rgba(256, 256, 256, 0.1);
-			}
-			h2.section-header {
-				margin: 10px 0;
-				color: #fff;
-				font-size: 18px;
-				font-weight: normal;
-			}
-			section.query {
-				margin-top: 60px;
-				width: 100%;
-
-				form {
-
-					h2 {
-						margin-bottom: 10px;
-						text-align: center;
-						font-size: 30px;
-						color: rgba(256, 256, 256, 0.9);
-						text-shadow: 0 1px #000;
-					}
-					input {
-						display: block;
-						margin: 0 auto;
-						padding: 0 30px;
-						width: 500px;
-						height: 50px;
-						font-size: 16px;
-						color: #fff;
-						background-color: rgba(256, 256, 256, 0.2);
-						border: none;
-						border-radius: 30px;
-						outline: none;
-						cursor: pointer;
-					}
-					input:hover {
-						opacity: 0.7;
-					}
-					input:focus {
-						opacity: 0.9;
-					}
+				span:first-child {
+					font-family: "slim-joe";
+					font-size: 20px;
+				}
+				span:last-child {
+					font-family: "big-john";
+					font-size: 19px;
 				}
 			}
-			section.results {
-				width: 100%;
+			nav {
+				margin-top: 50px;
 
-				h2.section-header {
-					display: inline-block;
-				}
-				h2 + span {
-					margin-left: 5px;
-					font-size: 18px;
-					color: #fff;
-				}
-				ul.results-list {
+				ul {
 					list-style: none;
 
-					li.result {
-						margin-bottom: 20px;
-						padding: 5px;
-						width: 80%;
-						height: 70px;
-						background-color: rgba(200, 200, 200, 0.3);
-						border-radius: 5px;
+					li {
+						padding: 10px;
+						width: calc(100% - 20px);
+						font-family: "slim-joe";
+						font-size: 13px;
+						color: #444;
+						border-top: 1px solid #aaa;
 						cursor: pointer;
 
-						h3.results-title {
-							color: #ddd;
-							font-size: 15px;
+						i {
+							margin-right: 10px;
+						}
+						span {
+							font-weight: bold;
 						}
 					}
-					li.result:hover {
-						opacity: 0.8;
+					li:last-child {
+						border-bottom: 1px solid #aaa;
+					}
+					li:hover {
+						background-color: #e3e3e3;
+					}
+				}
+			}
+		}
+		main {
+			float: right;
+			width: calc(100% - #{$drawer-width} - 1px);
+			background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2);
+			background: -o-linear-gradient($main-background-color-1, $main-background-color-2);
+			background: -moz-linear-gradient($main-background-color-1, $main-background-color-2);
+			background: linear-gradient($main-background-color-1, $main-background-color-2);
+
+			div.main-content {
+				margin: 0 auto;
+				width: 90%;
+
+				section.query {
+					margin-top: 60px;
+					width: 100%;
+
+					form {
+
+						h2 {
+							margin-bottom: 10px;
+							text-align: center;
+							font-family: "slim-joe";
+							font-size: 30px;
+							color: #fff;
+						}
+						input {
+							display: block;
+							margin: 0 auto;
+							padding: 0 10px;
+							width: calc(100% - 20px);
+							height: 45px;
+							font-size: 16px;
+							color: #444;
+							border: 1px solid #aaa;
+							border-radius: 3px;
+							outline: none;
+							cursor: pointer;
+						}
+						input:hover {
+							opacity: 0.9;
+						}
+						input:focus {
+							opacity: 1.0;
+						}
+						h5.results-summary {
+							opacity: 0;
+							display: inline-block;
+							margin: 10px 0;
+							font-family: "slim-joe";
+							font-size: 15px;
+							font-weight: normal;
+							color: #fff;
+
+							span.results-time {
+								margin-left: 5px;
+							}
+						}
+					}
+				}
+				section.results {
+					margin-top: 30px;
+					width: 100%;
+
+					ul.results-list {
+						display: none;
+						list-style: none;
+						overflow-y: scroll;
+
+						li.result {
+							margin-bottom: 20px;
+							padding: 7px;
+							width: calc(100% - 14px);
+							height: 70px;
+							background-color: rgba(256, 256, 256, 0.70);
+							border-radius: 3px;
+							box-shadow: 0 1px 0 #555;
+							cursor: pointer;
+
+							h3.results-title {
+								color: #222;
+								font-weight: normal;
+								font-size: 16px;
+							}
+							ul.results-reasons {
+								margin-top: 30px;
+								margin-left: -5px;
+								width: 101%;
+								list-style: none;
+								border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+								li {
+									display: inline-block;
+									width: calc(100% / 3 - 5px);
+									height: 28px;
+									color: #333;
+									border-right: 1px solid rgba(0, 0, 0, 0.3);
+								}
+								li:last-child {
+									border-right: none;
+								}
+							}
+						}
+						li.result:hover {
+							opacity: 0.8;
+						}
 					}
 				}
 			}
