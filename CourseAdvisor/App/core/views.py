@@ -33,6 +33,7 @@ class QueryView(JSONResponseMixin, View):
 
     def post(self, request, *args, **kwargs):
         question = request.POST.get('question')
+        print question
 
         headers = {
                     'X-SyncTimeout': 30,
@@ -44,7 +45,8 @@ class QueryView(JSONResponseMixin, View):
                 'question': {'questionText': question}
                }
 
-        r = requests.post(WASTON_URL, data=simplejson.dumps(data), headers=headers)
+        r = requests.post(WASTON_URL, data=simplejson.dumps(data), headers=headers, timeout=10)
+        print r
         context = simplejson.loads(r.text)
         context['succes'] = True
         return self.render_tp_response(context)
