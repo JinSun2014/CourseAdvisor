@@ -38,7 +38,9 @@
 				<section class="query">
 					<form>
 						<h2>Ask away.</h2>
-						<input placeholder="Type your question here...">
+            <input class="question" placeholder="Type your question here...">
+            {% csrf_token %}
+            <input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}" style="display:none"/>
 						<h5 class="results-summary"><span class="results-quantity">6</span> Results <span class="results-time">(0.42 seconds)</span></h5>
 					</form>
 				</section>

@@ -20,6 +20,21 @@ $(document).ready(function() {
 		});
 	}
 	var query = function() {
+    var question = $('section.query input.question').val();
+    var token = $("input[name='csrfmiddlewaretoken']").val();
+    var query_url = window.location.pathname + 'query';
+    console.log(token);
+    $.post(query_url, {
+      'csrfmiddlewaretoken': token,
+      'question': question,
+    }, function(response){
+      if (response.success){
+        console.log(response);
+      }
+      else{
+        alert('Cannot recognize this question.');
+      }
+    });
 		$('h5.results-summary').fadeTo(500, 1.0);
 		$('ul.results-list').slideDown();
 	};

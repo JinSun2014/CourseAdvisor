@@ -43,8 +43,12 @@ class QueryView(JSONResponseMixin, View):
         data = {
                 'question': {'questionText': question}
                }
-
-        r = requests.post(WASTON_URL, data=simplejson.dumps(data), headers=headers)
+        try:
+            r = requests.post(WASTON_URL, data=simplejson.dumps(data), headers=headers, timeout=10)
+        except requests.exceptions.ReadTimeout:
+            context = {'success': False}
+            return self.render_to_response(context)
+        print r
         context = simplejson.loads(r.text)
         context['succes'] = True
-        return self.render_tp_response(context)
+        return self.render_to_response(context)
