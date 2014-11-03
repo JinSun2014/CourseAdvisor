@@ -6,11 +6,11 @@
 		<link rel="icon" type="image/png" href="ph-logo-black.png">
 
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-		<script src="./javascripts/script.js"></script>
+		<script src="static/js/script.js"></script>
 	</head>
 
 	<body>
@@ -18,9 +18,9 @@
 		<header>
 			<div class="header-inner">
 				<div class="header-right">
-					<img class="user-image" src="./images/me.jpg">
+					<img class="user-image" src="static/img/me.jpg">
 					<span class="user-greeting">Hey, Jon</span>
-					<img class="ph-logo" src="./images/ph-logo.png">
+					<img class="ph-logo" src="static/img/ph-logo.png">
 				</div>
 			</div>
 		</header>
@@ -48,7 +48,8 @@
 
 				<section class="query">
 					<form>
-						<h2>Ask away.</h2>
+            <h2>Ask away.</h2>
+            {% csrf_token %}
 						<input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}" style="display:none"/>
 						<input class="question" placeholder="Type your question here...">
 						<h5 class="results-summary"><span class="results-quantity">6</span> Results <span class="results-time">(0.42 seconds)</span></h5>
