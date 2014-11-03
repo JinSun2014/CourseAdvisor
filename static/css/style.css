@@ -38,12 +38,16 @@ html {
             margin-left: 30px;
             width: 40px; }
     html body div.drawer {
+      position: relative;
       float: left;
       width: 250px;
       background-color: #eee;
-      border-right: 1px solid #aaa; }
+      border-right: 1px solid #444;
+      box-shadow: 1px 0 1px #666;
+      overflow: hidden; }
       html body div.drawer h1.banner {
         padding: 20px 10px 10px 10px;
+        width: 250px;
         color: #444; }
         html body div.drawer h1.banner span:first-child {
           font-family: "slim-joe";
@@ -53,11 +57,19 @@ html {
           font-size: 19px; }
       html body div.drawer nav {
         margin-top: 50px; }
+        html body div.drawer nav h4.control-center-title {
+          margin-bottom: 7px;
+          padding-left: 10px;
+          width: 250px;
+          font-family: 'Slim-Joe';
+          font-size: 16px;
+          color: rgba(238, 238, 238, 0.8);
+          text-shadow: 1px 1px 0px #eee, 0 0 0 #333, 1px 1px 0px #eee; }
         html body div.drawer nav ul {
           list-style: none; }
           html body div.drawer nav ul li {
             padding: 10px;
-            width: calc(100% - 20px);
+            width: calc(250px - 20px);
             font-family: "slim-joe";
             font-size: 13px;
             color: #444;
@@ -71,6 +83,26 @@ html {
             border-bottom: 1px solid #aaa; }
           html body div.drawer nav ul li:hover {
             background-color: #e3e3e3; }
+      html body div.drawer button {
+        position: absolute;
+        right: 0px;
+        bottom: 30px;
+        width: 32px;
+        height: 40px;
+        background-color: #444;
+        border: none;
+        border-radius: 3px 0 0 3px;
+        outline: none;
+        cursor: pointer; }
+        html body div.drawer button i {
+          position: absolute;
+          top: 5px;
+          left: 8px;
+          font-size: 30px;
+          color: #fff;
+          cursor: pointer; }
+        html body div.drawer button i.right {
+          visibility: hidden; }
     html body main {
       float: right;
       width: calc(100% - 250px - 1px);
@@ -98,7 +130,7 @@ html {
             height: 45px;
             font-size: 16px;
             color: #444;
-            border: 1px solid #aaa;
+            border: none;
             border-radius: 3px;
             outline: none;
             cursor: pointer; }
@@ -118,39 +150,82 @@ html {
               margin-left: 5px; }
         html body main div.main-content section.results {
           margin-top: 30px;
-          width: 100%; }
+          width: 100%;
+          overflow: hidden; }
           html body main div.main-content section.results ul.results-list {
             display: none;
+            width: calc(100% + 0px);
             list-style: none;
             overflow-y: scroll; }
             html body main div.main-content section.results ul.results-list li.result {
-              margin-bottom: 20px;
-              padding: 7px;
-              width: calc(100% - 14px);
-              height: 70px;
-              background-color: rgba(255, 255, 255, 0.7);
-              border-radius: 3px;
-              box-shadow: 0 1px 0 #555;
+              overflow: auto;
+              margin-bottom: 1px;
+              background-color: #eee;
               cursor: pointer; }
-              html body main div.main-content section.results ul.results-list li.result h3.results-title {
-                color: #222;
-                font-weight: normal;
-                font-size: 16px; }
-              html body main div.main-content section.results ul.results-list li.result ul.results-reasons {
-                margin-top: 30px;
-                margin-left: -5px;
-                width: 101%;
-                list-style: none;
-                border-top: 1px solid rgba(0, 0, 0, 0.3); }
-                html body main div.main-content section.results ul.results-list li.result ul.results-reasons li {
-                  display: inline-block;
-                  width: calc(100% / 3 - 5px);
-                  height: 28px;
-                  color: #333;
-                  border-right: 1px solid rgba(0, 0, 0, 0.3); }
-                html body main div.main-content section.results ul.results-list li.result ul.results-reasons li:last-child {
-                  border-right: none; }
+              html body main div.main-content section.results ul.results-list li.result div.result-left {
+                float: left;
+                padding: 20px 10px;
+                width: 150px; }
+                html body main div.main-content section.results ul.results-list li.result div.result-left h3 {
+                  color: #555;
+                  font-size: 20px; }
+              html body main div.main-content section.results ul.results-list li.result div.result-middle {
+                float: left;
+                padding: 20px 10px;
+                width: calc(100% - 150px - 80px - 40px); }
+                html body main div.main-content section.results ul.results-list li.result div.result-middle h5 {
+                  margin-bottom: 7px;
+                  font-size: 16px;
+                  color: #666; }
+                html body main div.main-content section.results ul.results-list li.result div.result-middle ul.relevant-text {
+                  margin: 0 auto;
+                  width: 90%;
+                  font-size: 12px;
+                  color: #777;
+                  list-style: square; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-middle ul.relevant-text li {
+                    margin-bottom: 2px;
+                    line-height: 20px; }
+                    html body main div.main-content section.results ul.results-list li.result div.result-middle ul.relevant-text li b {
+                      color: #444; }
+              html body main div.main-content section.results ul.results-list li.result div.result-right {
+                float: right;
+                width: 80px; }
+                html body main div.main-content section.results ul.results-list li.result div.result-right ul {
+                  list-style: none;
+                  border-radius: 0 2px 2px 0;
+                  border-left: 1px solid #fff; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-right ul li {
+                    padding: 15px 0;
+                    font-family: 'Slim-Joe';
+                    color: #999;
+                    text-align: center;
+                    border-bottom: 1px solid #fff; }
+                    html body main div.main-content section.results ul.results-list li.result div.result-right ul li i {
+                      display: inline-block;
+                      font-size: 12px; }
+                    html body main div.main-content section.results ul.results-list li.result div.result-right ul li span {
+                      display: inline-block;
+                      margin-left: 6px;
+                      font-size: 10px; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-right ul li:last-child {
+                    border-bottom: none; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-right ul li.result-confidence {
+                    color: #fff;
+                    background-color: #D9CAF2; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-right ul li.result-add-to-schedule.possible {
+                    color: #fff;
+                    background-color: #97E08F; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-right ul li.result-add-to-schedule.impossible {
+                    color: #fff;
+                    background-color: #97E08F; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-right ul li.result-add-to-schedule.added {
+                    color: #fff;
+                    background-color: #97E08F; }
+                  html body main div.main-content section.results ul.results-list li.result div.result-right ul li.result-course-info {
+                    color: #fff;
+                    background-color: #B1CFEB; }
             html body main div.main-content section.results ul.results-list li.result:hover {
-              opacity: 0.8; }
+              opacity: 0.95; }
 
 /*# sourceMappingURL=style.css.map */
