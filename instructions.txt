@@ -1,0 +1,10 @@
+source venv/bin/activite
+./manage.py runserver
+ -- go to 127.0.0.1:8000 or localhost:8000
+
+ ./manage.py collectstatic
+
+export WASTON_KEY='bnd1X3N0dWRlbnQyNjpud3Vfc3R1ZGVudDI2'
+
+
+ deactivite

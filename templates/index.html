@@ -3,7 +3,7 @@
 
 	<head>
 		<title>Professor Holmes</title>
-		<link rel="icon" type="image/png" href="ph-logo-black.png">
+		<link rel="icon" type="image/png" href="static/img/ph-logo-black.png">
 
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="static/css/style.css">
@@ -32,7 +32,7 @@
 				<ul>
 					<li><i class="fa fa-user"></i><span>Profile</span></li>
 					<li><i class="fa fa-calendar"></i><span>Schedule</span></li>
-					<li><i class="fa fa-list"></i><span>Your Recent Questions</span></li>
+					<li><i class="fa fa-list"></i><span>Past Questions</span></li>
 					<li><i class="fa fa-area-chart"></i><span>Common Questions</span></li>
 					<li><i class="fa fa-sign-out"></i><span>Log Out</span></li>
 				</ul>
@@ -48,8 +48,8 @@
 
 				<section class="query">
 					<form>
-            <h2>Ask away.</h2>
-            {% csrf_token %}
+            			<h2>Ask away.</h2>
+            			{% csrf_token %}
 						<input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}" style="display:none"/>
 						<input class="question" placeholder="Type your question here...">
 						<h5 class="results-summary"><span class="results-quantity">6</span> Results <span class="results-time">(0.42 seconds)</span></h5>
@@ -61,121 +61,144 @@
 
 						<li class="result">
 							<div class="result-left">
-								<h3></h3>
-							</div>
-							<div class="result-middle">
-								<h5>Relevance</h5>
-								<ul class="relevant-text">
-									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
-									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
-								</ul>
-							</div>
-							<div class="result-right">
-								<ul>
-									<li class="result-confidence"><i class="fa fa-check"></i><span></span></li>
-									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
-									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
-								</ul>
-							</div>
-						</li>
-
-						<li class="result">
-							<div class="results-reasoning">
-								<div class="result-left">
-								<h3>Intro to Artificial Intelligence</h3>
-							</div>
-							<div class="result-middle">
-								<h5>Relevance</h5>
-								<ul class="relevant-text">
-									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
-									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
-								</ul>
-							</div>
-							<div class="result-right">
-								<ul>
-									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
-									<li class="result-add-to-schedule added"><i class="fa fa-plus"></i><span>Add</span></li>
-									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
-								</ul>
-							</div>
-						</li>
-
-						<li class="result">
-							<div class="result-left">
-								<h3>Next Gen AI Applications with IBM Watson</h3>
-							</div>
-							<div class="result-middle">
-								<h5>Relevance</h5>
-								<ul class="relevant-text">
-									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
-									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
-								</ul>
-							</div>
-							<div class="result-right">
-								<ul>
-									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
-									<li class="result-add-to-schedule possible"><i class="fa fa-plus"></i><span>Add</span></li>
-									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
-								</ul>
-							</div>
-						</li>
-
-						<li class="result">
-							<div class="result-left">
-								<h3>Artificial Intelligence Programming</h3>
-							</div>
-							<div class="result-middle">
-								<h5>Relevance</h5>
-								<ul class="relevant-text">
-									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
-									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
-								</ul>
-							</div>
-							<div class="result-right">
 								<ul>
 									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
 									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
 									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
 								</ul>
 							</div>
-						</li>
-
-						<li class="result">
-							<div class="result-left">
-								<h3>Cognitivie Science</h3>
-							</div>
 							<div class="result-middle">
+								<h3 class="result-class-title">Machine Learning</h3>
+								<h5 class="result-class-professor">Bryan Pardo</h5>
+							</div>
+							<div class="result-right">
+								<i class="fa fa-angle-down"></i>
+							</div>
+							<div class="result-expand">
 								<h5>Relevance</h5>
 								<ul class="relevant-text">
 									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
 									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
 								</ul>
 							</div>
-							<div class="result-right">
-								<ul>
-									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
-									<li class="result-add-to-schedule added"><i class="fa fa-plus"></i><span>Add</span></li>
-									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
-								</ul>
-							</div>
 						</li>
 
 						<li class="result">
 							<div class="result-left">
-								<h3>Introduction to Neuroscience</h3>
+								<ul>
+									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
+									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
+									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
+								</ul>
 							</div>
 							<div class="result-middle">
+								<h3 class="result-class-title">Intro to Artificial Intelligence</h3>
+								<h5 class="result-class-professor">Doug Downey</h5>
+							</div>
+							<div class="result-right">
+								<i class="fa fa-angle-down"></i>
+							</div>
+							<div class="result-expand">
 								<h5>Relevance</h5>
 								<ul class="relevant-text">
 									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
 									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
 								</ul>
 							</div>
-							<div class="result-right">
+						</li>
+
+						<li class="result">
+							<div class="result-left">
 								<ul>
 									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
-									<li class="result-add-to-schedule possible"><i class="fa fa-plus"></i><span>Add</span></li>
+									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
 									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
+								</ul>
+							</div>
+							<div class="result-middle">
+								<h3 class="result-class-title">Next Gen AI Applications with IBM Watson</h3>
+								<h5 class="result-class-professor">Larry Birnbaum</h5>
+							</div>
+							<div class="result-right">
+								<i class="fa fa-angle-down"></i>
+							</div>
+							<div class="result-expand">
+								<h5>Relevance</h5>
+								<ul class="relevant-text">
+									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
+									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="result">
+							<div class="result-left">
+								<ul>
+									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
+									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
+									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
+								</ul>
+							</div>
+							<div class="result-middle">
+								<h3 class="result-class-title">Artificial Intelligence Programming</h3>
+								<h5 class="result-class-professor">Christopher Riesbeck</h5>
+							</div>
+							<div class="result-right">
+								<i class="fa fa-angle-down"></i>
+							</div>
+							<div class="result-expand">
+								<h5>Relevance</h5>
+								<ul class="relevant-text">
+									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
+									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="result">
+							<div class="result-left">
+								<ul>
+									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
+									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
+									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
+								</ul>
+							</div>
+							<div class="result-middle">
+								<h3 class="result-class-title">Cognitive Science</h3>
+								<h5 class="result-class-professor">Bryan Pardo</h5>
+							</div>
+							<div class="result-right">
+								<i class="fa fa-angle-down"></i>
+							</div>
+							<div class="result-expand">
+								<h5>Relevance</h5>
+								<ul class="relevant-text">
+									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
+									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="result">
+							<div class="result-left">
+								<ul>
+									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
+									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
+									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
+								</ul>
+							</div>
+							<div class="result-middle">
+								<h3 class="result-class-title">Introduction to Neuroscience</h3>
+								<h5 class="result-class-professor">Bryan Pardo</h5>
+							</div>
+							<div class="result-right">
+								<i class="fa fa-angle-down"></i>
+							</div>
+							<div class="result-expand">
+								<h5>Relevance</h5>
+								<ul class="relevant-text">
+									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
+									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
 								</ul>
 							</div>
 						</li>
