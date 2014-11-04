@@ -196,7 +196,10 @@ html {
                 float: right;
                 width: 120px;
                 text-align: center; }
+                html body main div.main-content section.results ul.results-list li.result div.result-right span {
+                  display: inline-block; }
                 html body main div.main-content section.results ul.results-list li.result div.result-right i {
+                  display: inline-block;
                   padding: 30px 0;
                   font-size: 35px;
                   color: #666; }

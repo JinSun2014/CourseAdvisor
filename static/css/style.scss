@@ -291,7 +291,11 @@ html {
 								width: 120px;
 								text-align: center;
 
+								span {
+									display: inline-block;
+								}
 								i {
+									display: inline-block;
 									padding: 30px 0;
 									font-size: 35px;
 									color: #666;
