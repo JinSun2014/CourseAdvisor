@@ -305,15 +305,30 @@ html {
 							}
 							div.result-expand {
 								display: none;
+								float: right;
+								padding: 15px 30px 15px 0;
+								width: calc(100% - 30px);
+								text-align: right;
+								background-color: #fafafa;
+								border-top: 1px solid #bbb;
 
-								h5 {
-									margin-bottom: 7px;
-									font-size: 16px;
-									color: #666;
+								h4 {
+									float: left;
+									padding: 10px 20px 10px 50px;
+									width: 140px;
+									font-family: "Slim-Joe";
+									font-size: 19px;
+									color: #444;
+									text-align: center;
+
+									span {
+										font-size: 26px;
+									}
 								}
+
 								ul.relevant-text {
-									margin: 0 auto;
-									width: 90%;
+									float: right;
+									width: 70%;
 									font-size: 12px;
 									color: #777;
 									list-style: square;
@@ -330,7 +345,7 @@ html {
 							}
 						}
 						li.result:hover {
-							background-color: rgba(238, 238, 238, 0.90);
+							box-shadow: 0px 1px 7px #777;
 						}
 					}
 				}

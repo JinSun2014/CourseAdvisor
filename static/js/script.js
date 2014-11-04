@@ -110,16 +110,18 @@ $(document).ready(function() {
 
 		if(open) {
 			$element.children('i').animateRotate(180, 0, t, "linear");
+			$element.siblings('div.result-expand').slideUp();
 			$element.siblings('div.result-expand').removeClass('open');
 			$element.siblings('div.result-expand').addClass('closed');
 		}
 		else {
 			$element.children('i').animateRotate(0, 180, t, "linear");
+			$element.siblings('div.result-expand').slideDown();
 			$element.siblings('div.result-expand').removeClass('closed');
 			$element.siblings('div.result-expand').addClass('open');
 		}
 		return;
-	}
+	};
 
 
 
