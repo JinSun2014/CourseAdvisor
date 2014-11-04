@@ -91,9 +91,9 @@ html {
 					padding-left: 10px;
 					width: 250px;
 					font-family: 'Slim-Joe';
-					font-size: 16px;
+					font-size: 14px;
 					color: rgba(238,238,238, 0.8);
-					text-shadow: 1px 1px 0px #eee, 0 0 0 #333, 1px 1px 0px #eee;
+					text-shadow: 1px 1px 0px #eee, 0 0 0 #222, 1px 1px 0px #eee;
 				}
 				ul {
 					list-style: none;
@@ -104,7 +104,7 @@ html {
 						font-family: "slim-joe";
 						font-size: 13px;
 						color: #444;
-						border-top: 1px solid #aaa;
+						border-top: 1px solid #ddd;
 						cursor: pointer;
 
 						i {
@@ -115,7 +115,7 @@ html {
 						}
 					}
 					li:last-child {
-						border-bottom: 1px solid #aaa;
+						border-bottom: 1px solid #ddd;
 					}
 					li:hover {
 						background-color: #e3e3e3;
@@ -126,8 +126,8 @@ html {
 				position: absolute;
 				right: 0px;
 				bottom: 30px;
-				width: 32px;
-				height: 40px;
+				width: 25px;
+				height: 30px;
 				background-color: #444;
 				border: none;
 				border-radius: 3px 0 0 3px;
@@ -136,9 +136,9 @@ html {
 
 				i {
 					position: absolute;
-					top: 5px;
-					left: 8px;
-					font-size: 30px;
+					top: 3px;
+					left: 6px;
+					font-size: 25px;
 					color: #fff;
 					cursor: pointer;
 				}
@@ -219,24 +219,86 @@ html {
 
 						li.result {
 							overflow: auto;
-							margin-bottom: 1px;
+							margin-bottom: 6px;
 							background-color: $result-background-color;
+							box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
 							cursor: pointer;
 
 							div.result-left {
 								float: left;
-								padding: 20px 10px;
-								width: 150px;
+								width: 80px;
 
-								h3 {
-									color: #555;
-									font-size: 20px;
+								ul {
+									list-style: none;
+									border-right: 1px solid #fff;
+
+									li {
+										padding: 5px 0;
+										font-family: 'Slim-Joe';
+										text-align: center;
+										color: #999;
+										border-bottom: 1px solid #fff;
+
+										i {
+											display: inline-block;
+											font-size: 12px;
+										}
+										span {
+											display: inline-block;
+											margin-left: 6px;
+											font-size: 10px;
+										}
+									}
+									li:last-child {
+										border-bottom: none;
+									}
+									li.result-confidence {
+										// color: #fff;
+										// background-color: #D9CAF2;
+									}
+									li.result-add-to-schedule.possible {
+										// color: #fff;
+										// background-color: #97E08F;
+									}
+									li.result-add-to-schedule.impossible {
+										// color: #fff;
+										// background-color: #97E08F;
+									}
+									li.result-add-to-schedule.added {
+										// color: #fff;
+										// background-color: #97E08F;
+									}
+									li.result-course-info {
+										// color: #fff;
+										// background-color: #B1CFEB;
+									}
 								}
 							}
 							div.result-middle {
 								float: left;
-								padding: 20px 10px;
-								width: calc(100% - 150px - 80px - 40px);
+								padding: 25px 10px;
+								width: calc(100% - 80px - 120px - 40px);
+
+								h3.result-class-title {
+									color: #555;
+								}
+								h5.result-class-professor {
+									color: #516395;
+								}
+							}
+							div.result-right {
+								float: right;
+								width: 120px;
+								text-align: center;
+
+								i {
+									padding: 30px 0;
+									font-size: 35px;
+									color: #666;
+								}
+							}
+							div.result-expand {
+								display: none;
 
 								h5 {
 									margin-bottom: 7px;
@@ -257,58 +319,6 @@ html {
 										b {
 											color: #444;
 										}
-									}
-								}
-							}
-							div.result-right {
-								float: right;
-								width: 80px;
-
-								ul {
-									list-style: none;
-									// background-color: #ddd;
-									border-radius: 0 2px 2px 0;
-									border-left: 1px solid #fff;
-
-									li {
-										padding: 15px 0;
-										font-family: 'Slim-Joe';
-										color: #999;
-										text-align: center;
-										border-bottom: 1px solid #fff;
-
-										i {
-											display: inline-block;
-											font-size: 12px;
-										}
-										span {
-											display: inline-block;
-											margin-left: 6px;
-											font-size: 10px;
-										}
-									}
-									li:last-child {
-										border-bottom: none;
-									}
-									li.result-confidence {
-										color: #fff;
-										background-color: #D9CAF2;
-									}
-									li.result-add-to-schedule.possible {
-										color: #fff;
-										background-color: #97E08F;
-									}
-									li.result-add-to-schedule.impossible {
-										color: #fff;
-										background-color: #97E08F;
-									}
-									li.result-add-to-schedule.added {
-										color: #fff;
-										background-color: #97E08F;
-									}
-									li.result-course-info {
-										color: #fff;
-										background-color: #B1CFEB;
 									}
 								}
 							}
