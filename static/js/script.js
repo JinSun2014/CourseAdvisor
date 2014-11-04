@@ -28,7 +28,7 @@ $(document).ready(function() {
 		vHeight = wHeight - hHeight;
 		$('div.drawer').height(vHeight);
 		$('main').height(vHeight);
-		$('ul.results-list').height($('main').height() - $('section.query').height() - 132);
+		$('ul.results-list').height($('main').height() - $('section.query').height() - 89);
 	};
 	var postQuery = function() {
 		var query = $('section.query input').val();
