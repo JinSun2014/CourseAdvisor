@@ -42,8 +42,28 @@ $(document).ready(function() {
 		processResponse();
 	};
 	var processResponse = function() {
-		var response = '{"question": "This is the response from Watson"}';
-		var json = JSON.parse(response);
+		// var question = "elephant";
+    var question = $('section.query input.question').val();
+    var token = $("input[name='csrfmiddlewaretoken']").val();
+    var query_url = window.location.pathname + 'query';
+    console.log(token);
+    $.post(query_url, {
+      'csrfmiddlewaretoken': token,
+      'question': question,
+    }, function(response){
+      if (response.success){
+        console.log(response);
+        var title = response.question.answers[0].text
+        title = title.split('-')
+        $('li.result:first-child h3').html(title[1]);
+        $('li.result:first-child li.result-confidence > span').html(response.question.answers[0].confidence);
+
+      }
+      else{
+        alert('Cannot recognize this question.');
+      }
+    });
+
 		// $('li.result:first-child h3.results-title').html(json.question);
 		// $('li.result:first-child h3.results-title').html(response["question"]["evidenceList"][0]);
 	};
