@@ -4,7 +4,7 @@ $(document).ready(function() {
 	/*
 	 * Plugins
 	 */
-	$.fn.animateRotate = function(angle, duration, easing, complete) {
+	$.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
 	    var args = $.speed(duration, easing, complete);
 	    var step = args.step;
 	    return this.each(function(i, e) {
@@ -13,7 +13,7 @@ $(document).ready(function() {
 	            if (step) return step.apply(this, arguments);
 	        };
 
-	        $({deg: 0}).animate({deg: angle}, args);
+	        $({deg: startAngle}).animate({deg: endAngle}, args);
 	    });
 	};
 
@@ -66,7 +66,7 @@ $(document).ready(function() {
 		  	}
 		});
 	};
-	var rotateDrawerButton = function() {
+	var toggleDrawer = function() {
 		var t = 400;
 		var open = $('div.drawer').hasClass('open');
 
@@ -82,11 +82,7 @@ $(document).ready(function() {
 			$('main').animate({
 				width: dfMain
 			}, {duration: t, queue: false});
-			$('button.drawer-toggle i.left').animateRotate(-180, t, "linear", function() {
-				$('button.drawer-toggle i.right').css('visibility', 'visible');
-				$('button.drawer-toggle i.left').css('visibility', 'hidden');
-				$('button.drawer-toggle i.left').css('transform', 'rotate(0deg)');
-			});
+			$('button.drawer-toggle i.left').animateRotate(0, -180, t, "linear");
 
 			$('div.drawer').removeClass('open');
 		}
@@ -102,16 +98,28 @@ $(document).ready(function() {
 			$('main').animate({
 				width: dfMain
 			}, {duration: t, queue: false});
-			$('button.drawer-toggle i.right').animateRotate(180, t, "linear", function() {
-				$('button.drawer-toggle i.left').css('visibility', 'visible');
-				$('button.drawer-toggle i.right').css('visibility', 'hidden');
-				$('button.drawer-toggle i.right').css('transform', 'rotate(0deg)');
-			});
+			$('button.drawer-toggle i.left').animateRotate(-180, 0, t, "linear");
 
 			$('div.drawer').addClass('open');
 		}
 		return;
 	};
+	var toggleReasoning = function($element) {
+		var t = 200;
+		var open = $element.siblings('div.result-expand').hasClass('open');
+
+		if(open) {
+			$element.children('i').animateRotate(180, 0, t, "linear");
+			$element.siblings('div.result-expand').removeClass('open');
+			$element.siblings('div.result-expand').addClass('closed');
+		}
+		else {
+			$element.children('i').animateRotate(0, 180, t, "linear");
+			$element.siblings('div.result-expand').removeClass('closed');
+			$element.siblings('div.result-expand').addClass('open');
+		}
+		return;
+	}
 
 
 
@@ -136,7 +144,10 @@ $(document).ready(function() {
         }
 	});
 	$('button.drawer-toggle').click(function() {
-		rotateDrawerButton();
+		toggleDrawer();
+	});
+	$('div.result-right').click(function() {
+		toggleReasoning($(this));
 	});
 
 });
