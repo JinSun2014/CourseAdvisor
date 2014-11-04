@@ -50,5 +50,5 @@ class QueryView(JSONResponseMixin, View):
             return self.render_to_response(context)
         print r
         context = simplejson.loads(r.text)
-        context['succes'] = True
+        context['success'] = True
         return self.render_to_response(context)
