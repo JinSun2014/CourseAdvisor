@@ -215,8 +215,8 @@ html {
                 border-top: 1px solid #bbb; }
                 html body main div.main-content section.results ul.results-list li.result div.result-expand h4 {
                   float: left;
-                  padding: 10px 20px 10px 50px;
-                  width: 140px;
+                  padding: 10px 0;
+                  width: 28%;
                   font-family: "Slim-Joe";
                   font-size: 19px;
                   color: #444;
