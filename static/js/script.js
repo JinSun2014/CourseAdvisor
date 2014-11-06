@@ -40,7 +40,7 @@ $(document).ready(function() {
 	var query = function() {
 		$('h5.results-summary').fadeTo(500, 1.0);
 		$('ul.results-list').slideDown();
-		// processResponse();
+		processResponse();
 	};
 	var processResponse = function() {
 		// var question = "elephant";
