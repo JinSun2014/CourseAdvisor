@@ -51,9 +51,9 @@ class QueryView(JSONResponseMixin, View):
             return self.render_to_response(context)
 
         if self.request.session.get('question_history', False):
-            self.request.session['question_history'].append((question, None))
+            self.request.session['question_history'] += '##%s' % question
         else:
-            self.request.session['question_history'] = [(question, None), ]
+            self.request.session['question_history'] = question
 
         print self.request.session['question_history']
         context = simplejson.loads(r.text)
