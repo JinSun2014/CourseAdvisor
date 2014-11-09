@@ -34,21 +34,29 @@ class QueryView(JSONResponseMixin, View):
     def post(self, request, *args, **kwargs):
         question = request.POST.get('question')
 
-        headers = {
-                    'X-SyncTimeout': 30,
-                    'Authorization': 'Basic ' + os.environ['WASTON_KEY'],
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                  }
-        data = {
-                'question': {'questionText': question}
-               }
+        headers = {'X-SyncTimeout': 30,
+                   'Authorization': 'Basic ' + os.environ['WASTON_KEY'],
+                   'Content-Type': 'application/json',
+                   'Accept': 'application/json'
+                   }
+        data = {'question': {'questionText': question}}
         try:
-            r = requests.post(WASTON_URL, data=simplejson.dumps(data), headers=headers, timeout=10)
+            r = requests.post(WASTON_URL,
+                              data=simplejson.dumps(data),
+                              headers=headers,
+                              timeout=5,
+                              )
         except requests.exceptions.ReadTimeout:
             context = {'success': False}
             return self.render_to_response(context)
-        print r
+
+        if self.request.session.get('question_history', False):
+            self.request.session['question_history'].append((question, None))
+        else:
+            self.request.session['question_history'] = [(question, None), ]
+
+        print self.request.session['question_history']
         context = simplejson.loads(r.text)
         context['success'] = True
+        context['history'] = self.request.session['question_history']
         return self.render_to_response(context)

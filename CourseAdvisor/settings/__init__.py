@@ -201,6 +201,10 @@ LOCAL_APPS = (
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
 # ######## END APP CONFIGURATION
 
+# ######## SESSION CONFIGURATION
+SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+# ######## END SESSION CONFIGURATION
+
 
 # ######## LOGGING CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#logging
