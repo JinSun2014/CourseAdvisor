@@ -56,7 +56,18 @@ class QueryView(JSONResponseMixin, View):
             self.request.session['question_history'] = question
 
         print self.request.session['question_history']
-        context = simplejson.loads(r.text)
+        response = simplejson.loads(r.text)
+        evidencelist = response['question']['evidencelist']
+        tmp = []
+        last = ''
+        for evidence in evidencelist:
+            if evidence['title'] != last:
+                tmp.append(evidence)
+            last = evidence['title']
+        evidencelist = tmp
+        context = {}
+        context['question'] = {}
+        context['question']['evidencelist'] = evidencelist
         context['success'] = True
         context['history'] = self.request.session['question_history']
         return self.render_to_response(context)
