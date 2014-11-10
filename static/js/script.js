@@ -49,6 +49,14 @@ $(document).ready(function() {
 		$('div.drawer').height(vHeight);
 		$('main').height(vHeight);
 		$('ul.results-list').height(wHeight - $('section.results').offset().top);
+
+		dHeight = $('div.drawer').height();
+		if (dHeight < 505) {
+			$('div.past-questions').addClass('closed');
+		}
+		else {
+			$('div.past-questions').removeClass('closed');	
+		}
 	};
 	var postQuery = function() {
 		var query = $('section.query input').val();
@@ -318,6 +326,17 @@ $(document).ready(function() {
 		updatePastQuestions(sampleResponse.history);
 		return;
 	};
+	var togglePastQuestions = function($target) {
+		dHeight = $('div.drawer').height();
+		if (dHeight < 505) {
+			if ($target.hasClass('closed')) {
+				$target.removeClass('closed');
+			}
+			else {
+				$target.addClass('closed');
+			}
+		}
+	}
 
 
 
@@ -347,6 +366,9 @@ $(document).ready(function() {
 		var q = $(this).html();
 		$('input.question').val(q);
 		query();
+	});
+	$('div.past-questions').click(function() {
+		togglePastQuestions($(this));
 	});
 
 });

@@ -41,6 +41,7 @@ html {
       position: fixed;
       float: left;
       width: 250px;
+      overflow-y: scroll;
       background-color: #eee;
       border-right: 1px solid #444;
       box-shadow: 1px 0 1px #666;
@@ -114,10 +115,12 @@ html {
             background-color: #555; }
         html body div.drawer div.past-questions ul::-webkit-scrollbar {
           width: 0px; }
+      html body div.drawer div.past-questions.closed ul {
+        display: none; }
       html body div.drawer button {
         position: absolute;
         right: 0px;
-        bottom: 330px;
+        bottom: 50%;
         width: 25px;
         height: 30px;
         background-color: #444;
@@ -135,6 +138,8 @@ html {
       @media (min-width: 800px) {
         html body div.drawer {
           position: relative; } }
+    html body div.drawer::-webkit-scrollbar {
+      width: 0px; }
     html body div.drawer.open {
       opacity: 1.0; }
     html body main {

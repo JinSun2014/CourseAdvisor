@@ -64,6 +64,7 @@ html {
 			position: fixed;
 			float: left;
 			width: $drawer-width;
+			overflow-y: scroll;
 			background-color: $drawer-background-color;
 			border-right: 1px solid #444;
 			box-shadow: 1px 0 1px #666;
@@ -164,10 +165,16 @@ html {
 					width: 0px;
 				}
 			}
+			div.past-questions.closed {
+
+				ul {
+					display: none;
+				}
+			}
 			button {
 				position: absolute;
 				right: 0px;
-				bottom: 330px;
+				bottom: 50%;
 				width: 25px;
 				height: 30px;
 				background-color: #444;
@@ -189,6 +196,9 @@ html {
 				position: relative;
 			}
 		}
+		div.drawer::-webkit-scrollbar {
+					width: 0px;
+				}
 		div.drawer.open {
 			opacity: 1.0;
 		}
