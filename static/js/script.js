@@ -213,6 +213,23 @@ $(document).ready(function() {
 		$('h5.results-summary').fadeTo(300, 1.0);
 		return;
 	};
+	var updatePastQuestions = function(h) {
+
+		// Remove old past questions
+		$('ul.past-questions > li').remove();
+
+		// Parse new past questions
+		var hList = h.split("##");
+		var hListLength = hList.length;
+
+		// Add new past questions to markup
+		for (var i=0; i<hListLength; i++) {
+			var li = '<li>';
+			li += hList[i];
+			li += '</li>';
+			$('ul.past-questions').append(li);
+		}
+	};
 	var processSampleResponse = function(q) {
 		// What course should I take to be a good game designer?
 
@@ -251,6 +268,7 @@ $(document).ready(function() {
 
 		$('ul.results-list').slideDown(350);
 		setResultsSummary(start);
+		updatePastQuestions(sampleResponse.history);
 		return;
 	};
 
@@ -282,6 +300,11 @@ $(document).ready(function() {
 	$(document).on('click', 'div.result-right', function() {
 
 		toggleReasoning($(this));
+	});
+	$(document).on('click', 'ul.past-questions > li', function() {
+		var q = $(this).html();
+		$('input.question').val(q);
+		query();
 	});
 
 });

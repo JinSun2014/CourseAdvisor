@@ -68,6 +68,7 @@ html {
 			border-right: 1px solid #444;
 			box-shadow: 1px 0 1px #666;
 			overflow: hidden;
+			opacity: 0.9;
 
 			h1.banner {
 				padding: 20px 10px 10px 10px;
@@ -122,14 +123,15 @@ html {
 				}
 			}
 			div.past-questions {
-				margin-top: 183px;
+				position: absolute;
+				bottom: 0;
 				padding: 10px 0 0 0;
 				background-color: #333;
 
 				> span {
 					display: block;
 					padding: 10px;
-					width: calc(#{$drawer-width} - 35px);
+					width: calc(#{$drawer-width} - 20px);
 					font-family: "slim-joe";
 					font-size: 13px;
 					color: $drawer-background-color;
@@ -146,7 +148,7 @@ html {
 
 					li {
 						padding: 10px 10px 10px 10px;
-						width: calc(#{$drawer-width} - 35px);
+						width: calc(#{$drawer-width} - 20px);
 						font-size: 12px;
 						color: #aaa;
 						cursor: pointer;
@@ -157,6 +159,9 @@ html {
 					li:hover {
 						background-color: #555;
 					}
+				}
+				ul::-webkit-scrollbar {
+					width: 0px;
 				}
 			}
 			button {
@@ -180,6 +185,9 @@ html {
 					cursor: pointer;
 				}
 			}
+		}
+		div.drawer.open {
+			opacity: 1.0;
 		}
 		main {
 			float: right;

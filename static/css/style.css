@@ -44,7 +44,8 @@ html {
       background-color: #eee;
       border-right: 1px solid #444;
       box-shadow: 1px 0 1px #666;
-      overflow: hidden; }
+      overflow: hidden;
+      opacity: 0.9; }
       html body div.drawer h1.banner {
         padding: 20px 10px 10px 10px;
         width: 250px;
@@ -83,13 +84,14 @@ html {
           html body div.drawer nav.drawer-menu ul li:hover {
             background-color: #e3e3e3; }
       html body div.drawer div.past-questions {
-        margin-top: 183px;
+        position: absolute;
+        bottom: 0;
         padding: 10px 0 0 0;
         background-color: #333; }
         html body div.drawer div.past-questions > span {
           display: block;
           padding: 10px;
-          width: calc(250px - 35px);
+          width: calc(250px - 20px);
           font-family: "slim-joe";
           font-size: 13px;
           color: #eee;
@@ -102,7 +104,7 @@ html {
           overflow-y: scroll; }
           html body div.drawer div.past-questions ul li {
             padding: 10px 10px 10px 10px;
-            width: calc(250px - 35px);
+            width: calc(250px - 20px);
             font-size: 12px;
             color: #aaa;
             cursor: pointer; }
@@ -110,6 +112,8 @@ html {
             background-color: #444; }
           html body div.drawer div.past-questions ul li:hover {
             background-color: #555; }
+        html body div.drawer div.past-questions ul::-webkit-scrollbar {
+          width: 0px; }
       html body div.drawer button {
         position: absolute;
         right: 0px;
@@ -128,6 +132,8 @@ html {
           font-size: 25px;
           color: #fff;
           cursor: pointer; }
+    html body div.drawer.open {
+      opacity: 1.0; }
     html body main {
       float: right;
       width: calc(100% - 250px - 1px);
