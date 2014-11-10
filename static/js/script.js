@@ -98,6 +98,9 @@ $(document).ready(function() {
 		});
 	};
 	var processResponse = function(q) {
+		// Start processing time
+		var start = new Date();
+
 		var token     = $("input[name='csrfmiddlewaretoken']").val();
 		var query_url = window.location.pathname + 'query';
 
@@ -107,8 +110,6 @@ $(document).ready(function() {
 		}, function(response){
       if (response.success){
         console.log(response);
-        // Start processing time
-        var start = new Date();
 
         // Get array of words in question
         var qWords = q.split(" ");
@@ -402,6 +403,7 @@ $(document).ready(function() {
 		query();
 	});
 	$('div.past-questions').click(function() {
+		
 		togglePastQuestions($(this));
 	});
 
