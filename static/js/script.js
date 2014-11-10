@@ -90,8 +90,8 @@ $(document).ready(function() {
 		promise.then(function(result) {
 			console.log(result);
 			var question  = $('section.query input.question').val();
-			processSampleResponse(question);
-			// processResponse(question);
+			// processSampleResponse(question);
+			processResponse(question);
 
 		}, function(err) {
 			console.log(err);
