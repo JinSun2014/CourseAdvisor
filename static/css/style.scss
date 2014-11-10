@@ -177,7 +177,7 @@ html {
 				bottom: 50%;
 				width: 25px;
 				height: 30px;
-				background-color: #444;
+				background-color: #FA6130;
 				border: none;
 				border-radius: 3px 0 0 3px;
 				outline: none;
@@ -197,8 +197,8 @@ html {
 			}
 		}
 		div.drawer::-webkit-scrollbar {
-					width: 0px;
-				}
+			width: 0px;
+		}
 		div.drawer.open {
 			opacity: 1.0;
 		}
