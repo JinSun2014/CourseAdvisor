@@ -221,16 +221,20 @@ html {
               html body main div.main-content section.results ul.results-list li.result div.result-middle {
                 float: left;
                 padding: 25px 15px;
-                width: calc(100% - 80px - 190px - 40px); }
+                width: calc(100% - 80px - 30px); }
                 html body main div.main-content section.results ul.results-list li.result div.result-middle h3.result-class-title {
                   color: #555; }
                 html body main div.main-content section.results ul.results-list li.result div.result-middle h5.result-class-professor {
                   color: #516395; }
+                @media (min-width: 500px) {
+                  html body main div.main-content section.results ul.results-list li.result div.result-middle {
+                    width: calc(100% - 80px - 190px - 40px); } }
               html body main div.main-content section.results ul.results-list li.result div.result-right {
                 float: right;
                 padding: 29px 0 28px;
-                width: 190px;
-                text-align: center; }
+                width: 100%;
+                text-align: center;
+                border-top: 1px solid #bbb; }
                 html body main div.main-content section.results ul.results-list li.result div.result-right span {
                   display: inline-block;
                   line-height: 28px;
@@ -243,35 +247,52 @@ html {
                   margin-left: 5px;
                   font-size: 25px;
                   color: #777; }
+                @media (min-width: 500px) {
+                  html body main div.main-content section.results ul.results-list li.result div.result-right {
+                    width: 190px;
+                    border-top: none; } }
               html body main div.main-content section.results ul.results-list li.result div.result-expand {
                 display: none;
                 float: right;
-                padding: 15px 30px 15px 0;
-                width: calc(100% - 30px);
                 text-align: right;
                 background-color: #fafafa;
                 border-top: 1px solid #bbb; }
                 html body main div.main-content section.results ul.results-list li.result div.result-expand h4 {
-                  float: left;
                   padding: 10px 0;
-                  width: 28%;
+                  width: 100%;
                   font-family: "Slim-Joe";
-                  font-size: 19px;
+                  font-size: 15px;
                   color: #444;
                   text-align: center; }
                   html body main div.main-content section.results ul.results-list li.result div.result-expand h4 span {
-                    font-size: 26px; }
+                    font-size: 22px; }
                 html body main div.main-content section.results ul.results-list li.result div.result-expand ul.relevant-text {
-                  float: right;
-                  width: 70%;
+                  padding: 0 10px 10px 10px;
                   font-size: 12px;
                   color: #777;
                   list-style: square; }
                   html body main div.main-content section.results ul.results-list li.result div.result-expand ul.relevant-text li {
                     margin-bottom: 2px;
-                    line-height: 20px; }
+                    line-height: 20px;
+                    text-align: center; }
                     html body main div.main-content section.results ul.results-list li.result div.result-expand ul.relevant-text li b {
                       color: #444; }
+                @media (min-width: 650px) {
+                  html body main div.main-content section.results ul.results-list li.result div.result-expand {
+                    padding: 15px 30px 15px 0;
+                    width: calc(100% - 30px); }
+                    html body main div.main-content section.results ul.results-list li.result div.result-expand h4 {
+                      float: left;
+                      width: 28%;
+                      font-size: 19px; }
+                      html body main div.main-content section.results ul.results-list li.result div.result-expand h4 span {
+                        font-size: 26px; }
+                    html body main div.main-content section.results ul.results-list li.result div.result-expand ul.relevant-text {
+                      float: right;
+                      padding: 0;
+                      width: 70%; }
+                      html body main div.main-content section.results ul.results-list li.result div.result-expand ul.relevant-text li {
+                        text-align: right; } }
             html body main div.main-content section.results ul.results-list li.result:hover {
               box-shadow: 0px 1px 7px #777; }
       @media (min-width: 800px) {

@@ -34,6 +34,12 @@ $(document).ready(function() {
 			$('div.drawer').width(dfDrawer);
 			$('button.drawer-toggle i').css('transform', 'rotate(180deg)');
 		}
+		else {
+			$('div.drawer').removeClass('open');
+			var dfDrawer = 250;
+			$('div.drawer').width(dfDrawer);
+			$('button.drawer-toggle i').css('transform', 'rotate(0deg)');
+		}
 
 		/* Heights */
 		wHeight = $(window).height();
@@ -49,7 +55,7 @@ $(document).ready(function() {
 		$.post( "http://www.github.com", function( query ) {
 		  	$( "section.query input" ).html( data );
 		});
-	}
+	};
 	var removeResults = function() {
 		$('ul.results-list').slideUp(220);
 		$('ul.results-list > li').remove();
@@ -217,7 +223,7 @@ $(document).ready(function() {
 
 			return cRounded;
 		}
-	}
+	};
 	var parseTitle = function(t) {
 		var maxLength = 30;
 		if(t.length > maxLength) {
@@ -316,20 +322,15 @@ $(document).ready(function() {
 
 
 	/*
-	 * Run on document ready
-	 */
-
-	setDimensions();
-
-
-
-	/*
 	 * Events
 	 */
 
+	$(window).resize(function() {
+
+		setDimensions();
+	}).resize();
 	$('input.question').on("keypress", function(e) {
 		if (e.keyCode == 13) {
-            
             query();
             return false;
         }
