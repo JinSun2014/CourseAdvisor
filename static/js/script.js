@@ -109,17 +109,12 @@ $(document).ready(function() {
 			'question': q,
 		}, function(response){
       		if (response.success){
-		        console.log(response);
 
 		        // Get array of words in question
 		        var qWords = q.split(" ");
 
-		        // For each class in response
-		        var numClasses = response.question.evidencelist.length;
-		        if (numClasses > 5) {
-		            numClasses = 5;
-		        }
-
+		        // For each class in response up to 5 classes
+		        var numClasses = Math.min(response.question.evidencelist.length, 5);
 		        for(var i=0; i<numClasses; i++) {
 
 		          	// If confidence significant enough
