@@ -115,6 +115,10 @@ $(document).ready(function() {
 
         // For each class in response
         var numClasses = response.question.evidencelist.length;
+        if (numClasses > 5){
+            numClasses = 5;
+        }
+
         for(var i=0; i<numClasses; i++) {
 
           // If confidence significant enough
