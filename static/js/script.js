@@ -4,6 +4,7 @@ $(document).ready(function() {
 	/*
 	 * Plugins
 	 */
+
 	$.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
 	    var args = $.speed(duration, easing, complete);
 	    var step = args.step;
@@ -35,7 +36,6 @@ $(document).ready(function() {
 			$('button.drawer-toggle i').css('transform', 'rotate(180deg)');
 		}
 		else {
-			$('div.drawer').removeClass('open');
 			var dfDrawer = 250;
 			$('div.drawer').width(dfDrawer);
 			$('button.drawer-toggle i').css('transform', 'rotate(0deg)');
