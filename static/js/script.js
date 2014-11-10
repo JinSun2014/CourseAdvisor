@@ -38,17 +38,15 @@ $(document).ready(function() {
 		});
 	}
 	var query = function() {
-		$('h5.results-summary').fadeTo(500, 1.0);
-		$('ul.results-list').slideDown();
-		processResponse();
+		var question  = $('section.query input.question').val();
+		processSampleResponse(question);
 	};
 	var processResponse = function() {
 		// var question = "elephant";
 		var question  = $('section.query input.question').val();
 		var token     = $("input[name='csrfmiddlewaretoken']").val();
-		var query_url = window.location.pathname + 'query';
 
-		console.log(token);
+		var query_url = window.location.pathname + 'query';
 
 		$.post(query_url, {
 			'csrfmiddlewaretoken': token,
@@ -122,6 +120,77 @@ $(document).ready(function() {
 		}
 		return;
 	};
+	var parseConfidence = function(c) {
+		// Returns 0 if c < 0.0001
+
+		// If confidence has exponential 
+		if(c.indexOf('E') > -1) {
+
+			// Get value of exponential
+			var exp = c[c.indexOf('E') + 2];
+
+			// Truncate the exponential off
+			var cNew = c.substring(0, c.indexOf('E'));
+
+			// Convert to value, rounded to 4 decimal places
+			var cFloat = parseFloat(cNew);
+			var cWithExp = cFloat * Math.pow(10, (-1 * parseFloat(exp)));
+			var cRounded = Number(cWithExp.toFixed(4));
+
+			return cRounded;
+		}
+
+		// Confidence doesn't have exponential
+		else {
+			var cFloat = parseFloat(c);
+			var cRounded = Number(cFloat.toFixed(4));
+
+			return cRounded;
+		}
+	}
+	var parseTitle = function(t) {
+		var maxLength = 30;
+		if(t.length > maxLength) {
+			return t.substring(0, maxLength) + '...';
+		}
+		return t;
+	};
+	var processSampleResponse = function(q) {
+
+		// Get array of words in question
+		var qWords = q.split(" ");
+
+		
+		// For each class in response
+		var numClasses = sampleResponse.question.evidencelist.length;
+		for(var i=0; i<numClasses; i++) {
+
+			// If confidence significant enough
+			var confidence = parseConfidence(sampleResponse.question.evidencelist[i].value);
+			if(confidence > 0.002) {
+
+				// Start making the list element
+				var element = '<li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>';
+
+				// Add confidence to list element
+				element += (confidence + '</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">');
+
+				// Add class title to list element
+				var classTitle = parseTitle(sampleResponse.question.evidencelist[i].title);
+				element += (classTitle + '</h3></div><div class="result-right"><span>See reasoning</span><i class="fa fa-angle-down"></i></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
+
+				// Add reasoning to list element
+				var reasoning = sampleResponse.question.evidencelist[i].text;
+				element += ("<li>... " + reasoning + " ...</li></ul></div></li>");
+
+				// Add list element to markup
+				$('ul.results-list').append(element);
+			}
+		}
+
+		$('h5.results-summary').fadeTo(500, 1.0);
+		$('ul.results-list').slideDown();
+	};
 
 
 
@@ -146,9 +215,15 @@ $(document).ready(function() {
         }
 	});
 	$('button.drawer-toggle').click(function() {
+
 		toggleDrawer();
 	});
-	$('div.result-right').click(function() {
+	// $('div.result-right').click(function() {
+	// 	console.log('hi');
+	// 	toggleReasoning($(this));
+	// });
+	$(document).on('click', 'div.result-right', function() {
+		console.log('hi');
 		toggleReasoning($(this));
 	});
 
