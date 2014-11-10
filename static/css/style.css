@@ -196,13 +196,14 @@ html {
                 text-align: center; }
                 html body main div.main-content section.results ul.results-list li.result div.result-right span {
                   display: inline-block;
-                  line-height: 30px;
+                  line-height: 28px;
                   vertical-align: top;
                   font-size: 12px;
                   font-family: 'Slim-Joe';
                   color: #666; }
                 html body main div.main-content section.results ul.results-list li.result div.result-right i {
                   display: inline-block;
+                  margin-left: 5px;
                   font-size: 25px;
                   color: #777; }
               html body main div.main-content section.results ul.results-list li.result div.result-expand {

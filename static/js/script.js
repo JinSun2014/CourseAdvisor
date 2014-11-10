@@ -155,11 +155,43 @@ $(document).ready(function() {
 		}
 		return t;
 	};
+	var parseReasoning = function(r, qw) {
+		var rWords = r.split(" ");
+		var rWordsLength = rWords.length;
+		var reasoning = '';
+
+		for(var i=0; i<rWordsLength; i++) {
+			if(qw.indexOf(rWords[i]) > -1) {
+				reasoning += '<b>' + rWords[i] + '</b> ';
+			}
+			else {
+				reasoning += rWords[i] + ' ';
+			}
+		}
+		return reasoning;
+	};
+	var setResultsSummary = function(start) {
+
+		// Set number of results
+		var numResults = $('ul.results-list > li').length;
+		$('span.results-quantity').html(numResults);
+
+		// Set time results took to load
+		var end = new Date();
+		var t = end - start;
+		$('span.results-time').html('(' + t + ' ms)');
+
+		$('h5.results-summary').fadeTo(500, 1.0);
+
+	};
 	var processSampleResponse = function(q) {
+		// What course should I take to be a good game designer?
+
+		// Start processing time
+		var start = new Date();
 
 		// Get array of words in question
 		var qWords = q.split(" ");
-
 		
 		// For each class in response
 		var numClasses = sampleResponse.question.evidencelist.length;
@@ -180,7 +212,7 @@ $(document).ready(function() {
 				element += (classTitle + '</h3></div><div class="result-right"><span>See reasoning</span><i class="fa fa-angle-down"></i></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
 
 				// Add reasoning to list element
-				var reasoning = sampleResponse.question.evidencelist[i].text;
+				var reasoning = parseReasoning(sampleResponse.question.evidencelist[i].text, qWords);
 				element += ("<li>... " + reasoning + " ...</li></ul></div></li>");
 
 				// Add list element to markup
@@ -188,8 +220,8 @@ $(document).ready(function() {
 			}
 		}
 
-		$('h5.results-summary').fadeTo(500, 1.0);
 		$('ul.results-list').slideDown();
+		setResultsSummary(start);
 	};
 
 
@@ -218,12 +250,7 @@ $(document).ready(function() {
 
 		toggleDrawer();
 	});
-	// $('div.result-right').click(function() {
-	// 	console.log('hi');
-	// 	toggleReasoning($(this));
-	// });
 	$(document).on('click', 'div.result-right', function() {
-		console.log('hi');
 		toggleReasoning($(this));
 	});
 
