@@ -23,7 +23,19 @@ $(document).ready(function() {
 	 * Functions
 	 */
 
-	var setHeights = function() {
+	var setDimensions = function() {
+
+		/* Widths */
+		wWidth = $(window).width();
+		var diDrawer = $('div.drawer').width();
+		if(wWidth <= 800) {
+			$('div.drawer').removeClass('open');
+			var dfDrawer = 27;
+			$('div.drawer').width(dfDrawer);
+			$('button.drawer-toggle i').css('transform', 'rotate(180deg)');
+		}
+
+		/* Heights */
 		wHeight = $(window).height();
 		hHeight = $('header').height();
 		vHeight = wHeight - hHeight;
@@ -97,37 +109,66 @@ $(document).ready(function() {
 		var t = 400;
 		var open = $('div.drawer').hasClass('open');
 
-		if(open) {
-			var diDrawer = $('div.drawer').width();
-			var diMain = $('main').width();
-			var dfDrawer = 50;
-			var dfMain = diMain + diDrawer - dfDrawer;
+		var wWidth = $(window).width();
+		// Small width
+		if (wWidth <= 800) {
+			if(open) {
+				var diDrawer = $('div.drawer').width();
+				var dfDrawer = 27;
 
-			$('div.drawer').animate({
-				width: dfDrawer
-			}, {duration: t, queue: false});
-			$('main').animate({
-				width: dfMain
-			}, {duration: t, queue: false});
-			$('button.drawer-toggle i.left').animateRotate(0, -180, t, "linear");
+				$('div.drawer').animate({
+					width: dfDrawer
+				}, {duration: t, queue: false});
+				$('button.drawer-toggle i').animateRotate(0, -180, t, "linear");
 
-			$('div.drawer').removeClass('open');
+				$('div.drawer').removeClass('open');
+			}
+			else {
+				var diDrawer = $('div.drawer').width();
+				var dfDrawer = 250;
+
+				$('div.drawer').animate({
+					width: dfDrawer
+				}, {duration: t, queue: false});
+				$('button.drawer-toggle i').animateRotate(-180, 0, t, "linear");
+
+				$('div.drawer').addClass('open');
+			}
 		}
+		// Large width
 		else {
-			var diDrawer = $('div.drawer').width();
-			var diMain = $('main').width();
-			var dfDrawer = 250;
-			var dfMain = diMain - dfDrawer + diDrawer;
+			if(open) {
+				var diDrawer = $('div.drawer').width();
+				var diMain = $('main').width();
+				var dfDrawer = 50;
+				var dfMain = diMain + diDrawer - dfDrawer;
 
-			$('div.drawer').animate({
-				width: dfDrawer
-			}, {duration: t, queue: false});
-			$('main').animate({
-				width: dfMain
-			}, {duration: t, queue: false});
-			$('button.drawer-toggle i.left').animateRotate(-180, 0, t, "linear");
+				$('div.drawer').animate({
+					width: dfDrawer
+				}, {duration: t, queue: false});
+				$('main').animate({
+					width: dfMain
+				}, {duration: t, queue: false});
+				$('button.drawer-toggle i').animateRotate(0, -180, t, "linear");
 
-			$('div.drawer').addClass('open');
+				$('div.drawer').removeClass('open');
+			}
+			else {
+				var diDrawer = $('div.drawer').width();
+				var diMain = $('main').width();
+				var dfDrawer = 250;
+				var dfMain = diMain - dfDrawer + diDrawer;
+
+				$('div.drawer').animate({
+					width: dfDrawer
+				}, {duration: t, queue: false});
+				$('main').animate({
+					width: dfMain
+				}, {duration: t, queue: false});
+				$('button.drawer-toggle i').animateRotate(-180, 0, t, "linear");
+
+				$('div.drawer').addClass('open');
+			}
 		}
 		return;
 	};
@@ -278,7 +319,7 @@ $(document).ready(function() {
 	 * Run on document ready
 	 */
 
-	setHeights();
+	setDimensions();
 
 
 

@@ -61,7 +61,7 @@ html {
 			}
 		}
 		div.drawer {
-			position: relative;
+			position: fixed;
 			float: left;
 			width: $drawer-width;
 			background-color: $drawer-background-color;
@@ -185,13 +185,16 @@ html {
 					cursor: pointer;
 				}
 			}
+			@media(min-width: 800px) {
+				position: relative;
+			}
 		}
 		div.drawer.open {
 			opacity: 1.0;
 		}
 		main {
 			float: right;
-			width: calc(100% - #{$drawer-width} - 1px);
+			width: calc(100% - 27px);
 			background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2);
 			background: -o-linear-gradient($main-background-color-1, $main-background-color-2);
 			background: -moz-linear-gradient($main-background-color-1, $main-background-color-2);
@@ -396,6 +399,9 @@ html {
 						}
 					}
 				}
+			}
+			@media(min-width: 800px) {
+				width: calc(100% - #{$drawer-width} - 1px);
 			}
 		}
 	}

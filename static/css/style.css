@@ -38,7 +38,7 @@ html {
             margin-left: 30px;
             width: 40px; }
     html body div.drawer {
-      position: relative;
+      position: fixed;
       float: left;
       width: 250px;
       background-color: #eee;
@@ -132,11 +132,14 @@ html {
           font-size: 25px;
           color: #fff;
           cursor: pointer; }
+      @media (min-width: 800px) {
+        html body div.drawer {
+          position: relative; } }
     html body div.drawer.open {
       opacity: 1.0; }
     html body main {
       float: right;
-      width: calc(100% - 250px - 1px);
+      width: calc(100% - 27px);
       background: -webkit-linear-gradient(#614385, #516395);
       background: -o-linear-gradient(#614385, #516395);
       background: -moz-linear-gradient(#614385, #516395);
@@ -271,5 +274,8 @@ html {
                       color: #444; }
             html body main div.main-content section.results ul.results-list li.result:hover {
               box-shadow: 0px 1px 7px #777; }
+      @media (min-width: 800px) {
+        html body main {
+          width: calc(100% - 250px - 1px); } }
 
 /*# sourceMappingURL=style.css.map */
