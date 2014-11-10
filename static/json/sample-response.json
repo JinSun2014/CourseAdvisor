@@ -1,0 +1,1475 @@
+
+var sampleResponse = {
+    "question": {
+        "synonymList": [{
+            "value": "course",
+            "synSet": [{
+                "name": "Wordnet_course-noun-1",
+                "synonym": [{
+                    "value": "class",
+                    "weight": 1,
+                    "isChosen": true
+                }]
+            }],
+            "partOfSpeech": "noun",
+            "lemma": "course"
+        }, {
+            "value": "should",
+            "synSet": [{
+                "name": "Lemma_Expansion",
+                "synonym": [{
+                    "value": "shall",
+                    "weight": 1,
+                    "isChosen": true
+                }]
+            }],
+            "partOfSpeech": "verb",
+            "lemma": "shall"
+        }, {
+            "value": "designer",
+            "synSet": [{
+                "name": "Wordnet_interior+designer-noun-1",
+                "synonym": [{
+                    "value": "decorator",
+                    "weight": 1,
+                    "isChosen": true
+                }]
+            }],
+            "partOfSpeech": "noun",
+            "lemma": "designer"
+        }, {
+            "value": "take",
+            "synSet": [{
+                "name": "STRICT_NORMALIZED_Aggressive_Synonym_TARGET",
+                "synonym": [{
+                    "value": "taake",
+                    "weight": 1,
+                    "isChosen": true
+                }]
+            }],
+            "partOfSpeech": "verb",
+            "lemma": "take"
+        }],
+        "focuslist": [{
+            "value": "What course"
+        }],
+        "errorNotifications": [],
+        "latlist": [{
+            "value": "course"
+        }, {
+            "value": "designer"
+        }],
+        "evidenceRequest": {
+            "items": -1,
+            "profile": "NO"
+        },
+        "evidencelist": [{
+            "text": "fuckshitfuckshit EECS 370-0 Computer Game Design Plot, narrative, and character simulation for creating game worlds; artificial intelligence for synthetic characters; tuning gameplay. Substantial programming and project work.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "0.008941609412431717",
+            "document": "/instance/504/deepqa/v1/question/document/PB_40DB9410169DFF8B19F60D8308C1921C/128/354",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Computer Game Design",
+            "metadataMap": {
+                "DOCNO": "40DB9410169DFF8B19F60D8308C1921C",
+                "originalfile": "holmes_testWatson_2.html",
+                "corpusName": "PB",
+                "deepqaid": "33945395",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33945395.xml",
+                "title": "Computer Game Design"
+            },
+            "id": "PB_40DB9410169DFF8B19F60D8308C1921C"
+        }, {
+            "text": "★ Relate to others. Babies first respond to adults more than they do to other babies. Later they notice other babies, but they tend to treat these babies as objects instead of people. Then they pay attention when other babies make sounds. ★ Communicate and develop language skills. Babies first cry and make throaty noises. Later they babble and say \"mama\" and \"dada.\" Then they make lots of sounds and begin to name a few familiar people and objects. They begin to enjoy hearing rhyming and silly language. Helping Your Preschool Child They learn to look at their hands and toes and play with them. They learn to cry when their parents leave and to recognize their own names. Babies need to become attached to at least one person who provides them with security and love. This first and most basic emotional attachment is the start for all human relationships.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.004519558046013117",
+            "document": "/instance/504/deepqa/v1/question/document/T_3176CF162764BE9B4CBA2DA05EC0CF0C/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "parenting UDHPreschool : Helping : Babies : Birth to 1 Year Old What to Expect : Play games. Babies first play with their own hands. Later they show an interest in toys, enjoy \"putting in and taking out\" games and eventually carry around or hug dolls or stuffed toys.",
+            "metadataMap": {
+                "DOCNO": "3176CF162764BE9B55E31C65D7F4F9ED",
+                "originalfile": "parenting_UDHPreschool.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_3176CF162764BE9B55E31C65D7F4F9ED",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33901440.xml",
+                "title": "parenting UDHPreschool : Helping : Babies : Birth to 1 Year Old What to Expect : Play games. Babies first play with their own hands. Later they show an interest in toys, enjoy \"putting in and taking out\" games and eventually carry around or hug dolls or stuffed toys."
+            },
+            "id": "T_3176CF162764BE9B4CBA2DA05EC0CF0C"
+        }, {
+            "text": " Browse more courses. x.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.0035906473640352488",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD619B478E74D452212/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : General Game Playing",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61A9A53F484E449588",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61A9A53F484E449588",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900446.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : General Game Playing",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD619B478E74D452212"
+        }, {
+            "text": " You're signed up for Game Theory II: Advanced Applications. The course is open and you can start watching lectures and participating on the forums with other students right now! Go to class The course will start on and we will notify you just before then to remind you when class will begin. The course is under preparation, and we will notify you by email when it starts. Earn a Verified Certificate with Signature Track. Signature Track enables you to securely link your coursework to your identity, allowing you to confidently show the world what you've achieved on Coursera. Learn more <<.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.00349031831137836",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD6111A233BAE970EE94/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : Congratulations!",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61EC9C7069C470EE92",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61EC9C7069C470EE92",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900454.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : Congratulations!",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD6111A233BAE970EE94"
+        }, {
+            "text": " We'll email you if there are new session dates announced for this course. In the meantime, let your friends know about this course, so that you'll all be ready to take it together! Back to browsing. x.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.0031273216009140015",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61FD5B9876D8088A82/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : Thanks for watching!",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD6148AD9443A7BF3613",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD6148AD9443A7BF3613",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900450.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : Thanks for watching!",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61FD5B9876D8088A82"
+        }, {
+            "text": " As a student enrolled in this course, you will have free access to selected chapters and content for the duration of the course. All chapters were selected by the instructor specifically for this course. You will be able to access the Coursera edition of the e-textbook via an e-reader in the class site hosted by Chegg. If you click on 'Buy this book', you will be able to purchase the full version of the textbook, rather than the limited chapter selection in the Coursera edition. This initiative is made possible by Coursera's collaboration with textbook publishers and Chegg.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.003095573978498578",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD613980D16F51C20338/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : In-course Textbooks",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD617AD8DF5F8F0CB904",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD617AD8DF5F8F0CB904",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900328.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : In-course Textbooks",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD613980D16F51C20338"
+        }, {
+            "text": " Popularized by movies such as \"A Beautiful Mind\", game theory is the mathematical modeling of strategic interaction among rational (and irrational) agents. Over four weeks of lectures, this advanced course considers how to design interactions between agents in order to achieve good social outcomes. Three main topics are covered: social choice theory (i.e., collective decision making), mechanism design, and auctions. In the first week we consider the problem of aggregating different agents' preferences, discussing voting rules and the challenges faced in collective decision making. We present some of the most important theoretical results in the area: notably, Arrow's Theorem, which proves that there is no \"perfect\" voting system, and also the Gibbard-Satterthwaite and Muller-Satterthwaite Theorems. We move on to consider the problem of making collective decisions when agents are self interested and can strategically misreport their preferences. We explain \"mechanism design\" -- a broad framework for designing interactions between self-interested agents -- and give some key theoretical results. Our third week focuses on the problem of designing mechanisms to maximize aggregate happiness across agents, and presents the powerful family of Vickrey-Clarke-Groves mechanisms. The course wraps up with a fourth week that considers the problem of allocating scarce resources among self-interested agents, and that provides an introduction to auction theory.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.003080925438553095",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61EE344A89D467E26F/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : About the Course",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD614726220004F8C168",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD614726220004F8C168",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900285.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : About the Course",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61EE344A89D467E26F"
+        }, {
+            "text": " There will be four weeks of materials consisting of online videos and problem sets. We recommend that you complete the problem set for each week within that week, although the hard deadline is two weeks from the release date. On the fifth week, we will have a final exam. Week 1. Social Choice. Week 2. Mechanism Design. Week 3. Efficient Mechanisms. Week 4. Auctions. Week 5-6. Final exam and final problem set.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.002833660924807191",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61C1225E276DCAA9CE/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Course Syllabus",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD6114B515FA3AEE5067",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD6114B515FA3AEE5067",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900314.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Course Syllabus",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61C1225E276DCAA9CE"
+        }, {
+            "text": " . Videos. The lectures are delivered via videos, which are broken into small chunks, usually between five and fifteen minutes each. There will be approximately one and a half hours of video content per week. You may watch the lecture videos at your convenience. Lower-resolution videos are also available for those with slow Internet connections. . Slides. We have made available pdf files of all the lecture slides. . Quizzes. There will be non-graded short \"quiz\" questions that will follow some of the videos to help you gauge your understanding. . Online Lab Exercises. After some of the videos, we will ask you to go online to play some games. These are entirely optional, and are designed to illustrate some of the concepts from the course. . Problem Sets. There will also be graded weekly problem sets that you will also answer online, but may work through offline; those must be completed within two weeks of the time that they are posted in order to be graded for full credit. If you miss a problem set deadline, you may complete it before the end of the course for half credit. You may discuss problems from the problem sets with other students in an online forum, without providing explicit answers. . Final Exam. There will be an online final exam that you will have to complete within two weeks of its posting. Once you begin the exam, you will have four hours to complete it. . Screen-side Chats. We will hold occasional online chats where we answer questions and discuss topics relevant to the course.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.002734017325565219",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD6194280ECE8DAE8841/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Course Format",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61AEA8B5FB0F6A4516",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61AEA8B5FB0F6A4516",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900347.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Course Format",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD6194280ECE8DAE8841"
+        }, {
+            "text": " 6 weeks of study. 6 weeks of study. 5-7 hours of work / week. English. English subtitles.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.002721051685512066",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD618E93746F4A48EBD9/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Course at a Glance",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD611E150FBFF8CC08A8",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD611E150FBFF8CC08A8",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900402.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Course at a Glance",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD618E93746F4A48EBD9"
+        }, {
+            "text": "★ Go to the library and find books that explore the themes of the TV shows that your child watches. Or help your child to use her drawings or pictures cut from magazines to make a book based on a TV show. ★",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.0016337581910192966",
+            "document": "/instance/504/deepqa/v1/question/document/T_3176CF162764BE9B694009DE541215AE/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "parenting UDHPreschool : Helping : Taking Charge of TV : Include the whole family in discussion and activities or games that relate to TV programs.",
+            "metadataMap": {
+                "DOCNO": "3176CF162764BE9BD9AF1130F2DC346E",
+                "originalfile": "parenting_UDHPreschool.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_3176CF162764BE9BD9AF1130F2DC346E",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33901673.xml",
+                "title": "parenting UDHPreschool : Helping : Taking Charge of TV : Include the whole family in discussion and activities or games that relate to TV programs."
+            },
+            "id": "T_3176CF162764BE9B694009DE541215AE"
+        }, {
+            "text": "What resources will I need for this class? For this course, all you need is an internet connection, and the time to read, write, and discuss some of the greatest challenges of our time. What is the coolest thing I'll learn if I take this class? Good health is one of the greatest challenges facing the development and prosperity of nations today. The changing burdens of disease affect millions of people globally.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "0.0013294582022354007",
+            "document": "/instance/504/deepqa/v1/question/document/PB_EA2686FF306D33604273BDBAA7E041F/394/808",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "An Introduction to Global Health | Coursera : An Introduction to Global Health : FAQ",
+            "metadataMap": {
+                "DOCNO": "EA2686FF306D33604273BDBAA7E041F",
+                "originalfile": "An Introduction to Global Health   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33901087",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33901087.xml",
+                "title": "An Introduction to Global Health | Coursera : An Introduction to Global Health : FAQ",
+                "description": "An Introduction to Global Health is a free online class taught by Flemming Konradsen of University of Copenhagen",
+                "abstract": "An Introduction to Global Health is a free online class taught by Flemming Konradsen of University of Copenhagen"
+            },
+            "id": "PB_EA2686FF306D33604273BDBAA7E041F"
+        }, {
+            "text": " Browse more courses. x.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.0012998143211007118",
+            "document": "/instance/504/deepqa/v1/question/document/T_8E0A49E7EC950FDC4230857E8544DB3/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "The Music of the Rolling Stones, 1962-1974 | Coursera : The Music of the Rolling Stones, 1962-1974 : Related Courses : Understanding Video Games",
+            "metadataMap": {
+                "DOCNO": "8E0A49E7EC950FDCE8A176E2CC0B5883",
+                "originalfile": "The Music of the Rolling Stones, 1962-1974   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_8E0A49E7EC950FDCE8A176E2CC0B5883",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899067.xml",
+                "title": "The Music of the Rolling Stones, 1962-1974 | Coursera : The Music of the Rolling Stones, 1962-1974 : Related Courses : Understanding Video Games",
+                "description": "The Music of the Rolling Stones, 1962-1974 is a free online class taught by John Covach of University of Rochester",
+                "abstract": "The Music of the Rolling Stones, 1962-1974 is a free online class taught by John Covach of University of Rochester"
+            },
+            "id": "T_8E0A49E7EC950FDC4230857E8544DB3"
+        }, {
+            "text": " Self-Study mode makes all the videos and assignments available to be done at your own pace, but without a certificate of completion at the end. This is only available for some courses at this time. OK, I got it! x.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.0010895725572481751",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61D19F51FCB669C21D/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean?",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD614639EFD6E476E0D9",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD614639EFD6E476E0D9",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900463.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean?",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61D19F51FCB669C21D"
+        }, {
+            "text": " Our system indicates that you are attempting to enroll in Game Theory II: Advanced Applications from an IP address associated with a country currently subject to U.S. sanctions. In order for Coursera to comply with U.S. export controls, we cannot allow you to enroll in this course. You can find out more information here. Coursera empowers people to improve their lives, the lives of their families, and the communities they live in with education. 2014 Coursera Inc. All rights reserved. Company. AboutPeopleLeadershipCareers. Friends. PartnersCommunityProgramsDevelopersTranslate. Connect. Google+TwitterFacebookBlogTech Blog. More. TermsPrivacyHelpPressContact.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.001032735570333898",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD614A95AA1AA8F4C213/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean? : Enrollment Blocked",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD6143E23227141AA1F7",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD6143E23227141AA1F7",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900468.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean? : Enrollment Blocked",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD614A95AA1AA8F4C213"
+        }, {
+            "text": " Are you sure you want to leave this page? Stay on this PageLeave this Page.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "0.0010152378818020225",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD6122881510856B274D1/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean? : Confirm Navigation",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD619CE3215769CB9A81",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD619CE3215769CB9A81",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900483.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean? : Confirm Navigation",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD6122881510856B274D1"
+        }, {
+            "text": " Are you sure you want to leave this page? Stay on this PageLeave this Page.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "9.980357717722654E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD6122881510856B274D/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean? : Confirm Navigation",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD619CE3215769CB9A8",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD619CE3215769CB9A8",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900480.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : What does \"self study\" mean? : Confirm Navigation",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD6122881510856B274D"
+        }, {
+            "text": "2 0 1 2 I E C C E F F E C T I V E J A N U A R Y 1 , 2 0 1 3 A R E Y O U U P T O D A T E O N T H E N E W E N E R G Y C O N S T R U C T I O N C O D E S f o r I L L I N O I S ? On August 17, Governor Pat Quinn signed Senate Bill 3724, amending the implementation date of the 2012 IECC to January 1, 2013. The Illinois Energy Office has a belief that teaching energy simulation for commercial buildings \"as a game,\" will appeal to designers, code officials and building owners implementing the 2012 IECC and ASHRAE 90.1, while better engaging their fellow engineers and energy modelers early in the building design processes. This workshop will introduce participants to the energy modeling process in the form of a game, where \"integrated\" teams of designers, code officials and building owners are exposed to competitive rounds selecting energy efficiency measures (EEMs) for a prototype building. The goal, to provide an introductory understanding of the energy modeling process, its challenges and rewards using OpenStudio((R)) and EnergyPlus((R)) to empower the Illinois design community. H T T P : / / W W W . I L D C E O . N E T / E N E R G Y C O D E Illinois Energy Office - Energy Efficiency Education & Codes 500 E. Monroe, Springfield, IL 62701 TEST YOUR MODELING ACUMEN. REGISTER FOR 2013-14 DATES NOW! E v e n t s a p p r o v e d f o r 6 . 0 A I A H S W / S D L U s , 6 . 0 G B C I C E h o u r s , a n d 0 . 6 C E U s t o w a r d I C C c e r t i f i c a t i o n r e n e w a l .",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "8.128854678943753E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_8B1CECBE43A81DA4B817EF7268554F42/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Blue Tape Game On Flyer 201314 Datesv41 : Game On! Commercial Energy Modeling for Code Compliance : Game On! Commercial Energy Modeling for Code Compliance",
+            "metadataMap": {
+                "DOCNO": "8B1CECBE43A81DA4CEFC572BBE8C27BA",
+                "originalfile": "Blue_Tape_GameOnFlyer_201314Datesv41.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_8B1CECBE43A81DA4CEFC572BBE8C27BA",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34026540.xml",
+                "title": "Blue Tape Game On Flyer 201314 Datesv41 : Game On! Commercial Energy Modeling for Code Compliance : Game On! Commercial Energy Modeling for Code Compliance",
+                "author": "Courtney Moriarta"
+            },
+            "id": "T_8B1CECBE43A81DA4B817EF7268554F42"
+        }, {
+            "text": " I -HOTEL & CONFERENCE CENTER Champaign, IL October 15, 2013 ROCK VALLEY COLLEGE Rockford, IL December 2, 2013 LINCOLN LAND COMMUNITY COLLEGE Springfield, IL January 22, 2014 JOHN A. LOGAN COLLEGE Carbondale/Carterville, IL February 7, 2014 O'FALLON PUBLIC SAFETY BUILDING O'Fallon, IL March 28, 2014 DePaul UNIVERSITY-LOOP CAMPUS Chicago (Loop), IL April 15, 2014 ILLINOIS CENTRAL COLLEGE Peoria, IL April 30, 2014 LEWIS & CLARK COMMUNITY COLLEGE Godfrey, IL May 9, 2014 DePaul UNIVERSITY-LOOP CAMPUS Chicago (Loop), IL May 22, 2014 To Register, Click on a Location. Sessions run 8:00a to 5:00p, and are offered at no cost (FREE!) to Illinois Investor Owned Utility customers. Here are links to papers we will be using and useful in supporting DCEO's approach. Download the \"Architects Guide to Integrating Energy Modeling in the Design Process,\" for preparatory reading. Course founded in part upon the paper, \"Learning by Playing Teaching Energy Simulation as a Game,\" work developed by the Department of Architecture, Graduate School of Design, Harvard University.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "8.114451775327325E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_8B1CECBE43A81DA4E30A231B329E2F4/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Blue Tape Game On Flyer 201314 Datesv41 : Game On! Commercial Energy Modeling for Code Compliance",
+            "metadataMap": {
+                "DOCNO": "8B1CECBE43A81DA413CE0608A0EF9AE9",
+                "originalfile": "Blue_Tape_GameOnFlyer_201314Datesv41.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_8B1CECBE43A81DA413CE0608A0EF9AE9",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34026539.xml",
+                "title": "Blue Tape Game On Flyer 201314 Datesv41 : Game On! Commercial Energy Modeling for Code Compliance",
+                "author": "Courtney Moriarta"
+            },
+            "id": "T_8B1CECBE43A81DA4E30A231B329E2F4"
+        }, {
+            "text": "Children who know the names and the shapes of the letters of the alphabet when they enter school usually have an easier time learning to read. Rhymes are an extension of children's language skills. By hearing and saying rhymes, along with repeated words and phrases, your child learns about spoken sounds and about words. Rhymes also spark a child's excitement about what comes next, which adds fun and adventure to reading. ★",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "7.464250666089356E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_3176CF162764BE9B33FC37963BA7743/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "parenting UDHPreschool : Helping : Preschoolers : Rhyme It! : What to Do : Play rhyming games and sing rhyming songs with your child. Many songs and games include clapping and bouncing and tossing balls.",
+            "metadataMap": {
+                "DOCNO": "3176CF162764BE9BB480B34474F7798A",
+                "originalfile": "parenting_UDHPreschool.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_3176CF162764BE9BB480B34474F7798A",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33901634.xml",
+                "title": "parenting UDHPreschool : Helping : Preschoolers : Rhyme It! : What to Do : Play rhyming games and sing rhyming songs with your child. Many songs and games include clapping and bouncing and tossing balls."
+            },
+            "id": "T_3176CF162764BE9B33FC37963BA7743"
+        }, {
+            "text": "★ Look for educational videos, DVDs, CDs and TV shows such as \"Between the Lions,\" \"Blue's Clues,\" and \"Sesame Street\" that feature letter-learning activities for young children. Watch such programs with your child and join in with him on the rhymes and songs. Here are a few tips about introducing your child to art: -Don't tell the child what to draw or paint. -Don't \"fix up\" your child's drawings. It will take lots of practice before you can recognize what he has drawnbut let him be creative! Invite your child to talk to you about what he is drawing and to identify by name each object in the picture. -Give your child lots of different materials to work with. Show her how to use new types of materials. -Find an art activity that's at the right level for your child and let him do as much of the project as possible. -Display your child's art prominently in your home. Point it out to visitors when your child is near to hear the praise.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "7.09987769369036E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_3176CF162764BE9B262D4162FA398798/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "parenting UDHPreschool : Helping : Preschoolers : Letters, Letters, Everywhere : What to Do : Teach your child \"The Alphabet Song\" and play games with him using the alphabet. Some alphabet books have songs and games that you can learn together.",
+            "metadataMap": {
+                "DOCNO": "3176CF162764BE9B5F8F99FC10C8B6BC",
+                "originalfile": "parenting_UDHPreschool.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_3176CF162764BE9B5F8F99FC10C8B6BC",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33901621.xml",
+                "title": "parenting UDHPreschool : Helping : Preschoolers : Letters, Letters, Everywhere : What to Do : Teach your child \"The Alphabet Song\" and play games with him using the alphabet. Some alphabet books have songs and games that you can learn together."
+            },
+            "id": "T_3176CF162764BE9B262D4162FA398798"
+        }, {
+            "text": " The following background readings provide more detailed coverage of the course material: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations, by Yoav Shoham and Kevin Leyton-Brown; Cambridge University Press, 2009. This book has the same structure as the course, and covers most of the same material. It is available as a free PDF download from the link above or for sale as a physical book from (e.g.) amazon.com. A Brief Introduction to the Basics of Game Theory, by Matthew O. Jackson. These notes offer a quick introduction to the basics of game theory; they are available as a free PDF download.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "6.829864578321576E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD612EA3BB51D30BA00E/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Suggested Readings",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61CD8807800BF68B25",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61CD8807800BF68B25",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900344.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Suggested Readings",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD612EA3BB51D30BA00E"
+        }, {
+            "text": " You must be comfortable with mathematical thinking and rigorous arguments. Relatively little specific math is required; the course involves lightweight probability theory (for example, you should know what a conditional probability is) and very lightweight calculus (for instance, taking a derivative).",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "6.725931307300925E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61EBD575095F43C156/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Recommended Background",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61F9CFF2A21C070EB4",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61F9CFF2A21C070EB4",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900321.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Recommended Background",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61EBD575095F43C156"
+        }, {
+            "text": " Verified Certificate Earning a Verified Certificate involves validating your identity to receive a shareable certificate endorsed by the host university. Statement of Accomplishment Statements of Accomplishment are unverified, and received upon completion of the free course.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "6.511230603791773E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61C5A486A51083FD9E/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Eligible for",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61DF32EDAECA37D1CC",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61DF32EDAECA37D1CC",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900396.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Eligible for",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61C5A486A51083FD9E"
+        }, {
+            "text": " Jan 11th 2015 - Feb 22nd 2015Jan 13th 2014 - Feb 24th 2014Future Sessions Join for Free. Join for Free. Add to WatchlistYou're Watching!Remove from watchlist.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "6.317109218798578E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61F7C8D3AD6DDC5C00/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Sessions",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61BD204B13661A2E38",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61BD204B13661A2E38",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900391.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Sessions",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61F7C8D3AD6DDC5C00"
+        }, {
+            "text": " Matthew O. JacksonStanford University. Kevin Leyton-BrownThe University of British Columbia. Yoav ShohamStanford University. Matthew O. JacksonStanford University. Kevin Leyton-BrownThe University of British Columbia. Yoav ShohamStanford University. Matthew O. JacksonStanford University. Kevin Leyton-BrownThe University of British Columbia. Yoav ShohamStanford University.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "6.104640197008848E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD61D9C8CF8F313352E8/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Instructors",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD612F33BADA398753D7",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD612F33BADA398753D7",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900410.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Instructors",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD61D9C8CF8F313352E8"
+        }, {
+            "text": " Will I get a statement of accomplishment after completing this class? Yes. Students who successfully complete the class will receive a statement of accomplishment signed by the instructors.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "6.001095753163099E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD616CF282914A56A72/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : FAQ",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61D9A3B7098BB84676",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61D9A3B7098BB84676",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900383.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : FAQ",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD616CF282914A56A72"
+        }, {
+            "text": " Computer Science: Theory Economics & Finance Computer Science: Artificial Intelligence.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "5.799232749268413E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_92AB77C9E079BD617FA9C00DB7D74B01/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Categories",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61DCBDAA427481E489",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_92AB77C9E079BD61DCBDAA427481E489",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900423.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Categories",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "T_92AB77C9E079BD617FA9C00DB7D74B01"
+        }, {
+            "text": "Yes! We expect this course to be taken by people completely new to our topics, and have designed the content in that way. What about timing? Can I take this self-paced? Yes, to an extent. Within any week of the course, you can view the recorded video lectures and online material whenever you have time available, regardless of your time zone. We will, however, connect the class on a common weekly schedule with regular due dates for all assessments.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "4.7871979768387973E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_BCCF7401D9B26520E27F2F43566DEB35/534/985",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship | Coursera : Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship : FAQ",
+            "metadataMap": {
+                "DOCNO": "BCCF7401D9B26520E27F2F43566DEB35",
+                "originalfile": "Developing Innovative Ideas for New Companies  The First Step in Entrepreneurship   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33900645",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900645.xml",
+                "title": "Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship | Coursera : Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship : FAQ",
+                "description": "Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship is a free online class taught by James V. Green of University of Maryland, College Park",
+                "abstract": "Developing Innovative Ideas for New Companies: The First Step in Entrepreneurship is a free online class taught by James V. Green of University of Maryland, College Park"
+            },
+            "id": "PB_BCCF7401D9B26520E27F2F43566DEB35"
+        }, {
+            "text": "River Edge Redevelopment Zone Program 2007 Annual Report The River Edge Redevelopment Zone is an innovative new pilot program designed to help revitalize riverfront areas by providing local developers and businesses with the critical tools to revive and redevelop abandoned or contaminated properties that will stimulate economic development opportunities and create more Illinois jobs. The River Edge Redevelopment Initiative includes the designation of redevelopment zones that will be eligible to receive tax credits, exemptions and new grant funding to support clean-up, remediation and redevelopment efforts that will lead to economic revitalization in these areas. This initiative combines resources across state agencies and will be administered primarily by the Illinois Department of Commerce and Economic Opportunity (DCEO) and the Illinois Environmental Protection Agency (IEPA). Only Aurora, East St. Louis and Rockford can apply to DCEO for designation. Implementation Status To date, DCEO has designated zones in the cities of Aurora and Rockford. (The application for designation of East St. Louis as a zone is in process.) Aurora Zone The City of Aurora River Edge Redevelopment Zone consists of former industrial land lining its east and west riverfronts that have tremendous economic development potential, but the cost of redevelopment have made attracting investment extremely difficult. Rockford Zone River Edge will allow for multiple redevelopments using several abandoned industrial sites along the Rock River, creating both recreational and residential development spaces including: a major indoor/outdoor whitewater attraction; an office, residential and educational facility; an environmentally friendly fish passage for the Upper Rock River; a new marina, and new commercial and residential developments along the River. Proposed New Legislation DCEO is not proposing any new legislation at this time.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "4.366876382846385E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_C8D9F56835F6F4F56B89B8EF70A53721/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Blue Tape River Edge Redevelopment Zone Program2007report : River Edge Redevelopment Zone Program 2007 Annual Report The River Edge Redevelopment Zone is an innovative new pilot program designed to help revitalize riverfront areas by providing local developers and businesses with the critical tools to revive and redevelop abandoned or contaminated properties that will stimulate economic development opportunities and create more Illinois jobs. The River Edge Redevelopment Initiative includes the designation of redevelopment zones that will be eligible to receive tax credits, exemptions and new grant funding to support clean-up, remediation and redevelopment efforts that will lead to economic revitalization in these areas. This initiative combines resources across state agencies and will be administered primarily by the Illinois Department of Commerce and Economic Opportunity (DCEO) and the Illinois Environmental Protection Agency (IEPA). Only Aurora, East St. Louis and Rockford can apply to DCEO for designation. Implementation Status To date, DCEO has designated zones in the cities of Aurora and Rockford. (The application for designation of East St. Louis as a zone is in process.) Aurora Zone The City of Aurora River Edge Redevelopment Zone consists of former industrial land lining its east and west riverfronts that have tremendous economic development potential, but the cost of redevelopment have made attracting investment extremely difficult. Rockford Zone River Edge will allow for multiple redevelopments using several abandoned industrial sites along the Rock River, creating both recreational and residential development spaces including: a major indoor/outdoor whitewater attraction; an office, residential and educational facility; an environmentally friendly fish passage for the Upper Rock River; a new marina, and new commercial and residential developments along the River. Proposed New Legislation DCEO is not proposing any new legislation at this time.",
+            "metadataMap": {
+                "DOCNO": "C8D9F56835F6F4F55E02071412F39A8B",
+                "originalfile": "Blue_Tape_RiverEdgeRedevelopmentZoneProgram2007report.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_C8D9F56835F6F4F55E02071412F39A8B",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34018572.xml",
+                "title": "Blue Tape River Edge Redevelopment Zone Program2007report : River Edge Redevelopment Zone Program 2007 Annual Report The River Edge Redevelopment Zone is an innovative new pilot program designed to help revitalize riverfront areas by providing local developers and businesses with the critical tools to revive and redevelop abandoned or contaminated properties that will stimulate economic development opportunities and create more Illinois jobs. The River Edge Redevelopment Initiative includes the designation of redevelopment zones that will be eligible to receive tax credits, exemptions and new grant funding to support clean-up, remediation and redevelopment efforts that will lead to economic revitalization in these areas. This initiative combines resources across state agencies and will be administered primarily by the Illinois Department of Commerce and Economic Opportunity (DCEO) and the Illinois Environmental Protection Agency (IEPA). Only Aurora, East St. Louis and Rockford can apply to DCEO for designation. Implementation Status To date, DCEO has designated zones in the cities of Aurora and Rockford. (The application for designation of East St. Louis as a zone is in process.) Aurora Zone The City of Aurora River Edge Redevelopment Zone consists of former industrial land lining its east and west riverfronts that have tremendous economic development potential, but the cost of redevelopment have made attracting investment extremely difficult. Rockford Zone River Edge will allow for multiple redevelopments using several abandoned industrial sites along the Rock River, creating both recreational and residential development spaces including: a major indoor/outdoor whitewater attraction; an office, residential and educational facility; an environmentally friendly fish passage for the Upper Rock River; a new marina, and new commercial and residential developments along the River. Proposed New Legislation DCEO is not proposing any new legislation at this time.",
+                "author": "mgauss"
+            },
+            "id": "T_C8D9F56835F6F4F56B89B8EF70A53721"
+        }, {
+            "text": "River Edge Redevelopment Zone Program 2008 Annual Report The River Edge Redevelopment Zone is an innovative pilot program designed to help revitalize riverfront areas by providing local developers and businesses with the critical tools to revive and redevelop abandoned or contaminated properties that will stimulate economic development opportunities and create more Illinois jobs. The River Edge Redevelopment Initiative includes the designation of redevelopment zones that are eligible to receive tax credits, exemptions and new grant funding to support clean-up, remediation and redevelopment efforts that will lead to economic revitalization in these areas. This initiative combines resources across state agencies and is administered primarily by the Illinois Department of Commerce and Economic Opportunity (DCEO) and the Illinois Environmental Protection Agency (IEPA). Implementation Status DCEO has designated zones in the cities of Aurora, East St. Louis, and Rockford. Aurora Zone The City of Aurora River Edge Redevelopment Zone consists of former industrial land lining its east and west riverfronts that have tremendous economic development potential, but the costs of redevelopment have made attracting investment extremely difficult. East St. Louis Zone The City of East St. Louis River Edge Redevelopment Zone is adjacent to the Mississippi River and consists of approximately 2.5 acres. The East St. Louis Riverfront is a unique area because of its unparalleled location directly across the river from the Gateway Arch. Rockford Zone In Rockford, River Edge will allow for multiple redevelopments using abandoned industrial sites along the Rock River, creating both recreational and residential development spaces. Effectiveness During Fiscal Year 2008, according to reports submitted by these three zones, investments of more than $27.2 million in these designated zones will result in the projected creation and retention of 220 jobs. Although other factors are undoubtedly involved, RERZ designation is a highly important determinant of a business's decision to locate or expand. While it is too early to fully evaluate the impact of this new program, we believe that the River Edge Redevelopment Program will become one of the state's most successful economic development tools. Proposed New Legislation DCEO is not proposing any new legislation at this time.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "4.1526625864207745E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_3D219D0B71B8ED8F4FC099E68DDE9871/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "Blue Tape 2008 Report : River Edge Redevelopment Zone Program 2008 Annual Report The River Edge Redevelopment Zone is an innovative pilot program designed to help revitalize riverfront areas by providing local developers and businesses with the critical tools to revive and redevelop abandoned or contaminated properties that will stimulate economic development opportunities and create more Illinois jobs. The River Edge Redevelopment Initiative includes the designation of redevelopment zones that are eligible to receive tax credits, exemptions and new grant funding to support clean-up, remediation and redevelopment efforts that will lead to economic revitalization in these areas. This initiative combines resources across state agencies and is administered primarily by the Illinois Department of Commerce and Economic Opportunity (DCEO) and the Illinois Environmental Protection Agency (IEPA). Implementation Status DCEO has designated zones in the cities of Aurora, East St. Louis, and Rockford. Aurora Zone The City of Aurora River Edge Redevelopment Zone consists of former industrial land lining its east and west riverfronts that have tremendous economic development potential, but the costs of redevelopment have made attracting investment extremely difficult. East St. Louis Zone The City of East St. Louis River Edge Redevelopment Zone is adjacent to the Mississippi River and consists of approximately 2.5 acres. The East St. Louis Riverfront is a unique area because of its unparalleled location directly across the river from the Gateway Arch. Rockford Zone In Rockford, River Edge will allow for multiple redevelopments using abandoned industrial sites along the Rock River, creating both recreational and residential development spaces. Effectiveness During Fiscal Year 2008, according to reports submitted by these three zones, investments of more than $27.2 million in these designated zones will result in the projected creation and retention of 220 jobs. Although other factors are undoubtedly involved, RERZ designation is a highly important determinant of a business's decision to locate or expand. While it is too early to fully evaluate the impact of this new program, we believe that the River Edge Redevelopment Program will become one of the state's most successful economic development tools. Proposed New Legislation DCEO is not proposing any new legislation at this time.",
+            "metadataMap": {
+                "DOCNO": "3D219D0B71B8ED8F710D78415CCDE873",
+                "originalfile": "Blue_Tape_2008Report.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_3D219D0B71B8ED8F710D78415CCDE873",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34031004.xml",
+                "title": "Blue Tape 2008 Report : River Edge Redevelopment Zone Program 2008 Annual Report The River Edge Redevelopment Zone is an innovative pilot program designed to help revitalize riverfront areas by providing local developers and businesses with the critical tools to revive and redevelop abandoned or contaminated properties that will stimulate economic development opportunities and create more Illinois jobs. The River Edge Redevelopment Initiative includes the designation of redevelopment zones that are eligible to receive tax credits, exemptions and new grant funding to support clean-up, remediation and redevelopment efforts that will lead to economic revitalization in these areas. This initiative combines resources across state agencies and is administered primarily by the Illinois Department of Commerce and Economic Opportunity (DCEO) and the Illinois Environmental Protection Agency (IEPA). Implementation Status DCEO has designated zones in the cities of Aurora, East St. Louis, and Rockford. Aurora Zone The City of Aurora River Edge Redevelopment Zone consists of former industrial land lining its east and west riverfronts that have tremendous economic development potential, but the costs of redevelopment have made attracting investment extremely difficult. East St. Louis Zone The City of East St. Louis River Edge Redevelopment Zone is adjacent to the Mississippi River and consists of approximately 2.5 acres. The East St. Louis Riverfront is a unique area because of its unparalleled location directly across the river from the Gateway Arch. Rockford Zone In Rockford, River Edge will allow for multiple redevelopments using abandoned industrial sites along the Rock River, creating both recreational and residential development spaces. Effectiveness During Fiscal Year 2008, according to reports submitted by these three zones, investments of more than $27.2 million in these designated zones will result in the projected creation and retention of 220 jobs. Although other factors are undoubtedly involved, RERZ designation is a highly important determinant of a business's decision to locate or expand. While it is too early to fully evaluate the impact of this new program, we believe that the River Edge Redevelopment Program will become one of the state's most successful economic development tools. Proposed New Legislation DCEO is not proposing any new legislation at this time.",
+                "author": "mgauss"
+            },
+            "id": "T_3D219D0B71B8ED8F4FC099E68DDE9871"
+        }, {
+            "text": "His lecture is very engaging and fun./Great UI breadth requirement to take. Easy and fun./I would not recommend taking this class, it is way too easy but you still have to go to class to take the quizzes. It did not help that it was on south campus this quarter. The grading is done almost arbitrarily and there is almost no feedback./Enjoyed this course a lot./take this class/Haoqi was a great lecturer.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "3.8890348514541984E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_2C6B985474CD7A2877A0C8AB805140CF/3994/4399",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Human-Computer Interaction",
+            "metadataMap": {
+                "DOCNO": "2C6B985474CD7A2877A0C8AB805140CF",
+                "originalfile": "holmes_testWatson_9.html",
+                "corpusName": "PB",
+                "deepqaid": "33945381",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33945381.xml",
+                "title": "Human-Computer Interaction"
+            },
+            "id": "PB_2C6B985474CD7A2877A0C8AB805140CF"
+        }, {
+            "text": "However, if you need very specific instructions, good organization and focused lectures to do well in a class, I would not recommend this class. It also helps to have some experience doing related projects (or have someone in your group have that experience and be willing to share expertise) before you take this class./Easy course if you get the right group. Only grades are 2 projects which you work in groups he assigns. Te professor is super chill but the ta requires more work/As a grad student, I felt it helped me as I got an idea what all can be done using NLP.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "3.829449706245214E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_DFBAA657CD9B11BEDC454D514843A97D/5382/5952",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Natural Language Processing",
+            "metadataMap": {
+                "DOCNO": "DFBAA657CD9B11BEDC454D514843A97D",
+                "originalfile": "holmes_testWatson_7.html",
+                "corpusName": "PB",
+                "deepqaid": "33945389",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33945389.xml",
+                "title": "Natural Language Processing"
+            },
+            "id": "PB_DFBAA657CD9B11BEDC454D514843A97D"
+        }, {
+            "text": "As the understanding of what makes a reliable resource is a key aspect of the course, you will also be asked to do your own research on the internet to find additional resources to complete the exercises. What are the learning outcomes of this course and why should I take it? By the end of the course you will have a better understanding of where information comes from, how to validate or refute arguments and how to develop your own arguments based on the available information.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "3.206132969353348E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_BE43903DCA8074CCE98C1084210A8CF5/792/1273",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Critical Thinking in Global Challenges | Coursera : Critical Thinking in Global Challenges : FAQ",
+            "metadataMap": {
+                "DOCNO": "BE43903DCA8074CCE98C1084210A8CF5",
+                "originalfile": "Critical Thinking in Global Challenges   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33900844",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900844.xml",
+                "title": "Critical Thinking in Global Challenges | Coursera : Critical Thinking in Global Challenges : FAQ",
+                "description": "Critical Thinking in Global Challenges is a free online class taught by Mayank Dutia and Celine Caquineau of The University of Edinburgh",
+                "abstract": "Critical Thinking in Global Challenges is a free online class taught by Mayank Dutia and Celine Caquineau of The University of Edinburgh"
+            },
+            "id": "PB_BE43903DCA8074CCE98C1084210A8CF5"
+        }, {
+            "text": "Evidence-based business process management based on process mining helps to create a common ground for business process improvement and information systems development. The course uses many examples using real-life event logs to illustrate the concepts and algorithms. After taking this course, one is able to run process mining projects and have a good understanding of the Business Process Intelligence field. After taking this course you should: - have a good understanding of Business Process Intelligence techniques (in particular process mining), - understand the role of Big Data in today's society, - be able to relate process mining techniques to other analysis techniques such as simulation, business intelligence, data mining, machine learning, and verification, - be able to apply basic process discovery techniques to learn a process model from an event log (both manually and using tools), - be able to apply basic",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "2.788756391964853E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_E7E64566E243C24530CE218486F04F3E/2179/3107",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Process Mining: Data science in Action | Coursera : Process Mining: Data science in Action : Course Syllabus",
+            "metadataMap": {
+                "DOCNO": "E7E64566E243C24530CE218486F04F3E",
+                "originalfile": "Process Mining  Data science in Action   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33899333",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899333.xml",
+                "title": "Process Mining: Data science in Action | Coursera : Process Mining: Data science in Action : Course Syllabus",
+                "description": "Process Mining: Data science in Action is a free online class taught by Wil van der Aalst of Eindhoven University of Technology",
+                "abstract": "Process Mining: Data science in Action is a free online class taught by Wil van der Aalst of Eindhoven University of Technology"
+            },
+            "id": "PB_E7E64566E243C24530CE218486F04F3E"
+        }, {
+            "text": "What resources will I need for this class? All the reading material will be freely accessible online. 4. What are the learning outcomes of this course and why should I take it? By following this course you will learn more about: the notion of terrorism as an instrument to achieve certain goals. the difficulties and importance of definitions of terrorism.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "2.0618758571799845E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_7A5B0099B410960D73AEBD60ABEA1A56/621/977",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Terrorism and Counterterrorism: Comparing Theory and Practice | Coursera : Terrorism and Counterterrorism: Comparing Theory and Practice : FAQ",
+            "metadataMap": {
+                "DOCNO": "7A5B0099B410960D73AEBD60ABEA1A56",
+                "originalfile": "Terrorism and Counterterrorism  Comparing Theory and Practice   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33899179",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899179.xml",
+                "title": "Terrorism and Counterterrorism: Comparing Theory and Practice | Coursera : Terrorism and Counterterrorism: Comparing Theory and Practice : FAQ",
+                "description": "Terrorism and Counterterrorism: Comparing Theory and Practice is a free online class taught by Edwin Bakker of Universiteit Leiden",
+                "abstract": "Terrorism and Counterterrorism: Comparing Theory and Practice is a free online class taught by Edwin Bakker of Universiteit Leiden"
+            },
+            "id": "PB_7A5B0099B410960D73AEBD60ABEA1A56"
+        }, {
+            "text": "HP does not warrant that the operation of this product will be uninterrupted or error-free. HP is not responsible for damage that occurs as a result of your failure to follow the instructions intended for the HP Hardware Product. This Limited Warranty does not apply to expendable or consumable parts and does not extend to any product from which the serial number has been removed or that has been damaged or rendered defective (a) as a result of accident, misuse, abuse, contamination, improper or inadequate maintenance or calibration or other external causes; (b) by operation outside the usage parameters stated in the user documentation that shipped with the product; (c) by software, interfacing, parts or supplies not supplied by HP; (d) improper site preparation or maintenance; (e) virus infection; (f) loss or damage in transit; or (g) by modification or service by anyone other than (i) HP, (ii) an HP authorized service provider, or (iii) your own installation of end-user replaceable HP or HP approved parts if available for your product in the servicing country/region. YOU SHOULD MAKE PERIODIC BACKUP COPIES OF THE DATA STORED ON YOUR HARD DRIVE OR OTHER STORAGE DEVICES AS A PRECAUTION AGAINST POSSIBLE FAILURES, ALTERATION, OR LOSS OF THE DATA. BEFORE RETURNING ANY UNIT FOR SERVICE, BE SURE TO BACK UP DATA AND REMOVE ANY CONFIDENTIAL, PROPRIETARY, OR PERSONAL INFORMATION. HP IS NOT RESPONSIBLE FOR DAMAGE TO OR LOSS OF ANY PROGRAMS, DATA, OR REMOVABLE STORAGE MEDIA. HP IS NOT RESPONSIBLE FOR THE RESTORATION OR REINSTALLATION OF ANY PROGRAMS OR DATA OTHER THAN SOFTWARE INSTALLED BY HP WHEN THE PRODUCT IS MANUFACTURED.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "2.031887270277366E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF10BF9D468D017B12D7/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Exclusions",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF1093927C2ACDDB02FB",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF1093927C2ACDDB02FB",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948392.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Exclusions",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF10BF9D468D017B12D7"
+        }, {
+            "text": "What resources will I need for this class? For this course, you will need: 1) an Internet connection; 2) software package capable of generating table-based CSV files (e.g. Microsoft Excel, Google Docs, Numbers); Why should I take this class? Data drives medical research and medical research drives scientific findings that ultimately result in improving human health. This course will enable you to be play an integral part in the process.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "2.0020693773403764E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_1B33BF02D3E2D440909DD88C1563ECB8/202/642",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Data Management for Clinical Research | Coursera : Data Management for Clinical Research : FAQ",
+            "metadataMap": {
+                "DOCNO": "1B33BF02D3E2D440909DD88C1563ECB8",
+                "originalfile": "Data Management for Clinical Research   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33900824",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900824.xml",
+                "title": "Data Management for Clinical Research | Coursera : Data Management for Clinical Research : FAQ",
+                "description": "Data Management for Clinical Research is a free online class taught by Stephany Duda, Paul Harris and Firas  Wehbe of Vanderbilt University",
+                "abstract": "Data Management for Clinical Research is a free online class taught by Stephany Duda, Paul Harris and Firas  Wehbe of Vanderbilt University"
+            },
+            "id": "PB_1B33BF02D3E2D440909DD88C1563ECB8"
+        }, {
+            "text": "Hardware: Original Systems - 1 year Technical phone assistance to diagnose potential hardware issues 1 year",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.9973571761511266E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF10C1C94776E09C497B/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF1083A48C3439415FA4",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF1083A48C3439415FA4",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948389.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF10C1C94776E09C497B"
+        }, {
+            "text": "According to ISO/IEC Guide 22 and EN 45014 Manufacturer's Name: Hewlett-Packard Company Manufacturer's Address: Hewlett-Packard Company 10500 Ridgeview Court Cupertino, CA 95014 declares, that the product(s) Product: Personal computer Model Number(s): S0000, SR1000, SA3000, m000, m1000, m5000, d1000, a000, t000, 8000, 9000 series Product Options: All conforms to the following Product Specifications: Safety: IEC 60950: 1999 / EN60950: 2000 IEC 60825-1: 1993 +A1 / EN 60825-1:1994 +A11 Class 1 (Laser/LED) GB4943: 2001 EMC: CISPR 22: 1997 / EN 55022: 1998 +A1 Class B CISPR 24: 1997 / EN 55024: 1998 IEC 61000-3-2:2000 / EN 61000-3-2: 2000 IEC 61000-3-3:1994 + A1: 2001 / EN 61000-3-3: 1995 + A1: 2001 GB9254: 1998 FCC Title 47 CFR, Part 15 Class B / ICES-002, issue 2 AS/NZS CISPR 22: 2002 Telecom: TBR 21: 1998, EG 201 121: 1998 Radio: ETSI 300-826 General EMC requirements for Radio equipment. ETSI 300-328 Technical requirements for Radio equipment. Supplementary Information: The product herewith complies with the requirements of the Low Voltage Directive 73/23/EEC, the EMC Directive 89/336/EEC and the R&TTE Directive 1999/5/EC and carries the \"CE Marking\" accordingly. This device complies with Part 15 of FCC rules. Operation is subject to the following two conditions: (1) this device may not cause harmful interference, and (2) this device must accept any interference received, including interference that may cause undesired operation. Cupertino, CA USA June 8, 2004 Signature / Manager: ______________________________________________ Ervin Gomez, Hardware Quality Eng. Manager For regulatory compliance information only, contact: Australia Contact: Product Regulations Manager, Hewlett-Packard Australia Ltd., 31-41 Joseph Street, Blackburn, Victoria 3130 European Contact: Hewlett-Packard GmbH, HQ-TRE, Herrenberger StraSSe 140, 71034 Boeblingen, Germany (FAX: +49-7031-14-3143). North America Contact: Hardware Quality Eng. Manager, Hewlett-Packard, CPC, 10500 Ridgeview Ct., Cupertino, CA 95015-4010. Phone: (408) 343-5000",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.9266895833425224E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF109CF5ABF7223B355B/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : DECLARATION OF CONFORMITY",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF108291C18CF7EC5C59",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF108291C18CF7EC5C59",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948583.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : DECLARATION OF CONFORMITY",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF109CF5ABF7223B355B"
+        }, {
+            "text": "Detailed questions",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.893944718176499E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF1058E44BA9256E5B846/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF1018EA37D528464797",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF1018EA37D528464797",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948435.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF1058E44BA9256E5B846"
+        }, {
+            "text": "Third-party hardware or software",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.8617563182488084E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF1058E44BA9256E5B845/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF101B94BC697D66F010",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF101B94BC697D66F010",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948433.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF1058E44BA9256E5B845"
+        }, {
+            "text": "Operating system",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.830116962082684E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF1058E44BA9256E5B844/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF105A8A714F637DCAB9",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF105A8A714F637DCAB9",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948431.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF1058E44BA9256E5B844"
+        }, {
+            "text": "Add-on options",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.7990110791288316E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF1058E44BA9256E5B843/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF10892C462CF86FA4A4",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF10892C462CF86FA4A4",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948429.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF1058E44BA9256E5B843"
+        }, {
+            "text": "Applicable error messages",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.7684359045233577E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF1058E44BA9256E5B842/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF10F559FB38C2AD966C",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF10F559FB38C2AD966C",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948426.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF1058E44BA9256E5B842"
+        }, {
+            "text": "Product serial number, model name, and model number",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.7383802332915366E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF1058E44BA9256E5B841/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF10EBD0A74662361B61",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF10EBD0A74662361B61",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948425.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF1058E44BA9256E5B841"
+        }, {
+            "text": "If your product fails during the Limited Warranty Period and the suggestions in the product documentation do not solve the problem, you can receive support by doing the following: Locate your nearest HP Support location via the World Wide Web at: http://www.hp.com/support Contact your authorized HP dealer or Authorized Service Provider and be sure to have the following information available before you call HP:",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.708833297016099E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF1058E44BA9256E5B84/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF10EF8F0D48DC7C372C",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF10EF8F0D48DC7C372C",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948423.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Contacting HP",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF1058E44BA9256E5B84"
+        }, {
+            "text": "Installation of non-HP products.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.681429275777191E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF107EA1CEDB3EA052737/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF109ADB29F49AC729C9",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF109ADB29F49AC729C9",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948421.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF107EA1CEDB3EA052737"
+        }, {
+            "text": "Isolating system problems to software usage problems.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.6528484411537647E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF107EA1CEDB3EA052734/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF107467EF369358AE87",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF107467EF369358AE87",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948417.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF107EA1CEDB3EA052734"
+        }, {
+            "text": "Interpreting system error messages.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.6247550956904888E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF107EA1CEDB3EA052733/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF108B9EE0AFB75AB83C",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF108B9EE0AFB75AB83C",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948415.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF107EA1CEDB3EA052733"
+        }, {
+            "text": "Setting up and configuring the software (how-to and first steps). Excludes system optimization, customization and network configuration.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.5971374523360282E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF107EA1CEDB3EA052732/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF1041CA683175F1465E",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF1041CA683175F1465E",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948414.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties :",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF107EA1CEDB3EA052732"
+        }, {
+            "text": "The Limited Warranty terms and conditions for most HP-branded options (HP Options) are as set forth in the Limited Warranty applicable to the HP Option and are included in the HP Option product packaging. If your HP Option is installed in an HP Hardware Product, HP may provide warranty service for either the period specified in the warranty documents (HP Option Limited Warranty Period) that shipped with the HP Option or for the remaining warranty period of the HP Hardware Product in which the HP Option is being installed, whichever period is the longer, but not to exceed three (3) years from the date you purchased the HP Option. The HP Option Limited Warranty Period starts from the date of purchase from HP or an HP authorized reseller. Your dated sales or delivery receipt, showing the date of purchase of the HP Option, is your warranty start date. See your HP Option Limited Warranty for more details. Non-HP options are provided \"AS IS\". However, non-HP manufacturers and suppliers may provide warranties directly to you. EXCEPT AS PROVIDED IN THE APPLICABLE SOFTWARE END-USER LICENSE OR PROGRAM LICENSE AGREEMENT, OR IF OTHERWISE PROVIDED UNDER LOCAL LAW, SOFTWARE PRODUCTS, INCLUDING ANY SOFTWARE PRODUCTS OR THE OPERATING SYSTEM PREINSTALLED BY HP ARE PROVIDED \"AS IS\". HP's only warranty obligations with respect to software distributed by HP under the HP brand name are set forth in the applicable end-user license or program license agreement provided with that software. If the removable media on which HP distributes the software proves to be defective in materials or workmanship within ninety (90) days of purchase, your sole remedy shall be to return the removable media to HP for replacement. It is your responsibility to contact non-HP manufacturers or suppliers for their warranty support.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.5699905634392053E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF107EA1CEDB3EA05273/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF10DEA77C37099A4F69",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF10DEA77C37099A4F69",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948409.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Options and Software Limited Warranties",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF107EA1CEDB3EA05273"
+        }, {
+            "text": "The Limited Warranty Period for an HP Hardware Product is a specified, fixed period commencing on the date of purchase. The date on your sales receipt is the date of purchase unless HP or your reseller informs you otherwise in writing.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.543303660582751E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF10CB1D70A2DB65B185/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Limited Warranty Period",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF10D73DEB17CF88B75D",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF10D73DEB17CF88B75D",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948399.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Limited Warranty Period",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF10CB1D70A2DB65B185"
+        }, {
+            "text": "IF YOUR HP HARDWARE PRODUCT FAILS TO WORK AS WARRANTED ABOVE, HP'S MAXIMUM LIABILITY UNDER THIS LIMITED WARRANTY IS EXPRESSLY LIMITED TO THE LESSER OF THE PRICE YOU HAVE PAID FOR THE PRODUCT OR THE COST OF REPAIR OR REPLACEMENT OF ANY HARDWARE COMPONENTS THAT MALFUNCTION IN CONDITIONS OF NORMAL USE. EXCEPT AS INDICATED ABOVE, IN NO EVENT WILL HP BE LIABLE FOR ANY DAMAGES CAUSED BY THE PRODUCT OR THE FAILURE OF THE PRODUCT TO PERFORM, INCLUDING ANY LOST PROFITS OR SAVINGS OR SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES. HP IS NOT LIABLE FOR ANY CLAIM MADE BY A THIRD PARTY OR MADE BY YOU FOR A THIRD PARTY. THIS LIMITATION OF LIABILITY APPLIES WHETHER DAMAGES ARE SOUGHT, OR A CLAIM MADE, UNDER THIS LIMITED WARRANTY OR AS A TORT CLAIM (INCLUDING NEGLIGENCE AND STRICT PRODUCT LIABILITY), A CONTRACT CLAIM, OR ANY OTHER CLAIM. THIS LIMITATION OF LIABILITY CANNOT BE WAIVED OR AMENDED BY ANY PERSON. THIS LIMITATION OF LIABILITY WILL BE EFFECTIVE EVEN IF YOU HAVE ADVISED HP OR AN AUTHORIZED REPRESENTATIVE OF HP OF THE POSSIBILITY OF ANY SUCH DAMAGES. THIS LIMITATION OF LIABILITY, HOWEVER, WILL NOT APPLY TO CLAIMS FOR PERSONAL INJURY. THIS LIMITED WARRANTY GIVES YOU SPECIFIC LEGAL RIGHTS. YOU MAY ALSO HAVE OTHER RIGHTS THAT MAY VARY FROM STATE TO STATE OR FROM COUNTRY/REGION TO COUNTRY/REGION. YOU ARE ADVISED TO CONSULT APPLICABLE STATE OR COUNTRY/REGION LAWS FOR A FULL DETERMINATION OF YOUR RIGHTS.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.488691777922213E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF107494182207911334/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Limitation of Liability",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF10D4AB966A3D606294",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF10D4AB966A3D606294",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948398.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Limitation of Liability",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF107494182207911334"
+        }, {
+            "text": "In countries/regions where it is available, your HP Limited Warranty may include a Customer Self Repair warranty service. If applicable, HP will determine in its sole discretion that Customer Self Repair is the appropriate method of warranty service. If so, HP will ship approved replacement parts directly to you to fulfill your HP Hardware Product warranty service. This will save considerable repair time. After you contact HP and the fault diagnosis identifies that the problem can be fixed using one of these parts, a replaceable part can be sent directly to you. Once the part arrives, replace the defective part pursuant to the provided instructions and documentation. If further assistance is required, call the HP Technical Support Center and a technician will assist you over the phone. In cases where the replacement part must be returned to HP, you must ship the defective part back to HP within a defined period of time, normally fifteen (15) days. The defective part must be returned with the associated documentation in the provided shipping material. Failure to return the defective product may result in HP billing you for the replacement. With a Customer Self Repair, HP will pay all shipping and part return costs and determine the courier/carrier to be used. If Customer Self Repair applies to you, please refer to your specific HP Hardware Product announcement. You can also obtain information on this warranty service on the HP Web site at: http://www.hp.com/support",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.46338643389754E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF10AC01126FD505A03B/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Customer Self Repair Warranty Service",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF103002C6E7E33D5440",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF103002C6E7E33D5440",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948401.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Customer Self Repair Warranty Service",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF10AC01126FD505A03B"
+        }, {
+            "text": "Under the terms of carry-in service, you will be required to deliver your HP Hardware Product to an authorized service location for warranty repair. You must prepay any shipping charges, taxes, or duties associated with transportation of the product to and from the service location. In addition, you are responsible for insuring any product shipped or returned to an authorized service location and assume risk of loss during shipping.",
+            "copyright": "http://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+            "value": "1.4385113900061697E-4",
+            "document": "/instance/504/deepqa/v1/question/document/T_652D8CC3A917DF10C43CD0846EAB3019/0/-1",
+            "termsOfUse": "http://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License",
+            "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Carry-in Warranty Service",
+            "metadataMap": {
+                "DOCNO": "652D8CC3A917DF1084AC6FB2C3C9E2A6",
+                "originalfile": "GX5000T - Compaq Gaming PC Warranty and Support Guide_AutoManual.pdf",
+                "corpusName": "PB",
+                "CorpusPlusDocno": "PB_652D8CC3A917DF1084AC6FB2C3C9E2A6",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33948402.xml",
+                "title": "GX5000 T Compaq Gaming PC Warranty and Support Guide Auto Manual : Microsoft Word - qb16182.doc : Warranty and Support Guide : COMPAQ X GAMING PC PRODUCTS : Hardware Limited Warranty : Carry-in Warranty Service",
+                "author": "jiml"
+            },
+            "id": "T_652D8CC3A917DF10C43CD0846EAB3019"
+        }, {
+            "text": "Will I get a statement of accomplishment with Distinction completing this class? Yes, Students who successfully complete the class with the final score >= 90% of the maximum possible score will receive a Statement of Accomplishment with Distinction. What are the learning outcomes of this course and why should I take it? At the end of the course students should have consciously learned the necessity of the protection of cultural heritage as Universal Humankind's universal patrimony. A further objective is also to raise awareness of the importance of the use of new technologies for the protection and monitoring of cultural heritage, as well as the possible active involvement of citizens in its preservation.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "1.2300886737648398E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_FA3AC69DD4264AC96EEDC6F8FC606D86/443/1157",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Recovering the Humankind Past and Saving the Universal Heritage | Coursera : Recovering the Humankind Past and Saving the Universal Heritage : FAQ",
+            "metadataMap": {
+                "DOCNO": "FA3AC69DD4264AC96EEDC6F8FC606D86",
+                "originalfile": "Recovering the Humankind Past and Saving the Universal Heritage   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33899427",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899427.xml",
+                "title": "Recovering the Humankind Past and Saving the Universal Heritage | Coursera : Recovering the Humankind Past and Saving the Universal Heritage : FAQ",
+                "description": "Recovering the Humankind Past and Saving the Universal Heritage is a free online class taught by Paolo Matthiae, Davide Nadali, Andrea Vitaletti and Emanuel Demetrescu of Sapienza University of Rome",
+                "abstract": "Recovering the Humankind Past and Saving the Universal Heritage is a free online class taught by Paolo Matthiae, Davide Nadali, Andrea Vitaletti and Emanuel Demetrescu of Sapienza University of Rome"
+            },
+            "id": "PB_FA3AC69DD4264AC96EEDC6F8FC606D86"
+        }, {
+            "text": "In typical computer science curriculums, a course like this one is taken by first- and second-year students and a course like that one is taken by juniors and seniors. I'd like to take Algorithms, Part II, but missed Part I. What should I do? It depends on your background. If you have absolutely no familiarity with basic data types and classic sorting and searching algorithms, you probably need to wait for the next offering of Part I. If you have some familiarity with the basics, you may be able to get up to speed by studying our book and our booksite. I am/was not a computer science major.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "1.0871262202272192E-4",
+            "document": "/instance/504/deepqa/v1/question/document/PB_3CB1759EE39A9399167933168256E9EA/1846/2443",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Algorithms, Part II | Coursera : Algorithms, Part II : FAQ",
+            "metadataMap": {
+                "DOCNO": "3CB1759EE39A9399167933168256E9EA",
+                "originalfile": "Algorithms, Part II   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33901143",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33901143.xml",
+                "title": "Algorithms, Part II | Coursera : Algorithms, Part II : FAQ",
+                "description": "Algorithms, Part II is a free online class taught by Kevin Wayne and Robert Sedgewick of Princeton University",
+                "abstract": "Algorithms, Part II is a free online class taught by Kevin Wayne and Robert Sedgewick of Princeton University"
+            },
+            "id": "PB_3CB1759EE39A9399167933168256E9EA"
+        }, {
+            "text": "Should I enroll in Medical Neuroscience or Foundational Neuroscience for Perception and Action? if you are currently enrolled in a health professions curriculum or are preparing to do so having satisfied the usual prerequisites, then you should take Medical Neuroscience. This course is designed to provide you with the foundational knowledge you will need in basic neuroscience and clinical neuroanatomy for success in the health professions. Moreover, it is longer, more comprehensive, and more consistent with the rigors of medical education than the shorter course derived from this content, Foundational Neuroscience for Perception and Action.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "9.498527651885524E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_AFE368D88F725497B7B471EC5B435D/1411/2059",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Medical Neuroscience | Coursera : Medical Neuroscience : FAQ",
+            "metadataMap": {
+                "DOCNO": "AFE368D88F725497B7B471EC5B435D",
+                "originalfile": "Medical Neuroscience   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33899648",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899648.xml",
+                "title": "Medical Neuroscience | Coursera : Medical Neuroscience : FAQ",
+                "description": "Medical Neuroscience is a free online class taught by Leonard E. White of Duke University",
+                "abstract": "Medical Neuroscience is a free online class taught by Leonard E. White of Duke University"
+            },
+            "id": "PB_AFE368D88F725497B7B471EC5B435D"
+        }, {
+            "text": "While all of the web spaces we recommend will be free to use, most will require registration with a valid email address. What are the learning outcomes of this course and why should I take it? There are no formal learning outcomes for this course. However we invite participants to determine useful aims and objectives for their own involvement. These might include becoming aware of how popular culture can help us think about current movements in educational digital technology.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "8.967657049652189E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_CCC2B7AC10D63EF733BE96132626A855/1533/2013",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "E-learning and Digital Cultures | Coursera : E-learning and Digital Cultures : FAQ",
+            "metadataMap": {
+                "DOCNO": "CCC2B7AC10D63EF733BE96132626A855",
+                "originalfile": "E-learning and Digital Cultures   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33900619",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900619.xml",
+                "title": "E-learning and Digital Cultures | Coursera : E-learning and Digital Cultures : FAQ",
+                "description": "E-learning and Digital Cultures is a free online class taught by Sian Bayne, Jeremy Knox, Hamish A. Macleod, Jen Ross and Christine  Sinclair of The University of Edinburgh",
+                "abstract": "E-learning and Digital Cultures is a free online class taught by Sian Bayne, Jeremy Knox, Hamish A. Macleod, Jen Ross and Christine  Sinclair of The University of Edinburgh"
+            },
+            "id": "PB_CCC2B7AC10D63EF733BE96132626A855"
+        }, {
+            "text": "What resources will I need for this class? All the material will be provided via course site. You do not have to purchase any textbook in this course. Who should take this course? Anyone who has curiosity about operations management and supply chain management is proper audience of this class. It might include students in any background, and employees at companies.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "7.762479071971029E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_42A7EC5D1AB77701A8CC06D542D398DC/439/806",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Supply Chain Management: A Learning Perspective | Coursera : Supply Chain Management: A Learning Perspective : FAQ",
+            "metadataMap": {
+                "DOCNO": "42A7EC5D1AB77701A8CC06D542D398DC",
+                "originalfile": "Supply Chain Management  A Learning Perspective   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33899268",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899268.xml",
+                "title": "Supply Chain Management: A Learning Perspective | Coursera : Supply Chain Management: A Learning Perspective : FAQ",
+                "description": "Supply Chain Management: A Learning Perspective  is a free online class taught by Bowon Kim of Korea Advanced Institute of Science and Technology",
+                "abstract": "Supply Chain Management: A Learning Perspective  is a free online class taught by Bowon Kim of Korea Advanced Institute of Science and Technology"
+            },
+            "id": "PB_42A7EC5D1AB77701A8CC06D542D398DC"
+        }, {
+            "text": "Plus, it's a ton of work if you end up being the person on your team doing the lion's share of the coding. Hopefully Professor Riesbeck finds a way to balance the workload, because that aspect of the class seems really unfair./This was an excellent course! I recommend taking it, but you have to be pretty good at coding already and being able to learn new technologies quickly./Riesbeck is an AMAZING teacher. 2, 5-week long projects that are somehow both fun and time consuming.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "7.414710853481665E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_F7758E554E19210DAB362BE2C4E787A1/1175/1655",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Software Project Management and Development",
+            "metadataMap": {
+                "DOCNO": "F7758E554E19210DAB362BE2C4E787A1",
+                "originalfile": "holmes_testWatson_5.html",
+                "corpusName": "PB",
+                "deepqaid": "33945390",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33945390.xml",
+                "title": "Software Project Management and Development"
+            },
+            "id": "PB_F7758E554E19210DAB362BE2C4E787A1"
+        }, {
+            "text": "And in doing so, building a business can also create value for employees, customers, and society. Building a business requires the right strategic focus, a compelling constantly improved customer value proposition, and the right leadership that can create a high engagement high performance environment with the right team. What is the coolest thing I'll learn if I take this Course? This course is really a practical course on leadership: learning how to engage others in pursuits they find meaningful in such a way that consistent high performance and excellence becomes the norm. No matter what you do in life, you will be dependent on other people, and this Course should be useful in both your personal and work life.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "6.6106476879213E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_B34E3938F5190E56558499223CB9960F/1298/2020",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Grow to Greatness: Smart Growth for Private Businesses, Part II | Coursera : Grow to Greatness: Smart Growth for Private Businesses, Part II : FAQ",
+            "metadataMap": {
+                "DOCNO": "B34E3938F5190E56558499223CB9960F",
+                "originalfile": "Grow to Greatness  Smart Growth for Private Businesses, Part II   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33900419",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900419.xml",
+                "title": "Grow to Greatness: Smart Growth for Private Businesses, Part II | Coursera : Grow to Greatness: Smart Growth for Private Businesses, Part II : FAQ",
+                "description": "Grow to Greatness: Smart Growth for Private Businesses, Part II is a free online class taught by Edward D. Hess of University of Virginia",
+                "abstract": "Grow to Greatness: Smart Growth for Private Businesses, Part II is a free online class taught by Edward D. Hess of University of Virginia"
+            },
+            "id": "PB_B34E3938F5190E56558499223CB9960F"
+        }, {
+            "text": "Coursera : Game Theory II: Advanced Applications .               This advanced course considers how to design interactions between agents in order to achieve good social outcomes. Three main topics are covered: social choice theory (i.e., collective decision making), mechanism design, and auctions. Loaded: 0%.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "6.301402027020231E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_92AB77C9E079BD61D19F0E8887D46BB0/131/443",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications",
+            "metadataMap": {
+                "DOCNO": "92AB77C9E079BD61D19F0E8887D46BB0",
+                "originalfile": "Game Theory II  Advanced Applications   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33900276",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900276.xml",
+                "title": "Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications",
+                "description": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia",
+                "abstract": "Game Theory II: Advanced Applications is a free online class taught by Matthew O. Jackson, Kevin Leyton-Brown and Yoav Shoham of Stanford University and The University of British Columbia"
+            },
+            "id": "PB_92AB77C9E079BD61D19F0E8887D46BB0"
+        }, {
+            "text": "Such learning methods are called reinforcement learning algorithms.reinforcement learning A good example is game playing where a single move by itself is not that important; it is the sequence of right moves that is good. A move is good if it is part of a good game playing policy. Game playing is an important research area in both artificial intelligence and machine learning. This is because games are easy to describe and at the same time, they are quite difficult to play well.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "6.237933121155947E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_3672C44513D7BAD6A55F40384D3DE331/27287/27769",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Alppaydin Machine Learning 2010 : Introduction to Machine Learning Second Edition : 1 : Introduction",
+            "metadataMap": {
+                "DOCNO": "3672C44513D7BAD6A55F40384D3DE331",
+                "originalfile": "Alppaydin_MachineLearning_2010.pdf",
+                "corpusName": "PB",
+                "deepqaid": "34046849",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34046849.xml",
+                "title": "Alppaydin Machine Learning 2010 : Introduction to Machine Learning Second Edition : 1 : Introduction"
+            },
+            "id": "PB_3672C44513D7BAD6A55F40384D3DE331"
+        }, {
+            "text": "For this course, all you need is an Internet connection, a willingness to seek out the music, and the time to view the lectures, listen to the music, and discuss the Beatles in the online forum. I have never studied music before. Can I still take this course? Yes, absolutely. While there will be musical details discussed, much of the information provided in this course is meant for the general student. Lack of musical training should not impact your ability to perform well on the quizzes.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "5.6816963478922844E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_BC287CA1039B3EB3F2D90396F058FE0B/408/901",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "The Music of the Beatles | Coursera : The Music of the Beatles : FAQ",
+            "metadataMap": {
+                "DOCNO": "BC287CA1039B3EB3F2D90396F058FE0B",
+                "originalfile": "The Music of the Beatles   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33899007",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899007.xml",
+                "title": "The Music of the Beatles | Coursera : The Music of the Beatles : FAQ",
+                "description": "The Music of the Beatles is a free online class taught by John Covach of University of Rochester",
+                "abstract": "The Music of the Beatles is a free online class taught by John Covach of University of Rochester"
+            },
+            "id": "PB_BC287CA1039B3EB3F2D90396F058FE0B"
+        }, {
+            "text": "For this course, all you need is an Internet connection, a willingness to seek out the music, and the time to view the lectures, listen to the music, and discuss the Rolling Stones in the online forum. I have never studied music before. Can I still take this course? Yes, absolutely. While there will be musical details discussed, much of the information provided in this course is meant for the general student. Lack of musical training should not impact your ability to perform well on the quizzes.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "5.5704098485875875E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_8E0A49E7EC950FDC57FC3F86A2F03E08/444/944",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "The Music of the Rolling Stones, 1962-1974 | Coursera : The Music of the Rolling Stones, 1962-1974 : FAQ",
+            "metadataMap": {
+                "DOCNO": "8E0A49E7EC950FDC57FC3F86A2F03E08",
+                "originalfile": "The Music of the Rolling Stones, 1962-1974   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33899052",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33899052.xml",
+                "title": "The Music of the Rolling Stones, 1962-1974 | Coursera : The Music of the Rolling Stones, 1962-1974 : FAQ",
+                "description": "The Music of the Rolling Stones, 1962-1974 is a free online class taught by John Covach of University of Rochester",
+                "abstract": "The Music of the Rolling Stones, 1962-1974 is a free online class taught by John Covach of University of Rochester"
+            },
+            "id": "PB_8E0A49E7EC950FDC57FC3F86A2F03E08"
+        }, {
+            "text": "Remember to take Downey's advice on assignments/the project very seriously - if he says it's going to take time, it will take a LOT of time./Machine Learning is a big topic, it's hard to introduce everything in a quarter. i would say, it's an interesting area, but not an interesting course./Good class. There was one very fun and challenging homework but other than that not a huge workload. The project was a good deal of fun and what you make of it.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "3.585409649531357E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_D4BA91D0ABC5D2713A6E13EE6EC7AE09/2791/3243",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Machine Learning",
+            "metadataMap": {
+                "DOCNO": "D4BA91D0ABC5D2713A6E13EE6EC7AE09",
+                "originalfile": "holmes_testWatson_10.html",
+                "corpusName": "PB",
+                "deepqaid": "33945397",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33945397.xml",
+                "title": "Machine Learning"
+            },
+            "id": "PB_D4BA91D0ABC5D2713A6E13EE6EC7AE09"
+        }, {
+            "text": "EECS 369-0 Introduction to Sensor Networks Basic hard ware and software platforms for sensor networks. Various algorithmic techniques for data routing, query processing, and tracking. Prerequisite: 343 or 340. EECS 370-0 Computer Game Design Plot, narrative, and character simulation for creating game worlds; artificial intelligence for synthetic characters; tuning gameplay. Sub stantial programming and project work.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "2.255164145026356E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_9F76C1E6AB83BDF03D9DE6BA227C1320/1136124/1136543",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "2014 15 Undergraduate Catalog holmes : Northwestern University Undergraduate Catalog 2014-15 : NORTHWESTERN",
+            "metadataMap": {
+                "DOCNO": "9F76C1E6AB83BDF03D9DE6BA227C1320",
+                "originalfile": "2014-15_Undergraduate_Catalog_holmes.pdf",
+                "corpusName": "PB",
+                "deepqaid": "34065731",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34065731.xml",
+                "title": "2014 15 Undergraduate Catalog holmes : Northwestern University Undergraduate Catalog 2014-15 : NORTHWESTERN",
+                "author": "Northwestern University"
+            },
+            "id": "PB_9F76C1E6AB83BDF03D9DE6BA227C1320"
+        }, {
+            "text": "fuckshitfuckshitEECS 370-0 Computer Game Design Plot, narrative, and character simulation for creating game worlds; artificial intelligence for synthetic characters; tuning gameplay. Substantial programming and project work.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "2.250720172014553E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_1F44F90D00B15B10EDEC56F6E18D10EB/117/342",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "testWatson",
+            "metadataMap": {
+                "DOCNO": "1F44F90D00B15B10EDEC56F6E18D10EB",
+                "originalfile": "testWatson.html",
+                "corpusName": "PB",
+                "deepqaid": "33903323",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33903323.xml",
+                "title": "testWatson"
+            },
+            "id": "PB_1F44F90D00B15B10EDEC56F6E18D10EB"
+        }, {
+            "text": "No. The Statement of Accomplishment is not part of a formal qualification from the University. However, it may be useful to demonstrate prior learning and interest in your subject to a higher education institution or potential employer. What resources will I need for this class? No resources needed. What are the learning outcomes of this course and why should I take it? You will learn about what is required to become a Veterinarian.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "1.617049565538764E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_8ACCA192C1E9BCF493903B90482CA3DE/484/920",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "EDIVET: Do you have what it takes to be a veterinarian? | Coursera : EDIVET: Do you have what it takes to be a veterinarian? : FAQ",
+            "metadataMap": {
+                "DOCNO": "8ACCA192C1E9BCF493903B90482CA3DE",
+                "originalfile": "EDIVET  Do you have what it takes to be a veterinarian    Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33900566",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33900566.xml",
+                "title": "EDIVET: Do you have what it takes to be a veterinarian? | Coursera : EDIVET: Do you have what it takes to be a veterinarian? : FAQ",
+                "description": "EDIVET: Do you have what it takes to be a veterinarian? is a free online class taught by Jessie Paterson, Kay Aitchison, Susan Rhind, Gurå Therese Bergkvist, Rachel Whittington, Catriona Bell and Andrew Gardiner of The University of Edinburgh",
+                "abstract": "EDIVET: Do you have what it takes to be a veterinarian? is a free online class taught by Jessie Paterson, Kay Aitchison, Susan Rhind, Gurå Therese Bergkvist, Rachel Whittington, Catriona Bell and Andrew Gardiner of The University of Edinburgh"
+            },
+            "id": "PB_8ACCA192C1E9BCF493903B90482CA3DE"
+        }, {
+            "text": "The modifications of remedies provided in this subsection shall not be available to any person who (A) practiced the patented process; (B) owns or controls, or is owned or controlled by, the person who practiced the patented process; or (C) had knowledge before the infringement that a patented process was used to make the product the importation, use, offer for sale, or sale of which constitutes the infringement. (2) No remedies for infringement under section 271(g) shall be available with respect to any product in the possession of, or in transit to, the person subject to liability under such section before that person had notice of infringement with respect to that product. The person subject to liability shall bear the burden of proving any such possession or transit. (3) (A) In making a determination with respect to the remedy in an action brought for infringement under section 271(g), the court shall consider(i) the good faith demonstrated by the defendant with respect to a request for disclosure; (ii) the good faith demonstrated by the plaintiff with respect to a request for disclosure, and (iii) the need to restore the exclusive rights secured by the patent. (B)",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "1.5559158782707527E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_823B2C35845DAB4A237569995B84EC44/48147/49334",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "consolidated laws cnsltg : MPEP - L : Appendix L Consolidated Patent Laws : PART III - PATENTS AND PROTECTION OF PATENT RIGHTS",
+            "metadataMap": {
+                "DOCNO": "823B2C35845DAB4A237569995B84EC44",
+                "originalfile": "consolidated_laws_cnsltg.pdf",
+                "corpusName": "PB",
+                "deepqaid": "33998455",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33998455.xml",
+                "title": "consolidated laws cnsltg : MPEP - L : Appendix L Consolidated Patent Laws : PART III - PATENTS AND PROTECTION OF PATENT RIGHTS",
+                "author": "United States Patent & Trademark Office"
+            },
+            "id": "PB_823B2C35845DAB4A237569995B84EC44"
+        }, {
+            "text": "3 D. Add-A-Dollar Programs, Utility Discounts, Waivers, Grants, and Pilot Programs Regulated utilities participate in leveraging additional energy assistance to low income families with the coordination and integration of Add-A-Dollar Programs, utility discounts, waivers, grants and pilot programs developed in cooperation with the Illinois LIHEAP. These initiatives are negotiated up front and ultimately expand the effect of LIHEAP to thousands of Illinois residents. E. Good Samaritan Energy Trust Fund Created by the Good Samaritan Energy Plan Act, Public Act 93-0285 provides for solicitation of voluntary contributions to the fund to be used for energy assistance in conjunction with, coordinated by, and administered by the Low Income Home Energy Assistance Program. These funds are used to provide energy assistance for LIHEAP eligible clients to enable them to pay gas or electric bill arrearages in order to have household gas or electric utility service connected.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "1.5280384104698896E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_362DC7B16A3BDCCC167922C462C7E967/2392/3368",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Blue Tape 2015 LIHEAP State Plan : Illinois : 2015 : STATE PLAN : II. 2015 PROGRAM DESIGN",
+            "metadataMap": {
+                "DOCNO": "362DC7B16A3BDCCC167922C462C7E967",
+                "originalfile": "Blue_Tape_2015 LIHEAP State Plan.pdf",
+                "corpusName": "PB",
+                "deepqaid": "34030545",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34030545.xml",
+                "title": "Blue Tape 2015 LIHEAP State Plan : Illinois : 2015 : STATE PLAN : II. 2015 PROGRAM DESIGN",
+                "author": "DPA"
+            },
+            "id": "PB_362DC7B16A3BDCCC167922C462C7E967"
+        }, {
+            "text": "Coursera : Algorithms, Part II : Related Courses : Algorithms: Design and Analysis, Part 1 .               Browse more courses. x.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "1.210632126458222E-5",
+            "document": "/instance/504/deepqa/v1/question/document/PB_3CB1759EE39A939998B21CB285FF8B69/113/3661",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Algorithms, Part II | Coursera : Algorithms, Part II : Related Courses : Algorithms: Design and Analysis, Part 1",
+            "metadataMap": {
+                "DOCNO": "3CB1759EE39A939998B21CB285FF8B69",
+                "originalfile": "Algorithms, Part II   Coursera.html",
+                "corpusName": "PB",
+                "deepqaid": "33901197",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33901197.xml",
+                "title": "Algorithms, Part II | Coursera : Algorithms, Part II : Related Courses : Algorithms: Design and Analysis, Part 1",
+                "description": "Algorithms, Part II is a free online class taught by Kevin Wayne and Robert Sedgewick of Princeton University",
+                "abstract": "Algorithms, Part II is a free online class taught by Kevin Wayne and Robert Sedgewick of Princeton University"
+            },
+            "id": "PB_3CB1759EE39A939998B21CB285FF8B69"
+        }, {
+            "text": "After the cost of the facility, the next largest start-up expense is equipment. Commercial food service dealers can help select the necessary equipment, for the type of restaurant chosen. It is wise to research the available options and take the necessary time to obtain competitive quotes. The potential cost savings of automatic or energy efficient and self-cleaning units should be considered.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "7.5079033194924705E-6",
+            "document": "/instance/504/deepqa/v1/question/document/PB_7075DB2CFC523B5E5F66E71799BC63C4/2150/2546",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Blue Tape Restaurant Profile : 1inside cover : Restaurant Start-Up Profile : Facility Design",
+            "metadataMap": {
+                "DOCNO": "7075DB2CFC523B5E5F66E71799BC63C4",
+                "originalfile": "Blue_Tape_RestaurantProfile.pdf",
+                "corpusName": "PB",
+                "deepqaid": "34020013",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34020013.xml",
+                "title": "Blue Tape Restaurant Profile : 1inside cover : Restaurant Start-Up Profile : Facility Design",
+                "author": "Baird"
+            },
+            "id": "PB_7075DB2CFC523B5E5F66E71799BC63C4"
+        }, {
+            "text": "If on examination it is determined that an applicant is entitled to a design patent under the law, a notice of allowance will be sent to the applicant or applicant's attorney, or agent, calling for the payment of an issue fee. The drawing of the design patent conforms to the same rules as other drawings, but no reference characters are allowed and the drawing should clearly depict the appearance, since the drawing defines the scope of patent protection. The specification of a design application is short and ordinarily follows a set form. Only one claim is permitted, following a set form that refers to the drawing(s).",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "6.876015504531097E-6",
+            "document": "/instance/504/deepqa/v1/question/document/PB_86762481A57C9F29016908476A39B8/785/1409",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "General Information Concerning Patents : General Information Concerning Patents : Design Patents",
+            "metadataMap": {
+                "DOCNO": "86762481A57C9F29016908476A39B8",
+                "originalfile": "General Information Concerning Patents_cnsltg.html",
+                "corpusName": "PB",
+                "deepqaid": "33946989",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33946989.xml",
+                "title": "General Information Concerning Patents : General Information Concerning Patents : Design Patents"
+            },
+            "id": "PB_86762481A57C9F29016908476A39B8"
+        }, {
+            "text": "The FinePix 2600 Zoom also offers digital zoom enlarging up to 2.55 (in 640 480 pixel mode). Combined with the 35 optical zoom, this gives a total magnification effect of 7.55 , making it easier to take the shots you want with the detail you need. Easy to Use The FinePix 2600 Zoom comes with two AA Ni-MH batteries, a battery charger and a 16MB SmartMedia((TM)) card so you can start taking pictures right away. This camera makes it easy to take great-looking pictures simply by pressing the shutter button.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "6.735438091709511E-6",
+            "document": "/instance/504/deepqa/v1/question/document/PB_F7CE36F8EB6F833D84E6A2DCCC20DA0D/1179/1687",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Fine Pix 2600 Fujifilm Digital Camera Manual 2600 Auto Manual : FP2600ZoomL/O-2 : t Hot Performance with a Cool Easy-to-Use Design!",
+            "metadataMap": {
+                "DOCNO": "F7CE36F8EB6F833D84E6A2DCCC20DA0D",
+                "originalfile": "FinePix 2600 - Fujifilm Digital Camera Manual 2600_AutoManual.pdf",
+                "corpusName": "PB",
+                "deepqaid": "33965583",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/33965583.xml",
+                "title": "Fine Pix 2600 Fujifilm Digital Camera Manual 2600 Auto Manual : FP2600ZoomL/O-2 : t Hot Performance with a Cool Easy-to-Use Design!",
+                "author": "KINOSHITA"
+            },
+            "id": "PB_F7CE36F8EB6F833D84E6A2DCCC20DA0D"
+        }, {
+            "text": "Under the Patent Cooperation Treaty (PCT), a national patent office of or acting for a State designated by the applicant under Chapter I of the PCT. See also \"Chapter I\" above.",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "4.287003321223892E-6",
+            "document": "/instance/504/deepqa/v1/question/document/PB_855C0365736D47B12D22CDC8C31E71B1/226/4703",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Glossary of patent law terms - Wikipedia, the free encyclopedia : Glossary of patent law terms : D : Designated office",
+            "metadataMap": {
+                "DOCNO": "855C0365736D47B12D22CDC8C31E71B1",
+                "originalfile": "CNSLTG_wikipedia_glossary_of_patent_law_terms.html",
+                "corpusName": "PB",
+                "deepqaid": "34008843",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34008843.xml",
+                "title": "Glossary of patent law terms - Wikipedia, the free encyclopedia : Glossary of patent law terms : D : Designated office"
+            },
+            "id": "PB_855C0365736D47B12D22CDC8C31E71B1"
+        }, {
+            "text": "With F factors at L levels each, searching one factor at a time takes O(L F) time, whereas a factorial experiment takes O(LF) time. 19.3 Response Surface Design To decrease the number of runs necessary, one possibility is to run a fractional factorial design where we run only a subset, another is to try to use knowledge gathered from previous runs to estimate configurations that seem likely to have high response. In searching one factor at a time, if we can assume that the response is typically quadratic (with a single maximum, assuming we are maximizing a response value, such as the test accuracy), then instead of trying all values, we can have an iterative procedure where starting from some initial runs, we fit a quadratic, find its maximum analytically, take that as the next estimate, run an experiment there, add the resulting data to the sample, and then continue fitting and sampling, until we get no further",
+            "copyright": "No copyright specified for this supporting passage or document.",
+            "value": "2.8792801458621398E-6",
+            "document": "/instance/504/deepqa/v1/question/document/PB_3672C44513D7BAD6DE4BE5F581E65FF7/12889/13814",
+            "termsOfUse": "No license specified for this supporting passage or document.",
+            "title": "Alppaydin Machine Learning 2010 : Introduction to Machine Learning Second Edition : 19 : Design and Analysis of MachineLearning Experiments",
+            "metadataMap": {
+                "DOCNO": "3672C44513D7BAD6DE4BE5F581E65FF7",
+                "originalfile": "Alppaydin_MachineLearning_2010.pdf",
+                "corpusName": "PB",
+                "deepqaid": "34046905",
+                "fileName": "/watsondata/ingestion/201411062029/eng/di/output/trec/intermediate/xml-splitTrecTrim/34046905.xml",
+                "title": "Alppaydin Machine Learning 2010 : Introduction to Machine Learning Second Edition : 19 : Design and Analysis of MachineLearning Experiments"
+            },
+            "id": "PB_3672C44513D7BAD6DE4BE5F581E65FF7"
+        }],
+        "category": "",
+        "questionText": "What course should I take to be a good game designer?",
+        "pipelineid": "639867357",
+        "qclasslist": [{
+            "value": "FACTOID"
+        }, {
+            "value": "DESCRIPTIVE"
+        }],
+        "items": 5,
+        "passthru": "",
+        "id": "9FB074ADFF66412B9CC6D57AD585B4BE",
+        "formattedAnswer": false,
+        "answers": [{
+            "pipeline": "Descriptive,TAO",
+            "confidence": 0.00894,
+            "id": 0,
+            "text": "40DB9410169DFF8BD888B447F0527C - Computer Game Design"
+        }, {
+            "pipeline": "TAO",
+            "confidence": 0.00452,
+            "id": 1,
+            "text": "3176CF162764BE9B4CBA2DA05EC0CF0C - parenting UDHPreschool : Helping : Babies : Birth to 1 Year Old What to Expect : Play games. Babies first play with their own hands. Later they show an interest in toys, enjoy \"putting in and taking out\" games and eventually carry around or hug dolls or stuffed toys."
+        }, {
+            "pipeline": "TAO",
+            "confidence": 0.00359,
+            "id": 2,
+            "text": "92AB77C9E079BD619B478E74D452212 - Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : General Game Playing"
+        }, {
+            "pipeline": "TAO",
+            "confidence": 0.00349,
+            "id": 3,
+            "text": "92AB77C9E079BD6111A233BAE970EE94 - Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : Congratulations!"
+        }, {
+            "pipeline": "TAO",
+            "confidence": 0.00313,
+            "id": 4,
+            "text": "92AB77C9E079BD61FD5B9876D8088A82 - Game Theory II: Advanced Applications | Coursera : Game Theory II: Advanced Applications : Related Courses : Thanks for watching!"
+        }],
+        "status": "Complete"
+    },
+    "success": true,
+    "history": "Which classes involve artificial intelligence?##Who teaches artificial intelligence?##What course should I take to be a good game designer?##What course should I take to be a good game designer?"
+};

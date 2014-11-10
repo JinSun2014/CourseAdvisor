@@ -61,13 +61,15 @@ html {
 			}
 		}
 		div.drawer {
-			position: relative;
+			position: fixed;
 			float: left;
 			width: $drawer-width;
+			overflow-y: scroll;
 			background-color: $drawer-background-color;
 			border-right: 1px solid #444;
 			box-shadow: 1px 0 1px #666;
 			overflow: hidden;
+			opacity: 0.9;
 
 			h1.banner {
 				padding: 20px 10px 10px 10px;
@@ -83,13 +85,13 @@ html {
 					font-size: 19px;
 				}
 			}
-			nav {
+			nav.drawer-menu {
 				margin-top: 60px;
 
 				h4.control-center-title {
 					margin-bottom: 9px;
 					padding-left: 10px;
-					width: 250px;
+					width: $drawer-width;
 					color: #888;;
 					font-family: "Slim-Joe";
 					font-size: 14px;
@@ -121,10 +123,58 @@ html {
 					}
 				}
 			}
+			div.past-questions {
+				position: absolute;
+				bottom: 0;
+				padding: 10px 0 0 0;
+				background-color: #333;
+
+				> span {
+					display: block;
+					padding: 10px;
+					width: calc(#{$drawer-width} - 20px);
+					font-family: "slim-joe";
+					font-size: 13px;
+					color: $drawer-background-color;
+					border-bottom: 1px solid #666;
+
+					i {
+						margin-right: 10px;
+					}
+				}
+				ul {
+					list-style: none;
+					height: 192px;
+					overflow-y: scroll;
+
+					li {
+						padding: 10px 10px 10px 10px;
+						width: calc(#{$drawer-width} - 20px);
+						font-size: 12px;
+						color: #aaa;
+						cursor: pointer;
+					}
+					li:nth-child(2n) {
+						background-color: #444;
+					}
+					li:hover {
+						background-color: #555;
+					}
+				}
+				ul::-webkit-scrollbar {
+					width: 0px;
+				}
+			}
+			div.past-questions.closed {
+
+				ul {
+					display: none;
+				}
+			}
 			button {
 				position: absolute;
 				right: 0px;
-				bottom: 30px;
+				bottom: 50%;
 				width: 25px;
 				height: 30px;
 				background-color: #444;
@@ -142,10 +192,19 @@ html {
 					cursor: pointer;
 				}
 			}
+			@media(min-width: 800px) {
+				position: relative;
+			}
+		}
+		div.drawer::-webkit-scrollbar {
+					width: 0px;
+				}
+		div.drawer.open {
+			opacity: 1.0;
 		}
 		main {
 			float: right;
-			width: calc(100% - #{$drawer-width} - 1px);
+			width: calc(100% - 27px);
 			background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2);
 			background: -o-linear-gradient($main-background-color-1, $main-background-color-2);
 			background: -moz-linear-gradient($main-background-color-1, $main-background-color-2);
@@ -192,7 +251,7 @@ html {
 							display: inline-block;
 							margin: 10px 0;
 							font-family: "slim-joe";
-							font-size: 15px;
+							font-size: 13px;
 							font-weight: normal;
 							color: #fff;
 
@@ -274,7 +333,7 @@ html {
 							div.result-middle {
 								float: left;
 								padding: 25px 15px;
-								width: calc(100% - 80px - 190px - 40px);
+								width: calc(100% - 80px - 30px);
 
 								h3.result-class-title {
 									color: #555;
@@ -282,16 +341,20 @@ html {
 								h5.result-class-professor {
 									color: #516395;
 								}
+								@media(min-width: 500px) {
+									width: calc(100% - 80px - 190px - 40px);
+								}
 							}
 							div.result-right {
 								float: right;
 								padding: 29px 0 28px;
-								width: 190px;
+								width: 100%;
 								text-align: center;
+								border-top: 1px solid #bbb;
 
 								span {
 									display: inline-block;
-									line-height: 30px;
+									line-height: 28px;
 									vertical-align: top;
 									font-size: 12px;
 									font-family: 'Slim-Joe';
@@ -299,36 +362,36 @@ html {
 								}
 								i {
 									display: inline-block;
+									margin-left: 5px;
 									font-size: 25px;
 									color: #777;
+								}
+								@media(min-width: 500px) {
+									width: 190px;
+									border-top: none;
 								}
 							}
 							div.result-expand {
 								display: none;
 								float: right;
-								padding: 15px 30px 15px 0;
-								width: calc(100% - 30px);
 								text-align: right;
 								background-color: #fafafa;
 								border-top: 1px solid #bbb;
 
 								h4 {
-									float: left;
 									padding: 10px 0;
-									width: 28%;
+									width: 100%;
 									font-family: "Slim-Joe";
-									font-size: 19px;
+									font-size: 15px;
 									color: #444;
 									text-align: center;
 
 									span {
-										font-size: 26px;
+										font-size: 22px;
 									}
 								}
-
 								ul.relevant-text {
-									float: right;
-									width: 70%;
+									padding: 0 10px 10px 10px;
 									font-size: 12px;
 									color: #777;
 									list-style: square;
@@ -336,9 +399,33 @@ html {
 									li {
 										margin-bottom: 2px;
 										line-height: 20px;
+										text-align: center;
 
 										b {
 											color: #444;
+										}
+									}
+								}
+								@media(min-width: 650px) {
+									padding: 15px 30px 15px 0;
+									width: calc(100% - 30px);
+
+									h4 {
+										float: left;
+										width: 28%;
+										font-size: 19px;
+
+										span {
+											font-size: 26px;
+										}
+									}
+									ul.relevant-text {
+										float: right;
+										padding: 0;
+										width: 70%;
+
+										li {
+											text-align: right;
 										}
 									}
 								}
@@ -349,6 +436,9 @@ html {
 						}
 					}
 				}
+			}
+			@media(min-width: 800px) {
+				width: calc(100% - #{$drawer-width} - 1px);
 			}
 		}
 	}
