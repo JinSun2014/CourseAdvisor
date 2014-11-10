@@ -37,9 +37,37 @@ $(document).ready(function() {
 		  	$( "section.query input" ).html( data );
 		});
 	}
+	var removeResults = function() {
+		$('ul.results-list').slideUp();
+		$('ul.results-list > li').remove();
+		$('h5.results-summary').css('opacity', 0);
+	};
 	var query = function() {
-		var question  = $('section.query input.question').val();
-		processSampleResponse(question);
+		// Make sure on input change event handler is effective
+		$('input.question').blur();
+
+		// Promise to query after cleanup
+		var promise = new Promise(function(resolve, reject) {
+
+			removeResults();
+
+			if ($('ul.results-list > li').length == 0) {
+				resolve("Stuff worked!");
+			}
+			else {
+				reject(Error("Fuck"));
+			}
+		});
+
+		// Follow through with promise
+		promise.then(function(result) {
+			console.log(result);
+			var question  = $('section.query input.question').val();
+			processSampleResponse(question);
+
+		}, function(err) {
+			console.log(err);
+		});
 	};
 	var processResponse = function() {
 		// var question = "elephant";
@@ -178,11 +206,11 @@ $(document).ready(function() {
 
 		// Set time results took to load
 		var end = new Date();
-		var t = end - start;
-		$('span.results-time').html('(' + t + ' ms)');
+		var t = (end - start) / 1000;
+		$('span.results-time').html('(' + t + ' seconds)');
 
-		$('h5.results-summary').fadeTo(500, 1.0);
-
+		$('h5.results-summary').fadeTo(300, 1.0);
+		return;
 	};
 	var processSampleResponse = function(q) {
 		// What course should I take to be a good game designer?
@@ -222,6 +250,7 @@ $(document).ready(function() {
 
 		$('ul.results-list').slideDown();
 		setResultsSummary(start);
+		return;
 	};
 
 
@@ -251,6 +280,7 @@ $(document).ready(function() {
 		toggleDrawer();
 	});
 	$(document).on('click', 'div.result-right', function() {
+
 		toggleReasoning($(this));
 	});
 
