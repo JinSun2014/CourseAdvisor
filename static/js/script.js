@@ -18,6 +18,7 @@ $(document).ready(function() {
 	};
 
 
+
 	/*
 	 * Functions
 	 */
@@ -38,7 +39,7 @@ $(document).ready(function() {
 		});
 	}
 	var removeResults = function() {
-		$('ul.results-list').slideUp();
+		$('ul.results-list').slideUp(220);
 		$('ul.results-list > li').remove();
 		$('h5.results-summary').css('opacity', 0);
 	};
@@ -248,7 +249,7 @@ $(document).ready(function() {
 			}
 		}
 
-		$('ul.results-list').slideDown();
+		$('ul.results-list').slideDown(350);
 		setResultsSummary(start);
 		return;
 	};
@@ -260,7 +261,6 @@ $(document).ready(function() {
 	 */
 
 	setHeights();
-
 
 
 

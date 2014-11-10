@@ -28,16 +28,26 @@
 
 		<div class="drawer open">
 			<h1 class="banner"><span>Professor</span> <span>Holmes</span></h1>
-			<nav>
+			<nav class="drawer-menu">
 				<h4 class="control-center-title">Control Center</h4>
 				<ul>
 					<li><i class="fa fa-user"></i><span>Profile</span></li>
 					<li><i class="fa fa-calendar"></i><span>Schedule</span></li>
-					<li><i class="fa fa-list"></i><span>Past Questions</span></li>
-					<li><i class="fa fa-area-chart"></i><span>Common Questions</span></li>
+					<!-- <li><i class="fa fa-list"></i><span>Past Questions</span></li> -->
+					<!-- <li><i class="fa fa-area-chart"></i><span>Common Questions</span></li> -->
 					<li><i class="fa fa-sign-out"></i><span>Log Out</span></li>
 				</ul>
 			</nav>
+			<div class="past-questions">
+				<span><i class="fa fa-list"></i>Past Questions</span>
+				<ul class="past-questions">
+					<li>Lorem ipsum dolor sit amet, te magna autem eripuit sed?</li>
+					<li>Tempor viderer recteque ut sit, vero falli mel cu?</li>
+					<li>Ea debitis blandit iracundia vel, meis philosophia?</li>
+					<li>Lorem ipsum dolor sit amet, te magna autem eripuit sed?</li>
+					<li>Tempor viderer recteque ut sit, vero falli mel cu?</li>
+				</ul>
+			</div>
 			<button class="drawer-toggle">
 				<i class="left fa fa-angle-double-left"></i>
 			</button>
@@ -57,33 +67,7 @@
 				</section>
 
 				<section class="results">
-					<ul class="results-list">
-
-						<!-- <li class="result">
-							<div class="result-left">
-								<ul>
-									<li class="result-confidence"><i class="fa fa-check"></i><span>0.664</span></li>
-									<li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li>
-									<li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li>
-								</ul>
-							</div>
-							<div class="result-middle">
-								<h3 class="result-class-title">Machine Learning</h3>
-								<h5 class="result-class-professor">Bryan Pardo</h5>
-							</div>
-							<div class="result-right">
-								<span>See reasoning</span>
-								<i class="fa fa-angle-down"></i>
-							</div>
-							<div class="result-expand closed">
-								<h4>What<br><span>Watson</span><br>Found</h4>
-								<ul class="relevant-text">
-									<li>... science and statistics. It has strong ties to <b>artificial intelligence</b> and optimization, which deliver methods, theory and application domains to the field ...</li>
-									<li>... As a scientific endeavour, machine learning grew out of the quest for <b>artificial intelligence</b>. Already in the early days of <b>AI</b> as an academic discipline ...</li>
-								</ul>
-							</div>
-						</li> -->
-					</ul>
+					<ul class="results-list"></ul>
 				</section>
 			</div>
 		</main>
