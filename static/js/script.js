@@ -36,6 +36,7 @@ $(document).ready(function() {
 			$('button.drawer-toggle i').css('transform', 'rotate(180deg)');
 		}
 		else {
+			$('div.drawer').addClass('open');
 			var dfDrawer = 250;
 			$('div.drawer').width(dfDrawer);
 			$('button.drawer-toggle i').css('transform', 'rotate(0deg)');
@@ -98,6 +99,9 @@ $(document).ready(function() {
 		});
 	};
 	var processResponse = function(q) {
+		// Start processing time
+		var start = new Date();
+
 		var token     = $("input[name='csrfmiddlewaretoken']").val();
 		var query_url = window.location.pathname + 'query';
 
@@ -105,53 +109,46 @@ $(document).ready(function() {
 			'csrfmiddlewaretoken': token,
 			'question': q,
 		}, function(response){
-      if (response.success){
-        console.log(response);
-        // Start processing time
-        var start = new Date();
+      		if (response.success){
 
-        // Get array of words in question
-        var qWords = q.split(" ");
+		        // Get array of words in question
+		        var qWords = q.split(" ");
 
-        // For each class in response
-        var numClasses = response.question.evidencelist.length;
-        if (numClasses > 5){
-            numClasses = 5;
-        }
+		        // For each class in response up to 5 classes
+		        var numClasses = Math.min(response.question.evidencelist.length, 5);
+		        for(var i=0; i<numClasses; i++) {
 
-        for(var i=0; i<numClasses; i++) {
+		          	// If confidence significant enough
+		          	var confidence = parseConfidence(response.question.evidencelist[i].value);
+		          	if(confidence > 0.002) {
 
-          // If confidence significant enough
-          var confidence = parseConfidence(response.question.evidencelist[i].value);
-          if(confidence > 0.002) {
+		            	// Start making the list element
+		            	var element = '<li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>';
 
-            // Start making the list element
-            var element = '<li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>';
+		            	// Add confidence to list element
+		            	element += (confidence + '</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">');
 
-            // Add confidence to list element
-            element += (confidence + '</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">');
+		            	// Add class title to list element
+		            	var classTitle = parseTitle(response.question.evidencelist[i].title);
+		            	element += (classTitle + '</h3></div><div class="result-right"><span>See reasoning</span><i class="fa fa-angle-down"></i></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
 
-            // Add class title to list element
-            var classTitle = parseTitle(response.question.evidencelist[i].title);
-            element += (classTitle + '</h3></div><div class="result-right"><span>See reasoning</span><i class="fa fa-angle-down"></i></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
+		            	// Add reasoning to list element
+		            	var reasoning = parseReasoning(response.question.evidencelist[i].text, qWords);
+		            	element += ("<li>... " + reasoning + " ...</li></ul></div></li>");
 
-            // Add reasoning to list element
-            var reasoning = parseReasoning(response.question.evidencelist[i].text, qWords);
-            element += ("<li>... " + reasoning + " ...</li></ul></div></li>");
+		            	// Add list element to markup
+		            	$('ul.results-list').append(element);
+		          	}
+		        }
 
-            // Add list element to markup
-            $('ul.results-list').append(element);
-          }
-        }
-
-        $('ul.results-list').slideDown(350);
-        setResultsSummary(start);
-        updatePastQuestions(response.history);
-      }
-      else{
-        alert('Cannot recognize this question.');
-      }
-    });
+		        $('ul.results-list').slideDown(350);
+		        setResultsSummary(start);
+		        updatePastQuestions(response.history);
+		    }
+      		else {
+        		alert('Cannot recognize this question.');
+      		}
+    	});
 	};
 	var toggleDrawer = function() {
 		var t = 400;
@@ -402,6 +399,7 @@ $(document).ready(function() {
 		query();
 	});
 	$('div.past-questions').click(function() {
+
 		togglePastQuestions($(this));
 	});
 
