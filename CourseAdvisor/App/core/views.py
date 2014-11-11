@@ -35,6 +35,7 @@ class QueryView(JSONResponseMixin, View):
     def post(self, request, *args, **kwargs):
         question = request.POST.get('question')
         if cache.get(question, False):
+            print 'cached'
             return self.render_to_response(cache.get(question))
 
         headers = {'X-SyncTimeout': 30,
@@ -59,18 +60,7 @@ class QueryView(JSONResponseMixin, View):
             self.request.session['question_history'] = question
 
         print self.request.session['question_history']
-        response = simplejson.loads(r.text)
-        evidencelist = response['question']['evidencelist']
-        tmp = []
-        last = ''
-        for evidence in evidencelist:
-            if evidence['title'] != last:
-                tmp.append(evidence)
-            last = evidence['title']
-        evidencelist = tmp
-        context = {}
-        context['question'] = {}
-        context['question']['evidencelist'] = evidencelist
+        context = simplejson.loads(r.text)
         context['success'] = True
         context['history'] = self.request.session['question_history']
         cache.set(question, context)
