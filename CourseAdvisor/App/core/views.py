@@ -1,6 +1,7 @@
 import json
 import os
 from django import http
+from django.core.cache import cache
 from django.views.generic import TemplateView, View
 import requests
 import simplejson
@@ -33,6 +34,8 @@ class QueryView(JSONResponseMixin, View):
 
     def post(self, request, *args, **kwargs):
         question = request.POST.get('question')
+        if cache.get(question, False):
+            return self.render_to_response(cache.get(question))
 
         headers = {'X-SyncTimeout': 30,
                    'Authorization': 'Basic ' + os.environ['WASTON_KEY'],
@@ -70,4 +73,5 @@ class QueryView(JSONResponseMixin, View):
         context['question']['evidencelist'] = evidencelist
         context['success'] = True
         context['history'] = self.request.session['question_history']
+        cache.set(question, context)
         return self.render_to_response(context)
