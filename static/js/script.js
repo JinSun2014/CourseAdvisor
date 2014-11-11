@@ -36,6 +36,7 @@ $(document).ready(function() {
 			$('button.drawer-toggle i').css('transform', 'rotate(180deg)');
 		}
 		else {
+			$('div.drawer').addClass('open');
 			var dfDrawer = 250;
 			$('div.drawer').width(dfDrawer);
 			$('button.drawer-toggle i').css('transform', 'rotate(0deg)');
