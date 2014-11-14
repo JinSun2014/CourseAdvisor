@@ -29,6 +29,10 @@ class IndexView(TemplateView):
     template_name = 'index.html'
 
 
+class ScheduleView(TemplateView):
+    template_name = 'schedule.html'
+
+
 class QueryView(JSONResponseMixin, View):
     http_method_names = [u'post', ]
 
