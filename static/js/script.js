@@ -53,6 +53,9 @@ $(document).ready(function() {
 		if(page == "index") {
 			$('ul.results-list').height(wHeight - $('section.results').offset().top);
 		}
+		else if(page == "schedule") {
+
+		}
 
 		dHeight = $('div.drawer').height();
 		if (dHeight < 505) {
@@ -382,12 +385,16 @@ $(document).ready(function() {
 	 * Events
 	 */
 
+	var page = getPageName();
+
 	$(window).resize(function() {
 
-		setDimensions();
+		setDimensions(page);
 	}).resize();
+	$('button.drawer-toggle').click(function() {
 
-	var page = getPageName();
+		toggleDrawer();
+	});
 	switch(page) {
 		case "index":
 			$('input.question').on("keypress", function(e) {
@@ -414,9 +421,5 @@ $(document).ready(function() {
 		case "schedule":
 			break;
 	}
-	$('button.drawer-toggle').click(function() {
-
-		toggleDrawer();
-	});
 
 });
