@@ -5,7 +5,9 @@ def parseResponse(response):
         id = text[0].strip()
         header = text[1].split(' : ')
         h1 = header[0].strip()
-        h2 = header[1].strip()
+        h2 = ''
+        if len(header) > 1:
+            h2 = header[1].strip()
         reason = ''
         value = 0.0
         for evidence in response['question']['evidencelist']:
