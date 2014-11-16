@@ -7,6 +7,7 @@ import requests
 import simplejson
 
 from CourseAdvisor.settings import WASTON_URL
+from .utils import parseResponse
 
 
 class JSONResponseMixin(object):
@@ -27,6 +28,10 @@ class JSONResponseMixin(object):
 
 class IndexView(TemplateView):
     template_name = 'index.html'
+
+
+class ScheduleView(TemplateView):
+    template_name = 'schedule.html'
 
 
 class QueryView(JSONResponseMixin, View):
@@ -60,8 +65,10 @@ class QueryView(JSONResponseMixin, View):
             self.request.session['question_history'] = question
 
         print self.request.session['question_history']
-        context = simplejson.loads(r.text)
+        response = simplejson.loads(r.text)
+        context, result = parseResponse(response)
         context['success'] = True
         context['history'] = self.request.session['question_history']
+        context['result'] = result
         cache.set(question, context)
         return self.render_to_response(context)

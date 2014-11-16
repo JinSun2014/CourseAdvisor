@@ -24,7 +24,7 @@ $(document).ready(function() {
 	 * Functions
 	 */
 
-	var setDimensions = function() {
+	var setDimensions = function(page) {
 
 		/* Widths */
 		wWidth = $(window).width();
@@ -49,7 +49,13 @@ $(document).ready(function() {
 
 		$('div.drawer').height(vHeight);
 		$('main').height(vHeight);
-		$('ul.results-list').height(wHeight - $('section.results').offset().top);
+
+		if(page == "index") {
+			$('ul.results-list').height(wHeight - $('section.results').offset().top);
+		}
+		else if(page == "schedule") {
+
+		}
 
 		dHeight = $('div.drawer').height();
 		if (dHeight < 505) {
@@ -367,7 +373,11 @@ $(document).ready(function() {
 				$target.addClass('closed');
 			}
 		}
-	}
+	};
+	var getPageName = function() {
+
+		return $('main').attr('id');
+	};
 
 
 
@@ -375,32 +385,41 @@ $(document).ready(function() {
 	 * Events
 	 */
 
+	var page = getPageName();
+
 	$(window).resize(function() {
 
-		setDimensions();
+		setDimensions(page);
 	}).resize();
-	$('input.question').on("keypress", function(e) {
-		if (e.keyCode == 13) {
-            query();
-            return false;
-        }
-	});
 	$('button.drawer-toggle').click(function() {
 
 		toggleDrawer();
 	});
-	$(document).on('click', 'div.result-right', function() {
+	switch(page) {
+		case "index":
+			$('input.question').on("keypress", function(e) {
+				if (e.keyCode == 13) {
+		            query();
+		            return false;
+		        }
+			});
+			$(document).on('click', 'div.result-right', function() {
 
-		toggleReasoning($(this));
-	});
-	$(document).on('click', 'ul.past-questions > li', function() {
-		var q = $(this).html();
-		$('input.question').val(q);
-		query();
-	});
-	$('div.past-questions').click(function() {
+				toggleReasoning($(this));
+			});
+			$(document).on('click', 'ul.past-questions > li', function() {
+				var q = $(this).html();
+				$('input.question').val(q);
+				query();
+			});
+			$('div.past-questions').click(function() {
 
-		togglePastQuestions($(this));
-	});
+				togglePastQuestions($(this));
+			});
+			break;
+
+		case "schedule":
+			break;
+	}
 
 });
