@@ -166,15 +166,50 @@ html {
         html body main div.main-content section.query {
           margin-top: 60px;
           width: 100%; }
-          html body main div.main-content section.query form h2 {
-            margin-bottom: 10px;
+          html body main div.main-content section.query form h2.query-prompt {
+            margin-bottom: 15px;
             text-align: center;
             font-family: "slim-joe";
             font-size: 30px;
             color: #fff; }
+          html body main div.main-content section.query form div.cycling-questions {
+            display: inline;
+            font-family: "slim-joe";
+            font-size: 15px;
+            color: #fff;
+            white-space: pre;
+            overflow: hidden; }
+          html body main div.main-content section.query form .typed-cursor {
+            display: inline;
+            color: #fff;
+            opacity: 1;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite; }
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
           html body main div.main-content section.query form input {
             display: inline-block;
-            margin: 0 auto;
+            margin: 10px auto 0;
             padding: 0 10px;
             width: calc(100% - 20px - 80px);
             height: 45px;
@@ -190,6 +225,7 @@ html {
             opacity: 1.0; }
           html body main div.main-content section.query form button {
             display: inline-block;
+            margin-top: 10px;
             width: 80px;
             height: 45px;
             vertical-align: top;

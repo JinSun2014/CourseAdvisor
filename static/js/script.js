@@ -399,6 +399,14 @@ $(document).ready(function() {
 
 	switch(page) {
 		case "index":
+			$(function() {
+				$('div.cycling-questions').typed({
+					strings: ["What course should I take to be a good game developer?", "What's a good introductory level psychology course?"],
+					typeSpeed: 45,
+					backSpeed: 20,
+					backDelay: 1000
+				});
+			});
 			$('input.question').on("keypress", function(e) {
 				if (e.keyCode == 13) {
 		            query();
