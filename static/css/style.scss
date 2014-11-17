@@ -259,15 +259,23 @@ html {
 						}
 						div.cycling-questions {
 							display: inline;
+							padding: 5px 5px 2px 5px;
 							font-family: "slim-joe";
 							font-size: 15px;
-							color: #fff;
+							color: #ddd;
+							text-shadow: 0px 1px 1px #666;
 							white-space: pre;
+							background-color: rgba(0, 0, 0, 0);
+							border-radius: 3px;
 							overflow: hidden;
+							cursor: pointer;
+						}
+						div.cycling-questions:hover {
+							background-color: rgba(0, 0, 0, 0.1);
 						}
 						.typed-cursor{
 							display: inline;
-							color: #fff;
+							color: #ddd;
 						    opacity: 1;
 						    -webkit-animation: blink 0.7s infinite;
 						    -moz-animation: blink 0.7s infinite;

@@ -401,11 +401,18 @@ $(document).ready(function() {
 		case "index":
 			$(function() {
 				$('div.cycling-questions').typed({
-					strings: ["What course should I take to be a good game developer?", "What's a good introductory level psychology course?"],
-					typeSpeed: 45,
+					strings: ["What course should I take to be a good game developer?", "What's a good introductory level psychology course?", "Which courses does Bryan Pardo teach?", "Which history courses are being offered next quarter?"],
+					typeSpeed: 35,
 					backSpeed: 20,
-					backDelay: 1000
+					backDelay: 1300,
+					loop: true,
+					loopCount: false,
 				});
+			});
+			$('div.cycling-questions').click(function() {
+				var question = $(this).attr('name');
+				$('input.question').val(question);
+				query();
 			});
 			$('input.question').on("keypress", function(e) {
 				if (e.keyCode == 13) {

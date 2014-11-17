@@ -148,6 +148,7 @@
                     }
 
                     // timeout for any pause after a character
+                    self.el.attr('name', curString);
                     self.timeout = setTimeout(function() {
                         if(curStrPos === curString.length) {
                            // fires callback function

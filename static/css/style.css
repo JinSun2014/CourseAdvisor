@@ -176,14 +176,21 @@ html {
               color: #fff; }
             html body main div.main-content section.query form div.cycling-questions {
               display: inline;
+              padding: 5px 5px 2px 5px;
               font-family: "slim-joe";
               font-size: 15px;
-              color: #fff;
+              color: #ddd;
+              text-shadow: 0px 1px 1px #666;
               white-space: pre;
-              overflow: hidden; }
+              background-color: transparent;
+              border-radius: 3px;
+              overflow: hidden;
+              cursor: pointer; }
+            html body main div.main-content section.query form div.cycling-questions:hover {
+              background-color: rgba(0, 0, 0, 0.1); }
             html body main div.main-content section.query form .typed-cursor {
               display: inline;
-              color: #fff;
+              color: #ddd;
               opacity: 1;
               -webkit-animation: blink 0.7s infinite;
               -moz-animation: blink 0.7s infinite;
