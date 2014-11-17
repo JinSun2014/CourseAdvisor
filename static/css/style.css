@@ -191,11 +191,12 @@ html {
             font-family: "slim-joe";
             font-size: 16px;
             color: #fff;
+            line-height: 45px;
             background: -webkit-linear-gradient(#FA5A2E, #FA906E);
             background: -o-linear-gradient(#FA5A2E, #FA906E);
             background: -moz-linear-gradient(#FA5A2E, #FA906E);
             background: linear-gradient(#FA5A2E, #FA906E);
-            border: 1px solid #614385;
+            border: 2px solid #614385;
             border-style: none none none solid;
             border-radius: 0 3px 3px 0;
             cursor: pointer; }
@@ -349,5 +350,57 @@ html {
       @media (min-width: 800px) {
         html body main {
           width: calc(100% - 250px - 1px); } }
+    html body footer {
+      width: 100%;
+      height: 80px;
+      background: -webkit-linear-gradient(#c6c6c6, #fff);
+      background: -o-linear-gradient(#c6c6c6, #fff);
+      background: -moz-linear-gradient(#c6c6c6, #fff);
+      background: linear-gradient(#c6c6c6, #fff);
+      overflow: auto;
+      box-shadow: 0 -3px 1px #888; }
+      html body footer div.footer-inner {
+        margin: 0 auto;
+        padding: 5px 0;
+        width: 95%;
+        height: 70px;
+        color: #777;
+        overflow: auto; }
+        html body footer div.footer-inner div.footer-left {
+          float: left; }
+          html body footer div.footer-inner div.footer-left span {
+            display: inline-block;
+            font-family: "big-john";
+            font-size: 9px; }
+          html body footer div.footer-inner div.footer-left ul {
+            display: inline-block;
+            font-family: "slim-joe";
+            font-size: 9px;
+            list-style: none; }
+            html body footer div.footer-inner div.footer-left ul li {
+              margin-left: 8px;
+              display: inline-block; }
+        html body footer div.footer-inner div.footer-right {
+          float: left;
+          font-size: 10px; }
+          html body footer div.footer-inner div.footer-right span {
+            margin-right: 5px;
+            vertical-align: bottom;
+            font-family: "slim-joe";
+            font-size: 9px; }
+          html body footer div.footer-inner div.footer-right img.ibm-logo {
+            margin-bottom: 2px;
+            margin-right: 5px;
+            width: 37px; }
+          html body footer div.footer-inner div.footer-right img.watson-logo {
+            margin-bottom: 1px;
+            width: 17px; }
+      @media (min-width: 321px) {
+        html body footer {
+          height: 30px; }
+          html body footer div.footer-inner {
+            height: 20px; }
+            html body footer div.footer-inner div.footer-right {
+              float: right; } }
 
 /*# sourceMappingURL=style.css.map */

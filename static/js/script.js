@@ -43,9 +43,10 @@ $(document).ready(function() {
 		}
 
 		/* Heights */
-		wHeight = $(window).height();
-		hHeight = $('header').height();
-		vHeight = wHeight - hHeight;
+		wHeight = $(window).height(); // window
+		hHeight = $('header').height(); // header
+		fHeight = $('footer').height(); // footer
+		vHeight = wHeight - hHeight - fHeight; // view
 
 		$('div.drawer').height(vHeight);
 		$('main').height(vHeight);
@@ -405,7 +406,7 @@ $(document).ready(function() {
 		        }
 			});
 			$('input.question + button').click(function() {
-				
+
 				query();
 			});
 			$(document).on('click', 'div.result-right', function() {
