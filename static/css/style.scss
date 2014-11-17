@@ -6,6 +6,9 @@ $drawer-width: 250px;
 $main-background-color-1: #614385; 
 $main-background-color-2: #516395;
 
+$orange-background-color-1: #FA5A2E;
+$orange-background-color-2: #FA906E;
+
 $result-background-color: #eee;
 
 $schedule-background-color: #eee;
@@ -186,7 +189,10 @@ html {
 				bottom: 50%;
 				width: 25px;
 				height: 30px;
-				background-color: #FA8A6C;
+				background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
+				background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
+				background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
+				background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 				border: none;
 				border-radius: 3px 0 0 3px;
 				outline: none;
@@ -237,15 +243,15 @@ html {
 							color: #fff;
 						}
 						input {
-							display: block;
+							display: inline-block;
 							margin: 0 auto;
 							padding: 0 10px;
-							width: calc(100% - 20px);
+							width: calc(100% - 20px - 80px);
 							height: 45px;
 							font-size: 16px;
 							color: #444;
 							border: none;
-							border-radius: 3px;
+							border-radius: 3px 0 0 3px;
 							outline: none;
 							cursor: pointer;
 						}
@@ -254,6 +260,26 @@ html {
 						}
 						input:focus {
 							opacity: 1.0;
+						}
+						button {
+							display: inline-block;
+							width: 80px;
+							height: 45px;
+							vertical-align: top;
+							font-family: "slim-joe";
+							font-size: 16px;
+							color: #fff;
+							background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
+							background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
+							background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
+							background: linear-gradient($orange-background-color-1, $orange-background-color-2);
+							border: 1px solid #614385;
+							border-style: none none none solid;
+							border-radius: 0 3px 3px 0;
+							cursor: pointer;
+						}
+						button:hover {
+							opacity: 0.9;
 						}
 						h5.results-summary {
 							opacity: 0;

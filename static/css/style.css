@@ -126,7 +126,10 @@ html {
         bottom: 50%;
         width: 25px;
         height: 30px;
-        background-color: #FA8A6C;
+        background: -webkit-linear-gradient(#FA5A2E, #FA906E);
+        background: -o-linear-gradient(#FA5A2E, #FA906E);
+        background: -moz-linear-gradient(#FA5A2E, #FA906E);
+        background: linear-gradient(#FA5A2E, #FA906E);
         border: none;
         border-radius: 3px 0 0 3px;
         outline: none;
@@ -165,21 +168,39 @@ html {
             font-size: 30px;
             color: #fff; }
           html body main div.main-content section.query form input {
-            display: block;
+            display: inline-block;
             margin: 0 auto;
             padding: 0 10px;
-            width: calc(100% - 20px);
+            width: calc(100% - 20px - 80px);
             height: 45px;
             font-size: 16px;
             color: #444;
             border: none;
-            border-radius: 3px;
+            border-radius: 3px 0 0 3px;
             outline: none;
             cursor: pointer; }
           html body main div.main-content section.query form input:hover {
             opacity: 0.9; }
           html body main div.main-content section.query form input:focus {
             opacity: 1.0; }
+          html body main div.main-content section.query form button {
+            display: inline-block;
+            width: 80px;
+            height: 45px;
+            vertical-align: top;
+            font-family: "slim-joe";
+            font-size: 16px;
+            color: #fff;
+            background: -webkit-linear-gradient(#FA5A2E, #FA906E);
+            background: -o-linear-gradient(#FA5A2E, #FA906E);
+            background: -moz-linear-gradient(#FA5A2E, #FA906E);
+            background: linear-gradient(#FA5A2E, #FA906E);
+            border: 1px solid #614385;
+            border-style: none none none solid;
+            border-radius: 0 3px 3px 0;
+            cursor: pointer; }
+          html body main div.main-content section.query form button:hover {
+            opacity: 0.9; }
           html body main div.main-content section.query form h5.results-summary {
             opacity: 0;
             display: inline-block;

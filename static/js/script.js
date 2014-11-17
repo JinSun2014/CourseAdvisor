@@ -395,6 +395,7 @@ $(document).ready(function() {
 
 		toggleDrawer();
 	});
+
 	switch(page) {
 		case "index":
 			$('input.question').on("keypress", function(e) {
@@ -402,6 +403,10 @@ $(document).ready(function() {
 		            query();
 		            return false;
 		        }
+			});
+			$('input.question + button').click(function() {
+				
+				query();
 			});
 			$(document).on('click', 'div.result-right', function() {
 

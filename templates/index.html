@@ -55,7 +55,7 @@
             			<h2>Ask away.</h2>
             			{% csrf_token %}
 						<input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}" style="display:none"/>
-						<input class="question" placeholder="Type your question here...">
+						<input class="question" placeholder="Type your question here..."><button>Ask</button>
 						<h5 class="results-summary"><span class="results-quantity"></span> Results <span class="results-time"></span></h5>
 					</form>
 				</section>
