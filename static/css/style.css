@@ -395,7 +395,7 @@ html {
           html body footer div.footer-inner div.footer-right img.watson-logo {
             margin-bottom: 1px;
             width: 17px; }
-      @media (min-width: 321px) {
+      @media (min-width: 730px) {
         html body footer {
           height: 30px; }
           html body footer div.footer-inner {
