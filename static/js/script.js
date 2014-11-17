@@ -43,9 +43,10 @@ $(document).ready(function() {
 		}
 
 		/* Heights */
-		wHeight = $(window).height();
-		hHeight = $('header').height();
-		vHeight = wHeight - hHeight;
+		wHeight = $(window).height(); // window
+		hHeight = $('header').height(); // header
+		fHeight = $('footer').outerHeight(); // footer w/ border
+		vHeight = wHeight - hHeight - fHeight; // view
 
 		$('div.drawer').height(vHeight);
 		$('main').height(vHeight);
@@ -395,13 +396,33 @@ $(document).ready(function() {
 
 		toggleDrawer();
 	});
+
 	switch(page) {
 		case "index":
+			$(function() {
+				$('div.cycling-questions').typed({
+					strings: ["What course should I take to be a good game developer?", "What's a good introductory level psychology course?", "Which courses does Bryan Pardo teach?", "Which history courses are being offered next quarter?"],
+					typeSpeed: 35,
+					backSpeed: 20,
+					backDelay: 1300,
+					loop: true,
+					loopCount: false,
+				});
+			});
+			$('div.cycling-questions').click(function() {
+				var question = $(this).attr('name');
+				$('input.question').val(question);
+				query();
+			});
 			$('input.question').on("keypress", function(e) {
 				if (e.keyCode == 13) {
 		            query();
 		            return false;
 		        }
+			});
+			$('input.question + button').click(function() {
+
+				query();
 			});
 			$(document).on('click', 'div.result-right', function() {
 

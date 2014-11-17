@@ -18,12 +18,17 @@ html {
     html body header {
       width: 100%;
       height: 50px;
-      background-color: #333; }
+      background: -webkit-linear-gradient(#222, #333);
+      background: -o-linear-gradient(#222, #333);
+      background: -moz-linear-gradient(#222, #333);
+      background: linear-gradient(#222, #333); }
       html body header div.header-inner {
         margin: 0 auto;
         padding: 10px 0;
         width: 95%;
         height: 30px; }
+        html body header div.header-inner div.header-left {
+          float: left; }
         html body header div.header-inner div.header-right {
           float: right; }
           html body header div.header-inner div.header-right img.user-image {
@@ -126,7 +131,10 @@ html {
         bottom: 50%;
         width: 25px;
         height: 30px;
-        background-color: #FA8A6C;
+        background: -webkit-linear-gradient(#FA5A2E, #FA906E);
+        background: -o-linear-gradient(#FA5A2E, #FA906E);
+        background: -moz-linear-gradient(#FA5A2E, #FA906E);
+        background: linear-gradient(#FA5A2E, #FA906E);
         border: none;
         border-radius: 3px 0 0 3px;
         outline: none;
@@ -158,38 +166,102 @@ html {
         html body main div.main-content section.query {
           margin-top: 60px;
           width: 100%; }
-          html body main div.main-content section.query form h2 {
-            margin-bottom: 10px;
-            text-align: center;
-            font-family: "slim-joe";
-            font-size: 30px;
-            color: #fff; }
-          html body main div.main-content section.query form input {
-            display: block;
-            margin: 0 auto;
-            padding: 0 10px;
-            width: calc(100% - 20px);
-            height: 45px;
-            font-size: 16px;
-            color: #444;
-            border: none;
-            border-radius: 3px;
-            outline: none;
-            cursor: pointer; }
-          html body main div.main-content section.query form input:hover {
-            opacity: 0.9; }
-          html body main div.main-content section.query form input:focus {
-            opacity: 1.0; }
-          html body main div.main-content section.query form h5.results-summary {
-            opacity: 0;
-            display: inline-block;
-            margin: 10px 0;
-            font-family: "slim-joe";
-            font-size: 13px;
-            font-weight: normal;
-            color: #fff; }
-            html body main div.main-content section.query form h5.results-summary span.results-time {
-              margin-left: 5px; }
+          html body main div.main-content section.query form {
+            text-align: center; }
+            html body main div.main-content section.query form h2.query-prompt {
+              margin-bottom: 15px;
+              text-align: center;
+              font-family: "slim-joe";
+              font-size: 30px;
+              color: #fff; }
+            html body main div.main-content section.query form div.cycling-questions {
+              display: inline;
+              padding: 5px 5px 2px 5px;
+              font-family: "slim-joe";
+              font-size: 15px;
+              color: #ddd;
+              text-shadow: 0px 1px 1px #666;
+              white-space: pre;
+              background-color: transparent;
+              border-radius: 3px;
+              overflow: hidden;
+              cursor: pointer; }
+            html body main div.main-content section.query form div.cycling-questions:hover {
+              background-color: rgba(0, 0, 0, 0.1); }
+            html body main div.main-content section.query form .typed-cursor {
+              display: inline;
+              color: #ddd;
+              opacity: 1;
+              -webkit-animation: blink 0.7s infinite;
+              -moz-animation: blink 0.7s infinite;
+              animation: blink 0.7s infinite; }
+@keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+            html body main div.main-content section.query form input {
+              display: inline-block;
+              margin: 10px auto 0;
+              padding: 0 10px;
+              width: calc(100% - 20px - 80px);
+              height: 45px;
+              font-size: 16px;
+              color: #444;
+              border: none;
+              border-radius: 3px 0 0 3px;
+              outline: none;
+              cursor: pointer; }
+            html body main div.main-content section.query form input:hover {
+              opacity: 0.9; }
+            html body main div.main-content section.query form input:focus {
+              opacity: 1.0; }
+            html body main div.main-content section.query form button {
+              display: inline-block;
+              margin-top: 10px;
+              width: 80px;
+              height: 45px;
+              vertical-align: top;
+              font-family: "slim-joe";
+              font-size: 16px;
+              color: #fff;
+              line-height: 45px;
+              background: -webkit-linear-gradient(#FA5A2E, #FA906E);
+              background: -o-linear-gradient(#FA5A2E, #FA906E);
+              background: -moz-linear-gradient(#FA5A2E, #FA906E);
+              background: linear-gradient(#FA5A2E, #FA906E);
+              border: 2px solid #614385;
+              border-style: none none none solid;
+              border-radius: 0 3px 3px 0;
+              cursor: pointer; }
+            html body main div.main-content section.query form button:hover {
+              opacity: 0.9; }
+            html body main div.main-content section.query form h5.results-summary {
+              opacity: 0;
+              display: inline-block;
+              margin: 10px 0;
+              font-family: "slim-joe";
+              font-size: 13px;
+              font-weight: normal;
+              color: #fff; }
+              html body main div.main-content section.query form h5.results-summary span.results-time {
+                margin-left: 5px; }
         html body main div.main-content section.results {
           margin-top: 30px;
           width: 100%;
@@ -328,5 +400,58 @@ html {
       @media (min-width: 800px) {
         html body main {
           width: calc(100% - 250px - 1px); } }
+    html body footer {
+      width: 100%;
+      height: 80px;
+      background: -webkit-linear-gradient(#c6c6c6, #fff);
+      background: -o-linear-gradient(#c6c6c6, #fff);
+      background: -moz-linear-gradient(#c6c6c6, #fff);
+      background: linear-gradient(#c6c6c6, #fff);
+      overflow: auto;
+      box-shadow: 0 1px 0px #aaa inset;
+      border-bottom: 3px solid #444; }
+      html body footer div.footer-inner {
+        margin: 0 auto;
+        padding: 5px 0;
+        width: 95%;
+        height: 70px;
+        color: #777;
+        overflow: auto; }
+        html body footer div.footer-inner div.footer-left {
+          float: left; }
+          html body footer div.footer-inner div.footer-left span {
+            display: inline-block;
+            font-family: "big-john";
+            font-size: 9px; }
+          html body footer div.footer-inner div.footer-left ul {
+            display: inline-block;
+            font-family: "slim-joe";
+            font-size: 9px;
+            list-style: none; }
+            html body footer div.footer-inner div.footer-left ul li {
+              margin-left: 8px;
+              display: inline-block; }
+        html body footer div.footer-inner div.footer-right {
+          float: left;
+          font-size: 10px; }
+          html body footer div.footer-inner div.footer-right span {
+            margin-right: 5px;
+            vertical-align: bottom;
+            font-family: "slim-joe";
+            font-size: 9px; }
+          html body footer div.footer-inner div.footer-right img.ibm-logo {
+            margin-bottom: 2px;
+            margin-right: 5px;
+            width: 37px; }
+          html body footer div.footer-inner div.footer-right img.watson-logo {
+            margin-bottom: 1px;
+            width: 17px; }
+      @media (min-width: 730px) {
+        html body footer {
+          height: 30px; }
+          html body footer div.footer-inner {
+            height: 20px; }
+            html body footer div.footer-inner div.footer-right {
+              float: right; } }
 
 /*# sourceMappingURL=style.css.map */
