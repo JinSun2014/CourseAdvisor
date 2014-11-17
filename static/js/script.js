@@ -45,7 +45,7 @@ $(document).ready(function() {
 		/* Heights */
 		wHeight = $(window).height(); // window
 		hHeight = $('header').height(); // header
-		fHeight = $('footer').height(); // footer
+		fHeight = $('footer').outerHeight(); // footer w/ border
 		vHeight = wHeight - hHeight - fHeight; // view
 
 		$('div.drawer').height(vHeight);

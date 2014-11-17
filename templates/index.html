@@ -19,9 +19,11 @@
 
 		<header>
 			<div class="header-inner">
+				<div class="header-left">
+				</div>
 				<div class="header-right">
-					<img class="user-image" src="static/img/me.jpg">
-					<span class="user-greeting">Hey, Jon</span>
+					<!-- <img class="user-image" src="static/img/me.jpg">
+					<span class="user-greeting">Hey, Jon</span> -->
 					<img class="ph-logo" src="static/img/ph-logo.png">
 				</div>
 			</div>
@@ -32,10 +34,10 @@
 			<nav class="drawer-menu">
 				<h4 class="control-center-title">Control Center</h4>
 				<ul>
-					<li><a href="#"><i class="fa fa-user"></i><span>Profile</span></a></li>
+					<!-- <li><a href="#"><i class="fa fa-user"></i><span>Profile</span></a></li> -->
 					<li><a href="./"><i class="fa fa-search"></i><span>Ask Holmes</span></a></li>
-					<li><a href="./schedule"><i class="fa fa-calendar"></i><span>Schedule</span></a></li>
-					<li><a href="#"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li>
+					<!-- <li><a href="./schedule"><i class="fa fa-calendar"></i><span>Schedule</span></a></li> -->
+					<!-- <li><a href="#"><i class="fa fa-sign-out"></i><span>Log Out</span></a></li> -->
 				</ul>
 			</nav>
 			<div class="past-questions">
@@ -53,7 +55,7 @@
 
 				<section class="query">
 					<form>
-            			<h2>Ask away.</h2>
+            			<h2>Ask me anything.</h2>
             			{% csrf_token %}
 						<input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}" style="display:none"/>
 						<input class="question" placeholder="Type your question here..."><button>Ask</button>
@@ -65,6 +67,7 @@
 					<ul class="results-list">
 					</ul>
 				</section>
+
 			</div>
 		</main>
 

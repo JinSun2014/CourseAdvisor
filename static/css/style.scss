@@ -9,6 +9,8 @@ $main-background-color-2: #516395;
 $orange-background-color-1: #FA5A2E;
 $orange-background-color-2: #FA906E;
 
+$header-background-color-1: #222;
+$header-background-color-2: #333;
 $footer-background-color-1: #c6c6c6;
 $footer-background-color-2: #fff;
 
@@ -44,7 +46,10 @@ html {
 		header {
 			width: 100%;
 			height: 50px;
-			background-color: #333;
+			background: -webkit-linear-gradient($header-background-color-1, $header-background-color-2);
+			background: -o-linear-gradient($header-background-color-1, $header-background-color-2);
+			background: -moz-linear-gradient($header-background-color-1, $header-background-color-2);
+			background: linear-gradient($header-background-color-1, $header-background-color-2);
 
 			div.header-inner {
 				margin: 0 auto;
@@ -52,6 +57,10 @@ html {
 				width: $header-footer-inner-width;
 				height: 30px;
 
+				div.header-left {
+					float: left;
+
+				}
 				div.header-right {
 					float: right;
 
@@ -535,7 +544,8 @@ html {
 			background: -moz-linear-gradient($footer-background-color-1, $footer-background-color-2);
 			background: linear-gradient($footer-background-color-1, $footer-background-color-2);
 			overflow: auto;
-			box-shadow: 0 -3px 1px #888;
+			box-shadow: 0 1px 0px #aaa inset;
+			border-bottom: 3px solid #444;
 
 			div.footer-inner {
 				margin: 0 auto;
