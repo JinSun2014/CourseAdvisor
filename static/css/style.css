@@ -166,26 +166,28 @@ html {
         html body main div.main-content section.query {
           margin-top: 60px;
           width: 100%; }
-          html body main div.main-content section.query form h2.query-prompt {
-            margin-bottom: 15px;
-            text-align: center;
-            font-family: "slim-joe";
-            font-size: 30px;
-            color: #fff; }
-          html body main div.main-content section.query form div.cycling-questions {
-            display: inline;
-            font-family: "slim-joe";
-            font-size: 15px;
-            color: #fff;
-            white-space: pre;
-            overflow: hidden; }
-          html body main div.main-content section.query form .typed-cursor {
-            display: inline;
-            color: #fff;
-            opacity: 1;
-            -webkit-animation: blink 0.7s infinite;
-            -moz-animation: blink 0.7s infinite;
-            animation: blink 0.7s infinite; }
+          html body main div.main-content section.query form {
+            text-align: center; }
+            html body main div.main-content section.query form h2.query-prompt {
+              margin-bottom: 15px;
+              text-align: center;
+              font-family: "slim-joe";
+              font-size: 30px;
+              color: #fff; }
+            html body main div.main-content section.query form div.cycling-questions {
+              display: inline;
+              font-family: "slim-joe";
+              font-size: 15px;
+              color: #fff;
+              white-space: pre;
+              overflow: hidden; }
+            html body main div.main-content section.query form .typed-cursor {
+              display: inline;
+              color: #fff;
+              opacity: 1;
+              -webkit-animation: blink 0.7s infinite;
+              -moz-animation: blink 0.7s infinite;
+              animation: blink 0.7s infinite; }
 @keyframes blink {
   0% {
     opacity: 1; }
@@ -207,52 +209,52 @@ html {
     opacity: 0; }
   100% {
     opacity: 1; } }
-          html body main div.main-content section.query form input {
-            display: inline-block;
-            margin: 10px auto 0;
-            padding: 0 10px;
-            width: calc(100% - 20px - 80px);
-            height: 45px;
-            font-size: 16px;
-            color: #444;
-            border: none;
-            border-radius: 3px 0 0 3px;
-            outline: none;
-            cursor: pointer; }
-          html body main div.main-content section.query form input:hover {
-            opacity: 0.9; }
-          html body main div.main-content section.query form input:focus {
-            opacity: 1.0; }
-          html body main div.main-content section.query form button {
-            display: inline-block;
-            margin-top: 10px;
-            width: 80px;
-            height: 45px;
-            vertical-align: top;
-            font-family: "slim-joe";
-            font-size: 16px;
-            color: #fff;
-            line-height: 45px;
-            background: -webkit-linear-gradient(#FA5A2E, #FA906E);
-            background: -o-linear-gradient(#FA5A2E, #FA906E);
-            background: -moz-linear-gradient(#FA5A2E, #FA906E);
-            background: linear-gradient(#FA5A2E, #FA906E);
-            border: 2px solid #614385;
-            border-style: none none none solid;
-            border-radius: 0 3px 3px 0;
-            cursor: pointer; }
-          html body main div.main-content section.query form button:hover {
-            opacity: 0.9; }
-          html body main div.main-content section.query form h5.results-summary {
-            opacity: 0;
-            display: inline-block;
-            margin: 10px 0;
-            font-family: "slim-joe";
-            font-size: 13px;
-            font-weight: normal;
-            color: #fff; }
-            html body main div.main-content section.query form h5.results-summary span.results-time {
-              margin-left: 5px; }
+            html body main div.main-content section.query form input {
+              display: inline-block;
+              margin: 10px auto 0;
+              padding: 0 10px;
+              width: calc(100% - 20px - 80px);
+              height: 45px;
+              font-size: 16px;
+              color: #444;
+              border: none;
+              border-radius: 3px 0 0 3px;
+              outline: none;
+              cursor: pointer; }
+            html body main div.main-content section.query form input:hover {
+              opacity: 0.9; }
+            html body main div.main-content section.query form input:focus {
+              opacity: 1.0; }
+            html body main div.main-content section.query form button {
+              display: inline-block;
+              margin-top: 10px;
+              width: 80px;
+              height: 45px;
+              vertical-align: top;
+              font-family: "slim-joe";
+              font-size: 16px;
+              color: #fff;
+              line-height: 45px;
+              background: -webkit-linear-gradient(#FA5A2E, #FA906E);
+              background: -o-linear-gradient(#FA5A2E, #FA906E);
+              background: -moz-linear-gradient(#FA5A2E, #FA906E);
+              background: linear-gradient(#FA5A2E, #FA906E);
+              border: 2px solid #614385;
+              border-style: none none none solid;
+              border-radius: 0 3px 3px 0;
+              cursor: pointer; }
+            html body main div.main-content section.query form button:hover {
+              opacity: 0.9; }
+            html body main div.main-content section.query form h5.results-summary {
+              opacity: 0;
+              display: inline-block;
+              margin: 10px 0;
+              font-family: "slim-joe";
+              font-size: 13px;
+              font-weight: normal;
+              color: #fff; }
+              html body main div.main-content section.query form h5.results-summary span.results-time {
+                margin-left: 5px; }
         html body main div.main-content section.results {
           margin-top: 30px;
           width: 100%;
