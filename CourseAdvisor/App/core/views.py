@@ -48,7 +48,7 @@ class QueryView(JSONResponseMixin, View):
             tuple.occurrences += 1
             tuple.save()
         except ObjectDoesNotExist:
-            if tuple != '':
+            if question != '':
                 tuple = Question(question=question, occurrences=1)
                 tuple.save()
 
