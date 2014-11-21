@@ -41,15 +41,16 @@ class QueryView(JSONResponseMixin, View):
 
     def post(self, request, *args, **kwargs):
         question = request.POST.get('question')
-        question = question.strip()
+        question = question.strip().lower().title()
 
         try:
             tuple = Question.objects.get(question=question)
             tuple.occurrences += 1
             tuple.save()
         except ObjectDoesNotExist:
-            tuple = Question(question=question, occurrences=1)
-            tuple.save()
+            if question != '':
+                tuple = Question(question=question, occurrences=1)
+                tuple.save()
 
         if cache.get(question, False):
             print 'cached'
