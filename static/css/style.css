@@ -227,7 +227,7 @@ html {
               border: none;
               border-radius: 3px 0 0 3px;
               outline: none;
-              cursor: pointer; }
+              cursor: text; }
             html body main div.main-content section.query form input:hover {
               opacity: 0.9; }
             html body main div.main-content section.query form input:focus {
