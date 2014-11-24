@@ -111,12 +111,14 @@ $(document).ready(function() {
 
 		var token     = $("input[name='csrfmiddlewaretoken']").val();
 		var query_url = window.location.pathname + 'query';
+    $('#be-paticent').show();
 
 		$.post(query_url, {
 			'csrfmiddlewaretoken': token,
 			'question': q,
 		}, function(response){
       		if (response.success){
+            $('#be-paticent').hide()
 
 		        // Get array of words in question
 		        var qWords = q.split(" ");
@@ -278,6 +280,7 @@ $(document).ready(function() {
 		return t;
 	};
 	var parseReasoning = function(r, qw) {
+    return r;
 		var rWords = r.split(" ");
 		var rWordsLength = rWords.length;
 		var reasoning = '';
@@ -424,7 +427,7 @@ $(document).ready(function() {
 
 				query();
 			});
-			$(document).on('click', 'div.result-right', function() {
+			$(document).on('click', 'div.result-middle', function() {
 
 				toggleReasoning($(this));
 			});
