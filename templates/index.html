@@ -55,17 +55,18 @@
 
 				<section class="query">
 					<form>
-            			<h2 class="query-prompt">Ask me anything.</h2>
+            			<h2 class="query-prompt">Ask me anything about Courses.</h2>
             			<div class="cycling-questions"></div>
             			{% csrf_token %}
 						<input type="hidden" name="csrfmiddlewaretoken" value="${csrf_token}" style="display:none"/>
-						<br><input class="question" placeholder="Type your question here..."><button>Ask</button>
+						<br><input class="question" placeholder="Type your question here..."><!--button>Ask</button-->
 						<h5 class="results-summary"><span class="results-quantity"></span> Results <span class="results-time"></span></h5>
 					</form>
 				</section>
 
 				<section class="results">
-					<ul class="results-list">
+          <h4 id='be-paticent' style='text-align: center; display: none;'>Asking Professor Holmes...</h4>
+          <ul class="results-list">
 					</ul>
 				</section>
 
@@ -84,11 +85,11 @@
 						<li>Jon Rovira</li>
 					</ul>
 				</div>
-				<div class="footer-right">
+				<!--div class="footer-right">
 					<span class="thick-font">Powered by</span>
 					<img class="ibm-logo" src="static/img/ibm-logo.png" />
 					<img class="watson-logo" src="static/img/ibm-watson-logo.png" />
-				</div>
+				</div-->
 			</div>
 		</footer>
 

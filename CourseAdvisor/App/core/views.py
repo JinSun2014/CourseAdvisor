@@ -2,11 +2,13 @@ import json
 import os
 from django import http
 from django.core.cache import cache
+from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic import TemplateView, View
 import requests
 import simplejson
 
 from CourseAdvisor.settings import WASTON_URL
+from App.core.models import Question
 from .utils import parseResponse
 
 
@@ -39,6 +41,17 @@ class QueryView(JSONResponseMixin, View):
 
     def post(self, request, *args, **kwargs):
         question = request.POST.get('question')
+        question = question.strip().lower().title()
+
+        try:
+            tuple = Question.objects.get(question=question)
+            tuple.occurrences += 1
+            tuple.save()
+        except ObjectDoesNotExist:
+            if question != '':
+                tuple = Question(question=question, occurrences=1)
+                tuple.save()
+
         if cache.get(question, False):
             print 'cached'
             return self.render_to_response(cache.get(question))
@@ -71,4 +84,5 @@ class QueryView(JSONResponseMixin, View):
         context['history'] = self.request.session['question_history']
         context['result'] = result
         cache.set(question, context)
+
         return self.render_to_response(context)
