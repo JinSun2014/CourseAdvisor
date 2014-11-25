@@ -404,8 +404,17 @@ $(document).ready(function() {
 		case "index":
 			$(function() {
 				$('div.cycling-questions').typed({
-					strings: ["What course should I take to be a good game developer?", "What's a good introductory level psychology course?", "Which courses does Bryan Pardo teach?", "Which history courses are being offered next quarter?"],
-					typeSpeed: 35,
+					strings: [
+            "What course is an easy A?",
+            "What course is about sparse coding and deep learning?",
+            "Who is the course instructor of NUvention?",
+            "What is the grading policy of EECS 325?",
+            "What is the required textbook of EECS 348?",
+            "What is the prerequisites of EECS 340?",
+            "What is computer usage of EECS 222?",
+            "What course requires a lot of programming?"
+          ],
+					typeSpeed: 25,
 					backSpeed: 0,
 					backDelay: 1300,
 					loop: true,
