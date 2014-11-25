@@ -436,7 +436,7 @@ $(document).ready(function() {
 
 				query();
 			});
-			$(document).on('click', 'div.result-middle', function() {
+			$(document).on('click', 'div.result-middle, div.result-right', function() {
 
 				toggleReasoning($(this));
 			});
