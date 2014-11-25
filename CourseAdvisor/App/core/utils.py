@@ -3,8 +3,11 @@ def parseResponse(response):
     for answer_dict in response['question']['answers']:
         text = answer_dict['text'].split('-')
         id = text[0].strip()
-        header = text[1].split(' : ')
-        h1 = header[0].strip()
+        header = ''
+        h1 = ''
+        if len(text) > 1:
+            header = text[1].split(' : ')
+            h1 = header[0].strip()
         h2 = ''
         if len(header) > 1:
             h2 = header[1].strip()
