@@ -402,7 +402,7 @@ $(document).ready(function() {
 			$(function() {
 				$('div.cycling-questions').typed({
 					strings: ["What course should I take to be a good game developer?", "What's a good introductory level psychology course?", "Which courses does Bryan Pardo teach?", "Which history courses are being offered next quarter?"],
-					typeSpeed: 35,
+					typeSpeed: 55,
 					backSpeed: 0,
 					backDelay: 1300,
 					loop: true,
