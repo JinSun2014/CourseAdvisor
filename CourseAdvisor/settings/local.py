@@ -24,6 +24,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # ######### DATABASE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
+    # If use sqlite
+    # 'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': 'mydatabase',
+    # }
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'courseadvisor',
