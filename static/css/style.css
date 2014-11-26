@@ -49,7 +49,7 @@ html {
       overflow-y: scroll;
       background-color: #eee;
       border-right: 1px solid #444;
-      box-shadow: 1px 0 1px #666;
+      box-shadow: 1px 0 1px #444;
       overflow: hidden;
       opacity: 0.9; }
       html body div.drawer h1.banner {
@@ -102,7 +102,10 @@ html {
         position: absolute;
         bottom: 0;
         padding: 10px 0 0 0;
-        background-color: #333; }
+        background: -webkit-linear-gradient(#2a2a2a, #222);
+        background: -o-linear-gradient(#2a2a2a, #222);
+        background: -moz-linear-gradient(#2a2a2a, #222);
+        background: linear-gradient(#2a2a2a, #222); }
         html body div.drawer div.past-questions > span {
           display: block;
           padding: 10px;
@@ -162,10 +165,10 @@ html {
     html body main {
       float: right;
       width: calc(100% - 27px);
-      background: -webkit-linear-gradient(#614385, #516395);
-      background: -o-linear-gradient(#614385, #516395);
-      background: -moz-linear-gradient(#614385, #516395);
-      background: linear-gradient(#614385, #516395); }
+      background: -webkit-linear-gradient(#4d4d7f, #553a74);
+      background: -o-linear-gradient(#4d4d7f, #553a74);
+      background: -moz-linear-gradient(#4d4d7f, #553a74);
+      background: linear-gradient(#4d4d7f, #553a74); }
       html body main div.main-content {
         margin: 0 auto;
         width: 90%; }

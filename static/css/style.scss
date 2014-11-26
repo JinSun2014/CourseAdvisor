@@ -3,8 +3,8 @@ $primary-color: #522F63;
 $drawer-background-color: #eee;
 $drawer-width: 250px;
 
-$main-background-color-1: #614385; 
-$main-background-color-2: #516395;
+$main-background-color-1: desaturate(darken(#515195, 5%), 5%);
+$main-background-color-2: darken(#614385, 5%);
 
 $orange-background-color-1: #FA906E;
 $orange-background-color-2: #FA5A2E;
@@ -13,6 +13,9 @@ $header-background-color-1: #222;
 $header-background-color-2: #333;
 $footer-background-color-1: #c6c6c6;
 $footer-background-color-2: #fff;
+
+$past-questions-color-1: #2a2a2a;
+$past-questions-color-2: #222;
 
 $result-background-color: #eee;
 
@@ -88,7 +91,7 @@ html {
 			overflow-y: scroll;
 			background-color: $drawer-background-color;
 			border-right: 1px solid #444;
-			box-shadow: 1px 0 1px #666;
+			box-shadow: 1px 0 1px #444;
 			overflow: hidden;
 			opacity: 0.9;
 
@@ -160,7 +163,10 @@ html {
 				position: absolute;
 				bottom: 0;
 				padding: 10px 0 0 0;
-				background-color: #333;
+				background: -webkit-linear-gradient($past-questions-color-1, $past-questions-color-2);
+				background: -o-linear-gradient($past-questions-color-1, $past-questions-color-2);
+				background: -moz-linear-gradient($past-questions-color-1, $past-questions-color-2);
+				background: linear-gradient($past-questions-color-1, $past-questions-color-2);
 
 				> span {
 					display: block;
