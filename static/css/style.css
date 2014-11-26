@@ -259,13 +259,13 @@ html {
             html body main div.main-content section.query form button:hover {
               opacity: 0.9; }
             html body main div.main-content section.query form h5.results-summary {
-              opacity: 0;
-              display: inline-block;
               margin: 10px 0;
+              text-align: left;
               font-family: "slim-joe";
               font-size: 13px;
               font-weight: normal;
-              color: #fff; }
+              color: #fff;
+              opacity: 0; }
               html body main div.main-content section.query form h5.results-summary span.results-time {
                 margin-left: 5px; }
         html body main div.main-content section.results {

@@ -52,7 +52,7 @@ $(document).ready(function() {
 		$('main').height(vHeight);
 
 		if(page == "index") {
-			$('ul.results-list').height(wHeight - $('section.results').offset().top);
+			$('ul.results-list').height(wHeight - $('section.results').offset().top - 34);
 		}
 		else if(page == "schedule") {
 

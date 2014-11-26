@@ -345,13 +345,13 @@ html {
 							opacity: 0.9;
 						}
 						h5.results-summary {
-							opacity: 0;
-							display: inline-block;
 							margin: 10px 0;
+							text-align: left;
 							font-family: "slim-joe";
 							font-size: 13px;
 							font-weight: normal;
 							color: #fff;
+							opacity: 0;
 
 							span.results-time {
 								margin-left: 5px;
