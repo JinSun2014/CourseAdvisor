@@ -165,10 +165,10 @@ html {
     html body main {
       float: right;
       width: calc(100% - 27px);
-      background: -webkit-linear-gradient(#4d4d7f, #553a74);
-      background: -o-linear-gradient(#4d4d7f, #553a74);
-      background: -moz-linear-gradient(#4d4d7f, #553a74);
-      background: linear-gradient(#4d4d7f, #553a74); }
+      background: -webkit-linear-gradient(#4d4d7f, #55416d);
+      background: -o-linear-gradient(#4d4d7f, #55416d);
+      background: -moz-linear-gradient(#4d4d7f, #55416d);
+      background: linear-gradient(#4d4d7f, #55416d); }
       html body main div.main-content {
         margin: 0 auto;
         width: 90%; }

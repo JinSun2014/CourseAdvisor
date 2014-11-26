@@ -447,6 +447,7 @@ $(document).ready(function() {
 			$('input.question + button').click(function() {
 
 				query();
+				return false;
 			});
 			$(document).on('click', 'div.result-middle, div.result-right', function() {
 
