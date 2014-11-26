@@ -449,9 +449,9 @@ $(document).ready(function() {
 				query();
 				return false;
 			});
-			$('div.result-middle, div.result-right').click(function() {
-				
-				toggleReasoning($(this).parent());
+			$('li.result').click(function() {
+
+				toggleReasoning($(this));
 			});
 			$(document).on('click', 'ul.past-questions > li', function() {
 				var q = $(this).html();

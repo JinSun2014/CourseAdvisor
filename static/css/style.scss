@@ -63,6 +63,22 @@ html {
 				div.header-left {
 					float: left;
 
+					button {
+						color: #fff;
+						background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: linear-gradient($orange-background-color-1, $orange-background-color-2);
+						border: none;
+						border-radius: 2px;
+
+						a {
+							display: block;
+							padding: 6px 3px;
+							color: #fff;
+							text-decoration: none;
+						}
+					}
 				}
 				div.header-right {
 					float: right;
@@ -151,11 +167,7 @@ html {
 						background-color: #e3e3e3;
 					}
 					li#important-control-center {
-						color: #fff;
-						background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
-						background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
-						background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
-						background: linear-gradient($orange-background-color-1, $orange-background-color-2);
+						color: $orange-background-color-1;
 					}
 				}
 			}
@@ -221,7 +233,7 @@ html {
 				background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
 				background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 				border: none;
-				border-radius: 3px 0 0 3px;
+				border-radius: 2px 0 0 2px;
 				outline: none;
 				cursor: pointer;
 
@@ -319,7 +331,6 @@ html {
 							font-family: Arial, Helvetica;
 							color: #444;
 							border: none;
-							border-radius: 3px 0 0 3px;
 							outline: none;
 							cursor: text;
 						}
@@ -345,7 +356,6 @@ html {
 							background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 							border: 2px solid #614385;
 							border-style: none none none solid;
-							border-radius: 0 3px 3px 0;
 							cursor: pointer;
 						}
 						button:hover {
@@ -511,8 +521,12 @@ html {
 								}
 							}
 						}
+						> li:last-child {
+							margin-bottom: 3px;
+						}
 						li.result:hover {
 							box-shadow: 0px 1px 7px #777;
+							opacity: 0.90;
 						}
 					}
 				}
