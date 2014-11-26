@@ -84,9 +84,12 @@ $(document).ready(function() {
 		// Promise to query after cleanup
 		var promise = new Promise(function(resolve, reject) {
 
-			removeResults();
+			// removeResults();
 
-			if ($('ul.results-list > li').length == 0) {
+			// if ($('ul.results-list > li').length == 0) {
+			// 	resolve("Stuff worked!");
+			// }
+			if (true) {
 				resolve("Stuff worked!");
 			}
 			else {
@@ -99,7 +102,8 @@ $(document).ready(function() {
 			console.log(result);
 			var question  = $('section.query input.question').val();
 			// processSampleResponse(question);
-			processResponse(question);
+			// processResponse(question);
+			processHardcodedResponse(question);
 
 		}, function(err) {
 			console.log(err);
@@ -111,14 +115,14 @@ $(document).ready(function() {
 
 		var token     = $("input[name='csrfmiddlewaretoken']").val();
 		var query_url = window.location.pathname + 'query';
-    $('#be-paticent').show();
+    	$('#be-patient').show();
 
 		$.post(query_url, {
 			'csrfmiddlewaretoken': token,
 			'question': q,
 		}, function(response){
       		if (response.success){
-            $('#be-paticent').hide()
+            	$('#be-patient').hide()
 
 		        // Get array of words in question
 		        var qWords = q.split(" ");
@@ -280,7 +284,7 @@ $(document).ready(function() {
 		return t;
 	};
 	var parseReasoning = function(r, qw) {
-    return r;
+    	return r;
 		var rWords = r.split(" ");
 		var rWordsLength = rWords.length;
 		var reasoning = '';
@@ -326,8 +330,16 @@ $(document).ready(function() {
 			$('ul.past-questions').append(li);
 		}
 	};
+	var processHardcodedResponse = function(q) {
+
+		// Start processing time
+		var start = new Date();
+
+		$('ul.results-list').slideDown(350);
+		setResultsSummary(start);
+		return;
+	}
 	var processSampleResponse = function(q) {
-		// What course should I take to be a good game designer?
 
 		// Start processing time
 		var start = new Date();
@@ -405,15 +417,15 @@ $(document).ready(function() {
 			$(function() {
 				$('div.cycling-questions').typed({
 					strings: [
-            "What course is an easy A?",
-            "What course is about sparse coding and deep learning?",
-            "Who is the course instructor of NUvention?",
-            "What is the grading policy of EECS 325?",
-            "What is the required textbook of EECS 348?",
-            "What is the prerequisites of EECS 340?",
-            "What is computer usage of EECS 222?",
-            "What course requires a lot of programming?"
-          ],
+					            "What course is an easy A?",
+					            "What course is about sparse coding and deep learning?",
+					            "Who is the course instructor of NUvention?",
+					            "What is the grading policy of EECS 325?",
+					            "What is the required textbook of EECS 348?",
+					            "What is the prerequisites of EECS 340?",
+					            "What is computer usage of EECS 222?",
+					            "What course requires a lot of programming?"
+					          ],
 					typeSpeed: 25,
 					backSpeed: 0,
 					backDelay: 1300,

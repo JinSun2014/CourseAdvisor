@@ -92,6 +92,12 @@ html {
             border-bottom: 1px solid #ddd; }
           html body div.drawer nav.drawer-menu ul li:hover {
             background-color: #e3e3e3; }
+          html body div.drawer nav.drawer-menu ul li#important-control-center {
+            color: #fff;
+            background: -webkit-linear-gradient(#FA906E, #FA5A2E);
+            background: -o-linear-gradient(#FA906E, #FA5A2E);
+            background: -moz-linear-gradient(#FA906E, #FA5A2E);
+            background: linear-gradient(#FA906E, #FA5A2E); }
       html body div.drawer div.past-questions {
         position: absolute;
         bottom: 0;

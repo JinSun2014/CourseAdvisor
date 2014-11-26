@@ -147,6 +147,13 @@ html {
 					li:hover {
 						background-color: #e3e3e3;
 					}
+					li#important-control-center {
+						color: #fff;
+						background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: linear-gradient($orange-background-color-1, $orange-background-color-2);
+					}
 				}
 			}
 			div.past-questions {
