@@ -47,7 +47,7 @@ html {
       float: left;
       width: 250px;
       overflow-y: scroll;
-      background-color: #eee;
+      background-color: #f9f9f9;
       border-right: 1px solid #444;
       box-shadow: 1px 0 1px #444;
       overflow: hidden;
@@ -112,7 +112,7 @@ html {
           width: calc(250px - 20px);
           font-family: "slim-joe";
           font-size: 13px;
-          color: #eee;
+          color: #f9f9f9;
           border-bottom: 1px solid #666; }
           html body div.drawer div.past-questions > span i {
             margin-right: 10px; }
@@ -165,10 +165,10 @@ html {
     html body main {
       float: right;
       width: calc(100% - 27px);
-      background: -webkit-linear-gradient(#4d4d7f, #55416d);
-      background: -o-linear-gradient(#4d4d7f, #55416d);
-      background: -moz-linear-gradient(#4d4d7f, #55416d);
-      background: linear-gradient(#4d4d7f, #55416d); }
+      background: -webkit-linear-gradient(#614385, #3a4460);
+      background: -o-linear-gradient(#614385, #3a4460);
+      background: -moz-linear-gradient(#614385, #3a4460);
+      background: linear-gradient(#614385, #3a4460); }
       html body main div.main-content {
         margin: 0 auto;
         width: 90%; }
@@ -283,7 +283,7 @@ html {
             html body main div.main-content section.results ul.results-list li.result {
               overflow: auto;
               margin-bottom: 6px;
-              background-color: #eee;
+              background-color: #f9f9f9;
               box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
               cursor: pointer; }
               html body main div.main-content section.results ul.results-list li.result div.result-left {

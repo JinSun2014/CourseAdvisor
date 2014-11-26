@@ -1,10 +1,10 @@
 $primary-color: #522F63;
 
-$drawer-background-color: #eee;
+$drawer-background-color: #f9f9f9;
 $drawer-width: 250px;
 
-$main-background-color-1: desaturate(darken(#515195, 5%), 5%);
-$main-background-color-2: desaturate(darken(#614385, 5%), 8%);
+$main-background-color-1: desaturate(#614385, 0%);
+$main-background-color-2: desaturate(darken(#516395, 15%), 5%);
 
 $orange-background-color-1: #FA906E;
 $orange-background-color-2: #FA5A2E;
@@ -17,7 +17,7 @@ $footer-background-color-2: #fff;
 $past-questions-color-1: #2a2a2a;
 $past-questions-color-2: #222;
 
-$result-background-color: #eee;
+$result-background-color: #f9f9f9;
 
 $schedule-background-color: #eee;
 
