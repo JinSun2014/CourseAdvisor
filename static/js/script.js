@@ -232,19 +232,19 @@ $(document).ready(function() {
 	};
 	var toggleReasoning = function($element) {
 		var t = 200;
-		var open = $element.siblings('div.result-expand').hasClass('open');
+		var open = $element.children('div.result-expand').hasClass('open');
 
 		if(open) {
-			$element.children('i').animateRotate(180, 0, t, "linear");
-			$element.siblings('div.result-expand').slideUp();
-			$element.siblings('div.result-expand').removeClass('open');
-			$element.siblings('div.result-expand').addClass('closed');
+			$element.find('div.result-right i').animateRotate(180, 0, t, "linear");
+			$element.children('div.result-expand').slideUp();
+			$element.children('div.result-expand').removeClass('open');
+			$element.children('div.result-expand').addClass('closed');
 		}
 		else {
-			$element.children('i').animateRotate(0, 180, t, "linear");
-			$element.siblings('div.result-expand').slideDown();
-			$element.siblings('div.result-expand').removeClass('closed');
-			$element.siblings('div.result-expand').addClass('open');
+			$element.find('div.result-right i').animateRotate(0, 180, t, "linear");
+			$element.children('div.result-expand').slideDown();
+			$element.children('div.result-expand').removeClass('closed');
+			$element.children('div.result-expand').addClass('open');
 		}
 		return;
 	};
@@ -449,9 +449,9 @@ $(document).ready(function() {
 				query();
 				return false;
 			});
-			$(document).on('click', 'div.result-middle, div.result-right', function() {
-
-				toggleReasoning($(this));
+			$('div.result-middle, div.result-right').click(function() {
+				
+				toggleReasoning($(this).parent());
 			});
 			$(document).on('click', 'ul.past-questions > li', function() {
 				var q = $(this).html();

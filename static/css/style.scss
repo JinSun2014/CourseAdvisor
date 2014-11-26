@@ -118,7 +118,7 @@ html {
 					width: $drawer-width;
 					color: #888;;
 					font-family: "Slim-Joe";
-					font-size: 14px;
+					font-size: 12px;
 				}
 				ul {
 					list-style: none;
@@ -127,7 +127,7 @@ html {
 						padding: 10px;
 						width: calc(#{$drawer-width} - 20px);
 						font-family: "slim-joe";
-						font-size: 13px;
+						font-size: 10px;
 						color: #444;
 						border-top: 1px solid #ddd;
 						cursor: pointer;
@@ -173,7 +173,7 @@ html {
 					padding: 10px;
 					width: calc(#{$drawer-width} - 20px);
 					font-family: "slim-joe";
-					font-size: 13px;
+					font-size: 12px;
 					color: $drawer-background-color;
 					border-bottom: 1px solid #666;
 
@@ -214,8 +214,8 @@ html {
 				position: absolute;
 				right: 0px;
 				bottom: 50%;
-				width: 25px;
-				height: 30px;
+				width: 20px;
+				height: 25px;
 				background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
 				background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
 				background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
@@ -227,9 +227,9 @@ html {
 
 				i {
 					position: absolute;
-					top: 3px;
-					left: 6px;
-					font-size: 25px;
+					top: 2px;
+					left: 5px;
+					font-size: 20px;
 					color: #fff;
 					cursor: pointer;
 				}
@@ -254,7 +254,7 @@ html {
 
 			div.main-content {
 				margin: 0 auto;
-				width: 90%;
+				width: 75%;
 
 				section.query {
 					margin-top: 60px;
@@ -316,6 +316,7 @@ html {
 							width: calc(100% - 20px - 80px);
 							height: 45px;
 							font-size: 16px;
+							font-family: Arial, Helvetica;
 							color: #444;
 							border: none;
 							border-radius: 3px 0 0 3px;
@@ -396,7 +397,6 @@ html {
 										font-family: 'Slim-Joe';
 										text-align: center;
 										color: #999;
-										// border-bottom: 1px solid #fff;
 										box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 
 										i {
@@ -412,26 +412,6 @@ html {
 									li:last-child {
 										box-shadow: none;
 									}
-									li.result-confidence {
-										// color: #fff;
-										// background-color: rgba(0, 88, 105, 0.6);
-									}
-									li.result-add-to-schedule.possible {
-										// color: #fff;
-										// background-color: rgba(0, 133, 106, 0.6);
-									}
-									li.result-add-to-schedule.impossible {
-										// color: #fff;
-										// background-color: rgba(0, 133, 106, 0.6);
-									}
-									li.result-add-to-schedule.added {
-										// color: #fff;
-										// background-color: rgba(0, 133, 106, 0.6);
-									}
-									li.result-course-info {
-										// color: #fff;
-										// background-color: rgba(116, 173, 0, 0.6);
-									}
 								}
 							}
 							div.result-middle {
@@ -440,7 +420,9 @@ html {
 								width: calc(100% - 80px - 30px);
 
 								h3.result-class-title {
-									color: #555;
+									font-weight: normal;
+									font-size: 16px;
+									color: #777;
 								}
 								h5.result-class-professor {
 									color: #516395;
@@ -457,21 +439,15 @@ html {
 								border-top: 1px solid #bbb;
 
 								span {
-									display: inline-block;
-									line-height: 28px;
-									vertical-align: top;
-									font-size: 12px;
-									font-family: 'Slim-Joe';
-									color: #666;
-								}
-								i {
-									display: inline-block;
-									margin-left: 5px;
-									font-size: 25px;
-									color: #777;
+
+									i {
+										margin-left: 5px;
+										font-size: 25px;
+										color: #777;
+									}
 								}
 								@media(min-width: 500px) {
-									width: 190px;
+									width: 120px;
 									border-top: none;
 								}
 							}

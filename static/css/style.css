@@ -70,14 +70,14 @@ html {
           width: 250px;
           color: #888;
           font-family: "Slim-Joe";
-          font-size: 14px; }
+          font-size: 12px; }
         html body div.drawer nav.drawer-menu ul {
           list-style: none; }
           html body div.drawer nav.drawer-menu ul li {
             padding: 10px;
             width: calc(250px - 20px);
             font-family: "slim-joe";
-            font-size: 13px;
+            font-size: 10px;
             color: #444;
             border-top: 1px solid #ddd;
             cursor: pointer; }
@@ -111,7 +111,7 @@ html {
           padding: 10px;
           width: calc(250px - 20px);
           font-family: "slim-joe";
-          font-size: 13px;
+          font-size: 12px;
           color: #f9f9f9;
           border-bottom: 1px solid #666; }
           html body div.drawer div.past-questions > span i {
@@ -138,8 +138,8 @@ html {
         position: absolute;
         right: 0px;
         bottom: 50%;
-        width: 25px;
-        height: 30px;
+        width: 20px;
+        height: 25px;
         background: -webkit-linear-gradient(#FA906E, #FA5A2E);
         background: -o-linear-gradient(#FA906E, #FA5A2E);
         background: -moz-linear-gradient(#FA906E, #FA5A2E);
@@ -150,9 +150,9 @@ html {
         cursor: pointer; }
         html body div.drawer button i {
           position: absolute;
-          top: 3px;
-          left: 6px;
-          font-size: 25px;
+          top: 2px;
+          left: 5px;
+          font-size: 20px;
           color: #fff;
           cursor: pointer; }
       @media (min-width: 800px) {
@@ -171,7 +171,7 @@ html {
       background: linear-gradient(#614385, #3a4460); }
       html body main div.main-content {
         margin: 0 auto;
-        width: 90%; }
+        width: 75%; }
         html body main div.main-content section.query {
           margin-top: 60px;
           width: 100%; }
@@ -232,6 +232,7 @@ html {
               width: calc(100% - 20px - 80px);
               height: 45px;
               font-size: 16px;
+              font-family: Arial, Helvetica;
               color: #444;
               border: none;
               border-radius: 3px 0 0 3px;
@@ -312,7 +313,9 @@ html {
                 padding: 25px 15px;
                 width: calc(100% - 80px - 30px); }
                 html body main div.main-content section.results ul.results-list li.result div.result-middle h3.result-class-title {
-                  color: #555; }
+                  font-weight: normal;
+                  font-size: 16px;
+                  color: #777; }
                 html body main div.main-content section.results ul.results-list li.result div.result-middle h5.result-class-professor {
                   color: #516395; }
                 @media (min-width: 500px) {
@@ -324,21 +327,13 @@ html {
                 width: 100%;
                 text-align: center;
                 border-top: 1px solid #bbb; }
-                html body main div.main-content section.results ul.results-list li.result div.result-right span {
-                  display: inline-block;
-                  line-height: 28px;
-                  vertical-align: top;
-                  font-size: 12px;
-                  font-family: 'Slim-Joe';
-                  color: #666; }
-                html body main div.main-content section.results ul.results-list li.result div.result-right i {
-                  display: inline-block;
+                html body main div.main-content section.results ul.results-list li.result div.result-right span i {
                   margin-left: 5px;
                   font-size: 25px;
                   color: #777; }
                 @media (min-width: 500px) {
                   html body main div.main-content section.results ul.results-list li.result div.result-right {
-                    width: 190px;
+                    width: 120px;
                     border-top: none; } }
               html body main div.main-content section.results ul.results-list li.result div.result-expand {
                 display: none;
