@@ -3,8 +3,8 @@ $primary-color: #522F63;
 $drawer-background-color: #f9f9f9;
 $drawer-width: 250px;
 
-$main-background-color-1: saturate(#614385, 2%);
-$main-background-color-2: desaturate(darken(#516395, 15%), 5%);
+$main-background-color-1: #614187; // rgba(97, 65, 135, 1)
+$main-background-color-2: #3a4460; // rgba(58, 68, 96, 1)
 
 $orange-background-color-1: #FA906E;
 $orange-background-color-2: #FA5A2E;
@@ -70,7 +70,6 @@ html {
 						background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
 						background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 						border: none;
-						border-radius: 2px;
 
 						a {
 							display: block;
@@ -107,7 +106,7 @@ html {
 			overflow-y: scroll;
 			background-color: $drawer-background-color;
 			border-right: 1px solid #444;
-			box-shadow: 1px 0 1px #444;
+			// box-shadow: 1px 0 1px #444;
 			overflow: hidden;
 			opacity: 0.9;
 
@@ -259,10 +258,23 @@ html {
 		main {
 			float: right;
 			width: calc(100% - 27px);
-			background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2);
-			background: -o-linear-gradient($main-background-color-1, $main-background-color-2);
-			background: -moz-linear-gradient($main-background-color-1, $main-background-color-2);
-			background: linear-gradient($main-background-color-1, $main-background-color-2);
+			// background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			// background: -o-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			// background: -moz-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			// background: linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+
+			background: -moz-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: -webkit-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: -o-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: -ms-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+
+			// background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), url('/img/fondo-home.jpg') no-repeat;
+			// background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
 
 			div.main-content {
 				margin: 0 auto;
@@ -332,7 +344,9 @@ html {
 						span.see-more-examples {
 							opacity: 0;
 							font-size: 12px;
-							color: #E5532A;
+							color: lighten(#E5532A, 10%);
+							text-shadow: 0 1px 0px #666;
+							// color: #E5532A;
 							letter-spacing: 1px;
 							cursor: pointer;
 						}

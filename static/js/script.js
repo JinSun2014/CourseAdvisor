@@ -46,7 +46,6 @@ $(document).ready(function() {
 		wHeight = $(window).height(); // window
 		hHeight = $('header').height(); // header
 		fHeight = $('footer').outerHeight(); // footer w/ border
-		console.log(fHeight);
 		vHeight = wHeight - hHeight - fHeight; // view
 
 		$('div.drawer').height(vHeight);
