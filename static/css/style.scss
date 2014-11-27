@@ -283,7 +283,7 @@ html {
 							color: #fff;
 						}
 						div.cycling-question {
-							display: inline;
+							display: none;
 							padding: 5px 5px 2px 5px;;
 							font-family: "slim-joe";
 							font-size: 15px;
@@ -294,17 +294,25 @@ html {
 							border-radius: 3px;
 							overflow: hidden;
 							cursor: pointer;
+
+							@media(min-width: 650px) {
+								display: inline;
+							}
 						}
 						div.cycling-question:hover {
 							background-color: rgba(0, 0, 0, 0.1);
 						}
 						.typed-cursor{
-							display: inline;
+							display: none;
 							color: #ddd;
 						    opacity: 1;
 						    -webkit-animation: blink 0.7s infinite;
 						    -moz-animation: blink 0.7s infinite;
 						    animation: blink 0.7s infinite;
+
+						    @media(min-width: 650px) {
+						    	display: inline;
+						    }
 						}
 						@keyframes blink{
 						    0% { opacity:1; }
@@ -339,7 +347,6 @@ html {
 								margin: 5px 0;
 								font-size: 13px;
 								color: rgba(256, 256, 256, 0.6);
-
 								letter-spacing: 1px;
 								cursor: pointer;
 							}
@@ -608,7 +615,7 @@ html {
 		}
 		footer {
 			width: 100%;
-			height: 80px;
+			height: 30px;
 			background: -webkit-linear-gradient($footer-background-color-1, $footer-background-color-2);
 			background: -o-linear-gradient($footer-background-color-1, $footer-background-color-2);
 			background: -moz-linear-gradient($footer-background-color-1, $footer-background-color-2);
@@ -618,10 +625,11 @@ html {
 			border-bottom: 3px solid #444;
 
 			div.footer-inner {
+				display: none;
 				margin: 0 auto;
 				padding: 5px 0;
 				width: $header-footer-inner-width;
-				height: 70px;
+				height: 20px;
 				color: #777;
 				overflow: auto;
 
@@ -646,7 +654,7 @@ html {
 					}
 				}
 				div.footer-right {
-					float: left;
+					float: right;
 					font-size: 10px;
 
 					span {
@@ -667,15 +675,9 @@ html {
 				}
 			}
 
-			@media(min-width: 730px) {
-				height: 30px;
-
+			@media(min-width: 505px) {
 				div.footer-inner {
-					height: 20px;
-
-					div.footer-right {
-						float: right;
-					}
+					display: block;
 				}
 			}
 		}

@@ -193,7 +193,7 @@ html {
               font-size: 30px;
               color: #fff; }
             html body main div.main-content section.query form div.cycling-question {
-              display: inline;
+              display: none;
               padding: 5px 5px 2px 5px;
               font-family: "slim-joe";
               font-size: 15px;
@@ -204,15 +204,21 @@ html {
               border-radius: 3px;
               overflow: hidden;
               cursor: pointer; }
+              @media (min-width: 650px) {
+                html body main div.main-content section.query form div.cycling-question {
+                  display: inline; } }
             html body main div.main-content section.query form div.cycling-question:hover {
               background-color: rgba(0, 0, 0, 0.1); }
             html body main div.main-content section.query form .typed-cursor {
-              display: inline;
+              display: none;
               color: #ddd;
               opacity: 1;
               -webkit-animation: blink 0.7s infinite;
               -moz-animation: blink 0.7s infinite;
               animation: blink 0.7s infinite; }
+              @media (min-width: 650px) {
+                html body main div.main-content section.query form .typed-cursor {
+                  display: inline; } }
 @keyframes blink {
   0% {
     opacity: 1; }
@@ -436,7 +442,7 @@ html {
           width: calc(100% - 250px - 1px); } }
     html body footer {
       width: 100%;
-      height: 80px;
+      height: 30px;
       background: -webkit-linear-gradient(#c6c6c6, #fff);
       background: -o-linear-gradient(#c6c6c6, #fff);
       background: -moz-linear-gradient(#c6c6c6, #fff);
@@ -445,10 +451,11 @@ html {
       box-shadow: 0 1px 0px #aaa inset;
       border-bottom: 3px solid #444; }
       html body footer div.footer-inner {
+        display: none;
         margin: 0 auto;
         padding: 5px 0;
         width: 95%;
-        height: 70px;
+        height: 20px;
         color: #777;
         overflow: auto; }
         html body footer div.footer-inner div.footer-left {
@@ -466,7 +473,7 @@ html {
               margin-left: 8px;
               display: inline-block; }
         html body footer div.footer-inner div.footer-right {
-          float: left;
+          float: right;
           font-size: 10px; }
           html body footer div.footer-inner div.footer-right span {
             margin-right: 5px;
@@ -480,12 +487,8 @@ html {
           html body footer div.footer-inner div.footer-right img.watson-logo {
             margin-bottom: 1px;
             width: 17px; }
-      @media (min-width: 730px) {
-        html body footer {
-          height: 30px; }
-          html body footer div.footer-inner {
-            height: 20px; }
-            html body footer div.footer-inner div.footer-right {
-              float: right; } }
+      @media (min-width: 505px) {
+        html body footer div.footer-inner {
+          display: block; } }
 
 /*# sourceMappingURL=style.css.map */
