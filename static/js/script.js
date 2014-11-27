@@ -502,10 +502,10 @@ $(document).ready(function() {
 				query();
 				return false;
 			});
-			$('li.result').click(function() {
-
-				toggleReasoning($(this));
-			});
+			$(document.body).on('click', 'li.result', function() {
+				
+				toggleReasoning($(this));				
+			})
 			$(document).on('click', 'ul.past-questions > li', function() {
 				var q = $(this).html();
 				$('input.question').val(q);
