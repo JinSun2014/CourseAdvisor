@@ -1,10 +1,10 @@
 $primary-color: #522F63;
 
-$drawer-background-color: #eee;
+$drawer-background-color: #f9f9f9;
 $drawer-width: 250px;
 
-$main-background-color-1: #614385; 
-$main-background-color-2: #516395;
+$main-background-color-1: #614187; // rgba(97, 65, 135, 1)
+$main-background-color-2: #3a4460; // rgba(58, 68, 96, 1)
 
 $orange-background-color-1: #FA906E;
 $orange-background-color-2: #FA5A2E;
@@ -14,7 +14,10 @@ $header-background-color-2: #333;
 $footer-background-color-1: #c6c6c6;
 $footer-background-color-2: #fff;
 
-$result-background-color: #eee;
+$past-questions-color-1: #2a2a2a;
+$past-questions-color-2: #222;
+
+$result-background-color: #f9f9f9;
 
 $schedule-background-color: #eee;
 
@@ -60,6 +63,21 @@ html {
 				div.header-left {
 					float: left;
 
+					button {
+						color: #fff;
+						background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
+						background: linear-gradient($orange-background-color-1, $orange-background-color-2);
+						border: none;
+
+						a {
+							display: block;
+							padding: 6px 3px;
+							color: #fff;
+							text-decoration: none;
+						}
+					}
 				}
 				div.header-right {
 					float: right;
@@ -88,7 +106,7 @@ html {
 			overflow-y: scroll;
 			background-color: $drawer-background-color;
 			border-right: 1px solid #444;
-			box-shadow: 1px 0 1px #666;
+			// box-shadow: 1px 0 1px #444;
 			overflow: hidden;
 			opacity: 0.9;
 
@@ -115,7 +133,7 @@ html {
 					width: $drawer-width;
 					color: #888;;
 					font-family: "Slim-Joe";
-					font-size: 14px;
+					font-size: 12px;
 				}
 				ul {
 					list-style: none;
@@ -124,7 +142,7 @@ html {
 						padding: 10px;
 						width: calc(#{$drawer-width} - 20px);
 						font-family: "slim-joe";
-						font-size: 13px;
+						font-size: 10px;
 						color: #444;
 						border-top: 1px solid #ddd;
 						cursor: pointer;
@@ -147,20 +165,26 @@ html {
 					li:hover {
 						background-color: #e3e3e3;
 					}
+					li#important-control-center {
+						color: $orange-background-color-1;
+					}
 				}
 			}
 			div.past-questions {
 				position: absolute;
 				bottom: 0;
 				padding: 10px 0 0 0;
-				background-color: #333;
+				background: -webkit-linear-gradient($past-questions-color-1, $past-questions-color-2);
+				background: -o-linear-gradient($past-questions-color-1, $past-questions-color-2);
+				background: -moz-linear-gradient($past-questions-color-1, $past-questions-color-2);
+				background: linear-gradient($past-questions-color-1, $past-questions-color-2);
 
 				> span {
 					display: block;
 					padding: 10px;
 					width: calc(#{$drawer-width} - 20px);
 					font-family: "slim-joe";
-					font-size: 13px;
+					font-size: 12px;
 					color: $drawer-background-color;
 					border-bottom: 1px solid #666;
 
@@ -201,22 +225,22 @@ html {
 				position: absolute;
 				right: 0px;
 				bottom: 50%;
-				width: 25px;
-				height: 30px;
+				width: 20px;
+				height: 25px;
 				background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
 				background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
 				background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
 				background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 				border: none;
-				border-radius: 3px 0 0 3px;
+				border-radius: 2px 0 0 2px;
 				outline: none;
 				cursor: pointer;
 
 				i {
 					position: absolute;
-					top: 3px;
-					left: 6px;
-					font-size: 25px;
+					top: 2px;
+					left: 5px;
+					font-size: 20px;
 					color: #fff;
 					cursor: pointer;
 				}
@@ -234,14 +258,27 @@ html {
 		main {
 			float: right;
 			width: calc(100% - 27px);
-			background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2);
-			background: -o-linear-gradient($main-background-color-1, $main-background-color-2);
-			background: -moz-linear-gradient($main-background-color-1, $main-background-color-2);
-			background: linear-gradient($main-background-color-1, $main-background-color-2);
+			// background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			// background: -o-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			// background: -moz-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			// background: linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+
+			background: -moz-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: -webkit-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: -o-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: -ms-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			background: linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+
+			// background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), url('/img/fondo-home.jpg') no-repeat;
+			// background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
 
 			div.main-content {
 				margin: 0 auto;
-				width: 90%;
+				width: 75%;
 
 				section.query {
 					margin-top: 60px;
@@ -257,8 +294,8 @@ html {
 							font-size: 30px;
 							color: #fff;
 						}
-						div.cycling-questions {
-							display: inline;
+						div.cycling-question {
+							display: none;
 							padding: 5px 5px 2px 5px;;
 							font-family: "slim-joe";
 							font-size: 15px;
@@ -269,17 +306,25 @@ html {
 							border-radius: 3px;
 							overflow: hidden;
 							cursor: pointer;
+
+							@media(min-width: 650px) {
+								display: inline;
+							}
 						}
-						div.cycling-questions:hover {
+						div.cycling-question:hover {
 							background-color: rgba(0, 0, 0, 0.1);
 						}
 						.typed-cursor{
-							display: inline;
+							display: none;
 							color: #ddd;
 						    opacity: 1;
 						    -webkit-animation: blink 0.7s infinite;
 						    -moz-animation: blink 0.7s infinite;
 						    animation: blink 0.7s infinite;
+
+						    @media(min-width: 650px) {
+						    	display: inline;
+						    }
 						}
 						@keyframes blink{
 						    0% { opacity:1; }
@@ -296,6 +341,33 @@ html {
 						    50% { opacity:0; }
 						    100% { opacity:1; }
 						}
+						span.see-more-examples {
+							opacity: 0;
+							font-size: 12px;
+							color: lighten(#E5532A, 10%);
+							text-shadow: 0 1px 0px #666;
+							// color: #E5532A;
+							letter-spacing: 1px;
+							cursor: pointer;
+						}
+						ul.example-questions {
+							display: none;
+							margin-top: 6px;
+							padding: 10px;
+							list-style: none;
+							background-color: rgba(0, 0, 0, 0.1);
+
+							li {
+								margin: 5px 0;
+								font-size: 13px;
+								color: rgba(256, 256, 256, 0.6);
+								letter-spacing: 1px;
+								cursor: pointer;
+							}
+							li:hover {
+								color: rgba(256, 256, 256, 0.8);
+							}
+						}
 						input {
 							display: inline-block;
 							margin: 10px auto 0;
@@ -303,9 +375,9 @@ html {
 							width: calc(100% - 20px - 80px);
 							height: 45px;
 							font-size: 16px;
+							font-family: Arial, Helvetica;
 							color: #444;
 							border: none;
-							border-radius: 3px 0 0 3px;
 							outline: none;
 							cursor: text;
 						}
@@ -331,20 +403,19 @@ html {
 							background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 							border: 2px solid #614385;
 							border-style: none none none solid;
-							border-radius: 0 3px 3px 0;
 							cursor: pointer;
 						}
 						button:hover {
 							opacity: 0.9;
 						}
 						h5.results-summary {
-							opacity: 0;
-							display: inline-block;
 							margin: 10px 0;
+							text-align: left;
 							font-family: "slim-joe";
 							font-size: 13px;
 							font-weight: normal;
 							color: #fff;
+							opacity: 0;
 
 							span.results-time {
 								margin-left: 5px;
@@ -383,7 +454,6 @@ html {
 										font-family: 'Slim-Joe';
 										text-align: center;
 										color: #999;
-										// border-bottom: 1px solid #fff;
 										box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 
 										i {
@@ -399,26 +469,6 @@ html {
 									li:last-child {
 										box-shadow: none;
 									}
-									li.result-confidence {
-										// color: #fff;
-										// background-color: rgba(0, 88, 105, 0.6);
-									}
-									li.result-add-to-schedule.possible {
-										// color: #fff;
-										// background-color: rgba(0, 133, 106, 0.6);
-									}
-									li.result-add-to-schedule.impossible {
-										// color: #fff;
-										// background-color: rgba(0, 133, 106, 0.6);
-									}
-									li.result-add-to-schedule.added {
-										// color: #fff;
-										// background-color: rgba(0, 133, 106, 0.6);
-									}
-									li.result-course-info {
-										// color: #fff;
-										// background-color: rgba(116, 173, 0, 0.6);
-									}
 								}
 							}
 							div.result-middle {
@@ -427,7 +477,9 @@ html {
 								width: calc(100% - 80px - 30px);
 
 								h3.result-class-title {
-									color: #555;
+									font-weight: normal;
+									font-size: 16px;
+									color: #777;
 								}
 								h5.result-class-professor {
 									color: #516395;
@@ -444,21 +496,15 @@ html {
 								border-top: 1px solid #bbb;
 
 								span {
-									display: inline-block;
-									line-height: 28px;
-									vertical-align: top;
-									font-size: 12px;
-									font-family: 'Slim-Joe';
-									color: #666;
-								}
-								i {
-									display: inline-block;
-									margin-left: 5px;
-									font-size: 25px;
-									color: #777;
+
+									i {
+										margin-left: 5px;
+										font-size: 25px;
+										color: #777;
+									}
 								}
 								@media(min-width: 500px) {
-									width: 190px;
+									width: 120px;
 									border-top: none;
 								}
 							}
@@ -522,8 +568,12 @@ html {
 								}
 							}
 						}
+						> li:last-child {
+							margin-bottom: 3px;
+						}
 						li.result:hover {
 							box-shadow: 0px 1px 7px #777;
+							opacity: 0.90;
 						}
 					}
 				}
@@ -579,7 +629,7 @@ html {
 		}
 		footer {
 			width: 100%;
-			height: 80px;
+			height: 30px;
 			background: -webkit-linear-gradient($footer-background-color-1, $footer-background-color-2);
 			background: -o-linear-gradient($footer-background-color-1, $footer-background-color-2);
 			background: -moz-linear-gradient($footer-background-color-1, $footer-background-color-2);
@@ -589,10 +639,11 @@ html {
 			border-bottom: 3px solid #444;
 
 			div.footer-inner {
+				display: none;
 				margin: 0 auto;
 				padding: 5px 0;
 				width: $header-footer-inner-width;
-				height: 70px;
+				height: 20px;
 				color: #777;
 				overflow: auto;
 
@@ -617,7 +668,7 @@ html {
 					}
 				}
 				div.footer-right {
-					float: left;
+					float: right;
 					font-size: 10px;
 
 					span {
@@ -638,15 +689,9 @@ html {
 				}
 			}
 
-			@media(min-width: 730px) {
-				height: 30px;
-
+			@media(min-width: 505px) {
 				div.footer-inner {
-					height: 20px;
-
-					div.footer-right {
-						float: right;
-					}
+					display: block;
 				}
 			}
 		}

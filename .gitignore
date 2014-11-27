@@ -1,4 +1,5 @@
 # Python bytecode:
+local.py
 *.py[co]
 *.pyc
 

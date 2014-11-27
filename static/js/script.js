@@ -52,7 +52,7 @@ $(document).ready(function() {
 		$('main').height(vHeight);
 
 		if(page == "index") {
-			$('ul.results-list').height(wHeight - $('section.results').offset().top);
+			$('ul.results-list').height(wHeight - $('section.results').offset().top - 34);
 		}
 		else if(page == "schedule") {
 
@@ -78,15 +78,20 @@ $(document).ready(function() {
 		$('h5.results-summary').css('opacity', 0);
 	};
 	var query = function() {
+		$('ul.example-questions').slideUp();
+
 		// Make sure on input change event handler is effective
 		$('input.question').blur();
 
 		// Promise to query after cleanup
 		var promise = new Promise(function(resolve, reject) {
 
-			removeResults();
+			// removeResults();
 
-			if ($('ul.results-list > li').length == 0) {
+			// if ($('ul.results-list > li').length == 0) {
+			// 	resolve("Stuff worked!");
+			// }
+			if (true) {
 				resolve("Stuff worked!");
 			}
 			else {
@@ -100,6 +105,7 @@ $(document).ready(function() {
 			var question  = $('section.query input.question').val();
 			// processSampleResponse(question);
 			processResponse(question);
+			// processHardcodedResponse(question);
 
 		}, function(err) {
 			console.log(err);
@@ -111,14 +117,14 @@ $(document).ready(function() {
 
 		var token     = $("input[name='csrfmiddlewaretoken']").val();
 		var query_url = window.location.pathname + 'query';
-    $('#be-paticent').show();
+    	$('#be-patient').show();
 
 		$.post(query_url, {
 			'csrfmiddlewaretoken': token,
 			'question': q,
 		}, function(response){
       		if (response.success){
-            $('#be-paticent').hide()
+            	$('#be-patient').hide()
 
 		        // Get array of words in question
 		        var qWords = q.split(" ");
@@ -228,19 +234,19 @@ $(document).ready(function() {
 	};
 	var toggleReasoning = function($element) {
 		var t = 200;
-		var open = $element.siblings('div.result-expand').hasClass('open');
+		var open = $element.children('div.result-expand').hasClass('open');
 
 		if(open) {
-			$element.children('i').animateRotate(180, 0, t, "linear");
-			$element.siblings('div.result-expand').slideUp();
-			$element.siblings('div.result-expand').removeClass('open');
-			$element.siblings('div.result-expand').addClass('closed');
+			$element.find('div.result-right i').animateRotate(180, 0, t, "linear");
+			$element.children('div.result-expand').slideUp();
+			$element.children('div.result-expand').removeClass('open');
+			$element.children('div.result-expand').addClass('closed');
 		}
 		else {
-			$element.children('i').animateRotate(0, 180, t, "linear");
-			$element.siblings('div.result-expand').slideDown();
-			$element.siblings('div.result-expand').removeClass('closed');
-			$element.siblings('div.result-expand').addClass('open');
+			$element.find('div.result-right i').animateRotate(0, 180, t, "linear");
+			$element.children('div.result-expand').slideDown();
+			$element.children('div.result-expand').removeClass('closed');
+			$element.children('div.result-expand').addClass('open');
 		}
 		return;
 	};
@@ -280,7 +286,7 @@ $(document).ready(function() {
 		return t;
 	};
 	var parseReasoning = function(r, qw) {
-    return r;
+    	return r;
 		var rWords = r.split(" ");
 		var rWordsLength = rWords.length;
 		var reasoning = '';
@@ -326,8 +332,18 @@ $(document).ready(function() {
 			$('ul.past-questions').append(li);
 		}
 	};
+	var processHardcodedResponse = function(q) {
+
+		// Start processing time
+		var start = new Date();
+
+		$('ul.results-list').append('<li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li><li class="result"><div class="result-left"><ul><li class="result-confidence"><i class="fa fa-check"></i><span>0.941</span></li><li class="result-add-to-schedule impossible"><i class="fa fa-plus"></i><span>Add</span></li><li class="result-course-info"><i class="fa fa-info"></i><span>Course</span></li></ul></div><div class="result-middle"><h3 class="result-class-title">Machine Learning</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text"><li>Reason 1</li><li>Reason 2</li><li>Reason 3</li></ul></li>')
+
+		$('ul.results-list').slideDown(350);
+		setResultsSummary(start);
+		return;
+	}
 	var processSampleResponse = function(q) {
-		// What course should I take to be a good game designer?
 
 		// Start processing time
 		var start = new Date();
@@ -382,6 +398,55 @@ $(document).ready(function() {
 
 		return $('main').attr('id');
 	};
+	var getRandomQuestion = function() {
+		var questions = [
+			"What course is an easy A?",
+			"What course is about sparse coding and deep learning?",
+			"Who is the course instructor of NUvention?",
+			"What is the grading policy of EECS 325?",
+			"What is the required textbook of EECS 348?",
+			"What is the prerequisites of EECS 340?",
+			// "What is computer usage of EECS 222?",
+			// "What course requires a lot of programming?"
+		];
+		var which = Math.round(Math.random() * (questions.length - 1));
+		return questions[which];
+	};
+	var setExampleQuestions = function() {
+		var questions = [
+			"What course is an easy A?",
+			"What course is about sparse coding and deep learning?",
+			"Who is the professor for NUvention?",
+			"What is the grading policy of EECS 325?",
+			"What is the required textbook of EECS 348?",
+			"What is the prerequisites of EECS 340?",
+			// "What is computer usage of EECS 222?",
+			// "What course requires a lot of programming?"
+		]
+
+		var alreadyPresent = "";
+		setTimeout(function() {
+			var alreadyPresent = $('div.cycling-question').attr('name');
+		}, 1000);
+
+		for (var i=0; i<questions.length; i++) {
+			if (questions[i] != alreadyPresent) {
+				$('ul.example-questions').append('<li>' + questions[i] + '</li>');
+			}
+		}
+	};
+	var toggleMoreExamples = function() {
+		var open = $('ul.example-questions').is(":visible");
+
+		if (open) {
+			$('ul.example-questions').slideUp();
+		}
+		else {
+			removeResults();
+			$('ul.example-questions').slideDown();
+			$('ul.example-questions').css('display', 'inline-block');
+		}
+	};
 
 
 
@@ -390,6 +455,7 @@ $(document).ready(function() {
 	 */
 
 	var page = getPageName();
+	setDimensions();
 
 	$(window).resize(function() {
 
@@ -402,26 +468,25 @@ $(document).ready(function() {
 
 	switch(page) {
 		case "index":
+			setExampleQuestions();
 			$(function() {
-				$('div.cycling-questions').typed({
+				$('div.cycling-question').typed({
 					strings: [
-            "What course is an easy A?",
-            "What course is about sparse coding and deep learning?",
-            "Who is the course instructor of NUvention?",
-            "What is the grading policy of EECS 325?",
-            "What is the required textbook of EECS 348?",
-            "What is the prerequisites of EECS 340?",
-            "What is computer usage of EECS 222?",
-            "What course requires a lot of programming?"
-          ],
+					            getRandomQuestion()
+					          ],
 					typeSpeed: 25,
 					backSpeed: 0,
 					backDelay: 1300,
-					loop: true,
+					loop: false,
 					loopCount: false,
+					callback: function() {
+						setTimeout(function() {
+							$('span.see-more-examples').fadeTo(800, 1.0);
+						}, 400);
+					}
 				});
 			});
-			$('div.cycling-questions').click(function() {
+			$('div.cycling-question').click(function() {
 				var question = $(this).attr('name');
 				$('input.question').val(question);
 				query();
@@ -435,11 +500,12 @@ $(document).ready(function() {
 			$('input.question + button').click(function() {
 
 				query();
+				return false;
 			});
-			$(document).on('click', 'div.result-middle, div.result-right', function() {
-
-				toggleReasoning($(this));
-			});
+			$(document.body).on('click', 'li.result', function() {
+				
+				toggleReasoning($(this));				
+			})
 			$(document).on('click', 'ul.past-questions > li', function() {
 				var q = $(this).html();
 				$('input.question').val(q);
@@ -449,6 +515,15 @@ $(document).ready(function() {
 
 				togglePastQuestions($(this));
 			});
+			$('span.see-more-examples').click(function() {
+
+				toggleMoreExamples();
+			});
+			$('ul.example-questions li').click(function() {
+				var question = $(this).html();
+				$('input.question').val(question);
+				query();
+			});	
 			break;
 
 		case "schedule":
