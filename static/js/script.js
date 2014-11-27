@@ -104,8 +104,8 @@ $(document).ready(function() {
 			console.log(result);
 			var question  = $('section.query input.question').val();
 			// processSampleResponse(question);
-			// processResponse(question);
-			processHardcodedResponse(question);
+			processResponse(question);
+			// processHardcodedResponse(question);
 
 		}, function(err) {
 			console.log(err);
