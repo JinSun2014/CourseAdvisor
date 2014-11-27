@@ -3,7 +3,7 @@ $primary-color: #522F63;
 $drawer-background-color: #f9f9f9;
 $drawer-width: 250px;
 
-$main-background-color-1: desaturate(#614385, 0%);
+$main-background-color-1: saturate(#614385, 2%);
 $main-background-color-2: desaturate(darken(#516395, 15%), 5%);
 
 $orange-background-color-1: #FA906E;
@@ -282,7 +282,7 @@ html {
 							font-size: 30px;
 							color: #fff;
 						}
-						div.cycling-questions {
+						div.cycling-question {
 							display: inline;
 							padding: 5px 5px 2px 5px;;
 							font-family: "slim-joe";
@@ -295,7 +295,7 @@ html {
 							overflow: hidden;
 							cursor: pointer;
 						}
-						div.cycling-questions:hover {
+						div.cycling-question:hover {
 							background-color: rgba(0, 0, 0, 0.1);
 						}
 						.typed-cursor{
@@ -320,6 +320,32 @@ html {
 						    0% { opacity:1; }
 						    50% { opacity:0; }
 						    100% { opacity:1; }
+						}
+						span.see-more-examples {
+							opacity: 0;
+							font-size: 12px;
+							color: #E5532A;
+							letter-spacing: 1px;
+							cursor: pointer;
+						}
+						ul.example-questions {
+							display: none;
+							margin-top: 6px;
+							padding: 10px;
+							list-style: none;
+							background-color: rgba(0, 0, 0, 0.1);
+
+							li {
+								margin: 5px 0;
+								font-size: 13px;
+								color: rgba(256, 256, 256, 0.6);
+
+								letter-spacing: 1px;
+								cursor: pointer;
+							}
+							li:hover {
+								color: rgba(256, 256, 256, 0.8);
+							}
 						}
 						input {
 							display: inline-block;

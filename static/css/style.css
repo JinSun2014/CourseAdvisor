@@ -174,10 +174,10 @@ html {
     html body main {
       float: right;
       width: calc(100% - 27px);
-      background: -webkit-linear-gradient(#614385, #3a4460);
-      background: -o-linear-gradient(#614385, #3a4460);
-      background: -moz-linear-gradient(#614385, #3a4460);
-      background: linear-gradient(#614385, #3a4460); }
+      background: -webkit-linear-gradient(#614187, #3a4460);
+      background: -o-linear-gradient(#614187, #3a4460);
+      background: -moz-linear-gradient(#614187, #3a4460);
+      background: linear-gradient(#614187, #3a4460); }
       html body main div.main-content {
         margin: 0 auto;
         width: 75%; }
@@ -192,7 +192,7 @@ html {
               font-family: "slim-joe";
               font-size: 30px;
               color: #fff; }
-            html body main div.main-content section.query form div.cycling-questions {
+            html body main div.main-content section.query form div.cycling-question {
               display: inline;
               padding: 5px 5px 2px 5px;
               font-family: "slim-joe";
@@ -204,7 +204,7 @@ html {
               border-radius: 3px;
               overflow: hidden;
               cursor: pointer; }
-            html body main div.main-content section.query form div.cycling-questions:hover {
+            html body main div.main-content section.query form div.cycling-question:hover {
               background-color: rgba(0, 0, 0, 0.1); }
             html body main div.main-content section.query form .typed-cursor {
               display: inline;
@@ -234,6 +234,26 @@ html {
     opacity: 0; }
   100% {
     opacity: 1; } }
+            html body main div.main-content section.query form span.see-more-examples {
+              opacity: 0;
+              font-size: 12px;
+              color: #E5532A;
+              letter-spacing: 1px;
+              cursor: pointer; }
+            html body main div.main-content section.query form ul.example-questions {
+              display: none;
+              margin-top: 6px;
+              padding: 10px;
+              list-style: none;
+              background-color: rgba(0, 0, 0, 0.1); }
+              html body main div.main-content section.query form ul.example-questions li {
+                margin: 5px 0;
+                font-size: 13px;
+                color: rgba(255, 255, 255, 0.6);
+                letter-spacing: 1px;
+                cursor: pointer; }
+              html body main div.main-content section.query form ul.example-questions li:hover {
+                color: rgba(255, 255, 255, 0.8); }
             html body main div.main-content section.query form input {
               display: inline-block;
               margin: 10px auto 0;
