@@ -172,11 +172,10 @@ html {
     html body main {
       float: right;
       width: calc(100% - 27px);
-      background: -moz-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url("../img/consulting.jpg") no-repeat;
-      background: -webkit-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url("../img/consulting.jpg") no-repeat;
-      background: -o-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url("../img/consulting.jpg") no-repeat;
-      background: -ms-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url("../img/consulting.jpg") no-repeat;
-      background: linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url("../img/consulting.jpg") no-repeat; }
+      background: -webkit-linear-gradient(#614187, #3a4460), url("../img/consulting.jpg") no-repeat;
+      background: -o-linear-gradient(#614187, #3a4460), url("../img/consulting.jpg") no-repeat;
+      background: -moz-linear-gradient(#614187, #3a4460), url("../img/consulting.jpg") no-repeat;
+      background: linear-gradient(#614187, #3a4460), url("../img/consulting.jpg") no-repeat; }
       html body main div.main-content {
         margin: 0 auto;
         width: 75%; }
@@ -243,7 +242,6 @@ html {
               opacity: 0;
               font-size: 12px;
               color: #eb7857;
-              text-shadow: 0 1px 0px #666;
               letter-spacing: 1px;
               cursor: pointer; }
             html body main div.main-content section.query form ul.example-questions {
