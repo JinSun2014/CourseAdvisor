@@ -117,14 +117,14 @@ $(document).ready(function() {
 
 		var token     = $("input[name='csrfmiddlewaretoken']").val();
 		var query_url = window.location.pathname + 'query';
-    	$('#be-patient').show();
+    	$('div.loader').show();
 
 		$.post(query_url, {
 			'csrfmiddlewaretoken': token,
 			'question': q,
 		}, function(response){
       		if (response.success){
-            	$('#be-patient').hide()
+            	$('div.loader').hide()
 
 		        // Get array of words in question
 		        var qWords = q.split(" ");
