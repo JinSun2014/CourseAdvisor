@@ -29,7 +29,7 @@ html {
         height: 30px; }
         html body header div.header-inner div.header-left {
           float: left; }
-          html body header div.header-inner div.header-left button {
+          html body header div.header-inner div.header-left input{
             color: #fff;
             background: -webkit-linear-gradient(#FA906E, #FA5A2E);
             background: -o-linear-gradient(#FA906E, #FA5A2E);
