@@ -6,6 +6,7 @@ $(document).ready(function() {
 	 */
 
 	$.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
+    B
 	    var args = $.speed(duration, easing, complete);
 	    var step = args.step;
 	    return this.each(function(i, e) {
@@ -86,7 +87,7 @@ $(document).ready(function() {
 		// Promise to query after cleanup
 		var promise = new Promise(function(resolve, reject) {
 
-			// removeResults();
+			removeResults();
 
 			// if ($('ul.results-list > li').length == 0) {
 			// 	resolve("Stuff worked!");
