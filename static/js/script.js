@@ -145,7 +145,7 @@ $(document).ready(function() {
 
 		            	// Add class title to list element
 		            	var classTitle = parseTitle(response.question.evidencelist[i].title);
-		            	element += (classTitle + '</h3></div><div class="result-right"><span>See reasoning</span><i class="fa fa-angle-down"></i></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
+		            	element += (classTitle + '</h3></div><div class="result-right"><span>Related text </span><i class="fa fa-angle-down"></i></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
 
 		            	// Add reasoning to list element
 		            	var reasoning = parseReasoning(response.question.evidencelist[i].text, qWords);
@@ -405,7 +405,7 @@ $(document).ready(function() {
 			"Who is the course instructor of NUvention?",
 			"What is the grading policy of EECS 325?",
 			"What is the required textbook of EECS 348?",
-			"What is the prerequisites of EECS 340?",
+			"What are the prerequisites of EECS 340?",
 			// "What is computer usage of EECS 222?",
 			// "What course requires a lot of programming?"
 		];
@@ -416,10 +416,10 @@ $(document).ready(function() {
 		var questions = [
 			"What course is an easy A?",
 			"What course is about sparse coding and deep learning?",
-			"Who is the professor for NUvention?",
+			"Who is the instructor of NUvention?",
 			"What is the grading policy of EECS 325?",
-			"What is the required textbook of EECS 348?",
-			"What is the prerequisites of EECS 340?",
+			"What is the required textbook for EECS 348?",
+			"What are the prerequisites for EECS 340?",
 			// "What is computer usage of EECS 222?",
 			// "What course requires a lot of programming?"
 		]
