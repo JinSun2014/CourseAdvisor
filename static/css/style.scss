@@ -63,20 +63,18 @@ html {
 				div.header-left {
 					float: left;
 
-					button {
+					a {
+						position: relative;
+						top: 6px;
+						padding: 5px 10px;
+						font-size: 15px;
 						color: #fff;
+						text-decoration: none;
 						background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
 						background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
 						background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
 						background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 						border: none;
-
-						a {
-							display: block;
-							padding: 6px 3px;
-							color: #fff;
-							text-decoration: none;
-						}
 					}
 				}
 				div.header-right {
@@ -258,23 +256,16 @@ html {
 		main {
 			float: right;
 			width: calc(100% - 27px);
-			// background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
-			// background: -o-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
-			// background: -moz-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
-			// background: linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			background: -webkit-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			background: -o-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			background: -moz-linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
+			background: linear-gradient($main-background-color-1, $main-background-color-2), url('../img/consulting.jpg') no-repeat;
 
-			background: -moz-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
-			background: -webkit-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
-			background: -o-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
-			background: -ms-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
-			background: linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
-
-			// background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 59%, rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
-			// background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(59%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))), url('/img/fondo-home.jpg') no-repeat;
-			// background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
-			// background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
-			// background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
-			// background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 59%,rgba(0,0,0,0.65) 100%), url('/img/fondo-home.jpg') no-repeat;
+			// background: -moz-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			// background: -webkit-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			// background: -o-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			// background: -ms-linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
+			// background: linear-gradient(top, rgba(97, 65, 135, 0.75) 0%, rgba(58, 68, 96, 0.9) 100%), url('../img/consulting.jpg') no-repeat;
 
 			div.main-content {
 				margin: 0 auto;
@@ -345,7 +336,6 @@ html {
 							opacity: 0;
 							font-size: 12px;
 							color: lighten(#E5532A, 10%);
-							text-shadow: 0 1px 0px #666;
 							// color: #E5532A;
 							letter-spacing: 1px;
 							cursor: pointer;
@@ -428,6 +418,69 @@ html {
 					width: 100%;
 					overflow: hidden;
 
+					> div.loader {
+						display: none;
+					}
+					div.loader, div.loader:before, div.loader:after {
+						border-radius: 50%;
+					}
+					div.loader:before, div.loader:after {
+						position: absolute;
+						content: '';
+					}
+					div.loader:before {
+						width: 5.2em;
+						height: 10.2em;
+						background: #4b4371;
+						border-radius: 10.2em 0 0 10.2em;
+						top: -0.1em;
+						left: -0.1em;
+						-webkit-transform-origin: 5.2em 5.1em;
+						transform-origin: 5.2em 5.1em;
+						-webkit-animation: load2 2s infinite ease 1.5s;
+						animation: load2 2s infinite ease 1.5s;
+					}
+					div.loader {
+						font-size: 11px;
+						text-indent: -99999em;
+						margin: 5em auto;
+						position: relative;
+						width: 10em;
+						height: 10em;
+						box-shadow: inset 0 0 0 1em #FFF;
+					}
+					div.loader:after {
+						width: 5.2em;
+						height: 10.2em;
+						background: #4b4371;
+						border-radius: 0 10.2em 10.2em 0;
+						top: -0.1em;
+						left: 5.1em;
+						-webkit-transform-origin: 0px 5.1em;
+						transform-origin: 0px 5.1em;
+						-webkit-animation: load2 2s infinite ease;
+						animation: load2 2s infinite ease;
+					}
+					@-webkit-keyframes load2 {
+						0% {
+							-webkit-transform: rotate(0deg);
+							transform: rotate(0deg);
+						}
+						100% {
+							-webkit-transform: rotate(360deg);
+							transform: rotate(360deg);
+						}
+					}
+					@keyframes load2 {
+						0% {
+							-webkit-transform: rotate(0deg);
+							transform: rotate(0deg);
+						}
+						100% {
+							-webkit-transform: rotate(360deg);
+							transform: rotate(360deg);
+						}
+					}
 					ul.results-list {
 						display: none;
 						width: calc(100% + 0px);
