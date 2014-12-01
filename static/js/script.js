@@ -6,7 +6,6 @@ $(document).ready(function() {
 	 */
 
 	$.fn.animateRotate = function(startAngle, endAngle, duration, easing, complete) {
-    B
 	    var args = $.speed(duration, easing, complete);
 	    var step = args.step;
 	    return this.each(function(i, e) {
