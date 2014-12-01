@@ -29,18 +29,18 @@ html {
         height: 30px; }
         html body header div.header-inner div.header-left {
           float: left; }
-          html body header div.header-inner div.header-left input{
+          html body header div.header-inner div.header-left a {
+            position: relative;
+            top: 6px;
+            padding: 5px 10px;
+            font-size: 15px;
             color: #fff;
+            text-decoration: none;
             background: -webkit-linear-gradient(#FA906E, #FA5A2E);
             background: -o-linear-gradient(#FA906E, #FA5A2E);
             background: -moz-linear-gradient(#FA906E, #FA5A2E);
             background: linear-gradient(#FA906E, #FA5A2E);
             border: none; }
-            html body header div.header-inner div.header-left button a {
-              display: block;
-              padding: 6px 3px;
-              color: #fff;
-              text-decoration: none; }
         html body header div.header-inner div.header-right {
           float: right; }
           html body header div.header-inner div.header-right img.user-image {

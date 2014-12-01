@@ -63,20 +63,18 @@ html {
 				div.header-left {
 					float: left;
 
-					button {
+					a {
+						position: relative;
+						top: 6px;
+						padding: 5px 10px;
+						font-size: 15px;
 						color: #fff;
+						text-decoration: none;
 						background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
 						background: -o-linear-gradient($orange-background-color-1, $orange-background-color-2);
 						background: -moz-linear-gradient($orange-background-color-1, $orange-background-color-2);
 						background: linear-gradient($orange-background-color-1, $orange-background-color-2);
 						border: none;
-
-						a {
-							display: block;
-							padding: 6px 3px;
-							color: #fff;
-							text-decoration: none;
-						}
 					}
 				}
 				div.header-right {

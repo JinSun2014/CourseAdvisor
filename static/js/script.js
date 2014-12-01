@@ -145,7 +145,7 @@ $(document).ready(function() {
 
 		            	// Add class title to list element
 		            	var classTitle = parseTitle(response.question.evidencelist[i].title);
-		            	element += (classTitle + '</h3></div><div class="result-right"><span>Related text </span><i class="fa fa-angle-down"></i></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
+		            	element += (classTitle + '</h3></div><div class="result-right"><span><i class="fa fa-angle-down"></i></span></div><div class="result-expand closed"><h4>What<br><span>Watson</span><br>Found</h4><ul class="relevant-text">');
 
 		            	// Add reasoning to list element
 		            	var reasoning = parseReasoning(response.question.evidencelist[i].text, qWords);
