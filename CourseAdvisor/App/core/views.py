@@ -41,7 +41,7 @@ class QueryView(JSONResponseMixin, View):
 
     def post(self, request, *args, **kwargs):
         question = request.POST.get('question')
-        question = question.strip().lower().title()
+        question = question.strip().lower()
 
         try:
             tuple = Question.objects.get(question=question)
