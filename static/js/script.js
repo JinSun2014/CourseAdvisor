@@ -404,10 +404,10 @@ $(document).ready(function() {
 			"What course is about sparse coding and deep learning?",
 			"Who is the course instructor of NUvention?",
 			"What is the grading policy of EECS 325?",
-			"What is the required textbook of EECS 348?",
-			"What are the prerequisites of EECS 340?",
-			// "What is computer usage of EECS 222?",
-			// "What course requires a lot of programming?"
+			"What is the required textbook for EECS 348?",
+			"What are the prerequisites for EECS 340?",
+			"What is computer usage of EECS 222?",
+			"What course requires a lot of programming?"
 		];
 		var which = Math.round(Math.random() * (questions.length - 1));
 		return questions[which];
@@ -420,8 +420,8 @@ $(document).ready(function() {
 			"What is the grading policy of EECS 325?",
 			"What is the required textbook for EECS 348?",
 			"What are the prerequisites for EECS 340?",
-			// "What is computer usage of EECS 222?",
-			// "What course requires a lot of programming?"
+			"What is computer usage of EECS 222?",
+			"What course requires a lot of programming?"
 		]
 
 		var alreadyPresent = "";
