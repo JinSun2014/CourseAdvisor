@@ -197,9 +197,10 @@ html {
               display: inline;
               padding: 8px 10px;
               font-family: "Slim-Joe";
+              font-family: "big-john";
               font-size: 6px;
-              color: #fff;
-              text-shadow: 0 1px 1px #555;
+              color: rgba(255, 255, 255, 0.8);
+              text-shadow: 0 1px 0px #777;
               background-color: rgba(0, 0, 0, 0.2);
               border-radius: 3px; }
             html body main div.main-content section.query form h3.new-items:before {
@@ -219,7 +220,7 @@ html {
                 font-size: 11px; } }
             @media (min-width: 620px) {
               html body main div.main-content section.query form h3.new-items {
-                font-size: 13px; } }
+                font-size: 12px; } }
             html body main div.main-content section.query form div.inline-spacer {
               height: 30px; }
             html body main div.main-content section.query form div.cycling-question {

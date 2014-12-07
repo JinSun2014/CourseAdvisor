@@ -292,9 +292,10 @@ html {
 							display: inline;
 							padding: 8px 10px;
 							font-family: "Slim-Joe";
+							font-family: "big-john";
 							font-size: 6px;
-							color: #fff;
-							text-shadow: 0 1px 1px #555;
+							color: rgba(256, 256, 256, 0.8);
+							text-shadow: 0 1px 0px #777;
 							background-color: rgba(0, 0, 0, 0.2);
 							border-radius: 3px;
 						}
@@ -320,7 +321,7 @@ html {
 						}
 						@media(min-width: 620px) {
 							h3.new-items {
-								font-size: 13px;
+								font-size: 12px;
 							}
 						}
 						div.inline-spacer {
