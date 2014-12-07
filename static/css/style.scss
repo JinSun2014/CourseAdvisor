@@ -65,9 +65,11 @@ html {
 
 					a {
 						position: relative;
-						top: 6px;
+						display: inline-block;
+						top: 3px;
 						padding: 5px 10px;
-						font-size: 15px;
+						font-family: "Slim-Joe";
+						font-size: 12px;
 						color: #fff;
 						text-decoration: none;
 						background: -webkit-linear-gradient($orange-background-color-1, $orange-background-color-2);
@@ -285,6 +287,45 @@ html {
 							font-size: 30px;
 							color: #fff;
 						}
+						h3.new-items {
+							position: relative;
+							display: inline;
+							padding: 8px 10px;
+							font-family: "Slim-Joe";
+							font-size: 6px;
+							color: #fff;
+							text-shadow: 0 1px 1px #555;
+							background-color: rgba(0, 0, 0, 0.2);
+							border-radius: 3px;
+						}
+						h3.new-items:before {
+							position: absolute;
+							top: -12px;
+							content: "";
+							width: 0;
+							height: 0;
+							border-left: 12px solid transparent;
+							border-right: 12px solid transparent;
+							border-bottom: 12px solid rgba(0, 0, 0, 0.2);
+						}
+						@media(min-width: 420px) {
+							h3.new-items {
+								font-size: 9px;
+							}
+						}
+						@media(min-width: 520px) {
+							h3.new-items {
+								font-size: 11px;
+							}
+						}
+						@media(min-width: 620px) {
+							h3.new-items {
+								font-size: 13px;
+							}
+						}
+						div.inline-spacer {
+							height: 20px;
+						}
 						div.cycling-question {
 							display: none;
 							padding: 5px 5px 2px 5px;;
@@ -355,7 +396,8 @@ html {
 								cursor: pointer;
 							}
 							li:hover {
-								color: rgba(256, 256, 256, 0.8);
+								// color: rgba(256, 256, 256, 0.8);
+								text-decoration: underline;
 							}
 						}
 						input {
