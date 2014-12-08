@@ -472,14 +472,14 @@ html {
 						content: '';
 					}
 					div.loader:before {
-						width: 5.2em;
-						height: 10.2em;
+						width: 3.6em;
+						height: 7.4em;
 						background: #4b4371;
-						border-radius: 10.2em 0 0 10.2em;
+						border-radius: 7.4em 0 0 7.4em;
 						top: -0.1em;
 						left: -0.1em;
-						-webkit-transform-origin: 5.2em 5.1em;
-						transform-origin: 5.2em 5.1em;
+						-webkit-transform-origin: 3.6em 3.6em;
+						transform-origin: 3.6em 3.6em;
 						-webkit-animation: load2 2s infinite ease 1.5s;
 						animation: load2 2s infinite ease 1.5s;
 					}
@@ -488,19 +488,19 @@ html {
 						text-indent: -99999em;
 						margin: 5em auto;
 						position: relative;
-						width: 10em;
-						height: 10em;
+						width: 6.9em;
+						height: 6.9em;
 						box-shadow: inset 0 0 0 1em #FFF;
 					}
 					div.loader:after {
-						width: 5.2em;
-						height: 10.2em;
+						width: 3.6em;
+						height: 7.4em;
 						background: #4b4371;
-						border-radius: 0 10.2em 10.2em 0;
+						border-radius: 0 7.4em 7.4em 0;
 						top: -0.1em;
-						left: 5.1em;
-						-webkit-transform-origin: 0px 5.1em;
-						transform-origin: 0px 5.1em;
+						left: 3.6em;
+						-webkit-transform-origin: 0px 3.6em;
+						transform-origin: 0px 3.6em;
 						-webkit-animation: load2 2s infinite ease;
 						animation: load2 2s infinite ease;
 					}
